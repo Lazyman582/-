@@ -1,0 +1,1328 @@
+fileFormatVersion: 2
+guid: 93fecf7f93f40904fab8f700a56c3040
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 68
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0410088b2b40dc4fa6f6a248d68fab6
+      internalID: -799340573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 395
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de0d6d63a0c3c946b3fd66b75c692a9
+      internalID: 1009052463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 430
+        width: 56
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1aff86fdfd33843a938bb4c96d88d1
+      internalID: 1953146831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 407
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f57fbc6293b4434193787f1a5086f8a
+      internalID: 966824592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 358
+        width: 60
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dc8d522b9f0a449aa5a80325c7392b
+      internalID: 1145678062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 339
+        width: 46
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e9284ad56d693478f9a089c6ebda86
+      internalID: 699504745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 61
+        height: 62
+      alignment: 9
+      pivot: {x: 0.49, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7d9e4a043738e40a66cc6497fc3f38
+      internalID: -1413556894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 265
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a373b4c3a68e3714f8e486d171f7522e
+      internalID: -764627620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 283
+        width: 51
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b819a4bea6578c4786a117ce880ae91
+      internalID: -2076652103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_10
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 270
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477b73052e7d542469d47f3fbf1748ac
+      internalID: -850824189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 58
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db9436ab4d624f4da964319e794c273
+      internalID: -1272565186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 203
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de08a50d390820b4eb73c9f3f2bdab1f
+      internalID: 1393976019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_13
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 204
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d3b6d8ce1321c439122fa3d4ccbbfc
+      internalID: -1083545916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_14
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 211
+        width: 58
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acec99558f915b341941a2a66981f0c0
+      internalID: -550618479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_15
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 204
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e9d111034076344b0daa35a3c839ff
+      internalID: 96207224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_16
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 203
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbca86357a494145877aceb9f8d8094
+      internalID: -1530307105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_17
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 203
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61621faeaf103e04895fc409fee017af
+      internalID: 1958965107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_18
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 139
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065b36025616d3f41bb927924109e7ba
+      internalID: 1019103524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 54
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e317fa0ad3d444195ee796652a1371
+      internalID: -2071685156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 140
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88345dcdcf928045adddb207bedb1e9
+      internalID: 1262806767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_21
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 141
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f6aad8231ed97499f47f8251e2ff8e
+      internalID: -1911661787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 140
+        width: 49
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d438ebc886e1f604d82755bba5070af0
+      internalID: 1050519386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_23
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 144
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a65c1ddd7c5cb94f99a171e92f50f13
+      internalID: 828268359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_24
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 139
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c295e8d40bdfbc44da2d560dc49d3ce2
+      internalID: -973919183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_25
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 139
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0b39c08646a57429749d7bf6bf593b
+      internalID: -1211622901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_26
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 139
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cef2a5e52992eb45bef62af0cb6b209
+      internalID: 1180185412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_27
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 13
+        width: 70
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb6922c759c75a46b940139881dd477
+      internalID: 835921856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_28
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 77
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed49528d20be5db48be8875d1d4024e1
+      internalID: 1085549197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_29
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 89
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44afc59bfeb989b46a8c253597c7e12d
+      internalID: -1811306916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_30
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 86
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e591219bfd053e45b616d646df5dd12
+      internalID: -125649266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_31
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 74
+        width: 84
+        height: 64
+      alignment: 9
+      pivot: {x: 0.42, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21707b629b3f2e44099bb45e27526272
+      internalID: 1654583561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_32
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 75
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e62de8a5803de84199ce93a66b63407
+      internalID: 1965573933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 86
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763acbee93de95f4a87959c295edff66
+      internalID: 660981129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_34
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 86
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c58bd494e9d14469518c78293c5e1e
+      internalID: -1801230492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_35
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 76
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b8883ad7491cf4e868d87caf2e50de
+      internalID: 255955638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_36
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 74
+        width: 80
+        height: 63
+      alignment: 9
+      pivot: {x: 0.42, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0037653e1863d24799d92d3a278f2c5
+      internalID: 1723816195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_37
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 74
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bd3303d0720b842b03d457f1179c44
+      internalID: 671438452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_38
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 75
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffb60e6dbd0d92408286b053aa90348
+      internalID: -989413578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_39
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 74
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccb534763a4d6d48a4aaebd0f75943c
+      internalID: 1430300957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_40
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 0
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b11276f7c88fa4fa3b3952286118da
+      internalID: -1658766065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_41
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 10
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e959892aa42b0f64685dcdf69d5400c6
+      internalID: 1672815179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_42
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 23
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f551b64d71928ee468998bee0c0de717
+      internalID: -530033014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_43
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 59
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aa2a1b11b8db44897cfcb0ac0a3480
+      internalID: -1862356291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_44
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 5
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e3fc463c795fd429ceffca403a4259
+      internalID: -1054873368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_45
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 25
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60b41f26237e50419f72d24d2e80a50
+      internalID: 581995532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_46
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 3
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae65025113e5d7c47a214f83186f6de7
+      internalID: 597499089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_47
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 11
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6a0cac02248a1479ee51ed68eaa4ac
+      internalID: 1725161860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_48
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 11
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf85cd12d587924798c68ade8e0836d
+      internalID: -1966041748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 78
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786eda3c72b198e4e863ff4206f5aa09
+      internalID: -383845958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_49
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 326
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f35b73cbe2a2343bd6abfd46b702b9
+      internalID: 1065218900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_50
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 202
+        width: 40
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06986d5a8d3d51d4286c637394c41d89
+      internalID: 1465724379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_51
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 139
+        width: 70
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a94cf8c3b82c940ab0e17454f68596
+      internalID: -1333359920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 61
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9caf5a43ebd14647a4398fd1f06e09c
+      internalID: -233443739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_three_hits_attack_combo_no_slashes_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 61
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81f164cdc641974e94ac3201a2ad3e4
+      internalID: -1484005213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      penitent_three_hits_attack_combo_no_slashes_0: -799340573
+      penitent_three_hits_attack_combo_no_slashes_1: 1009052463
+      penitent_three_hits_attack_combo_no_slashes_10: -850824189
+      penitent_three_hits_attack_combo_no_slashes_11: -1272565186
+      penitent_three_hits_attack_combo_no_slashes_12: 1393976019
+      penitent_three_hits_attack_combo_no_slashes_13: -1083545916
+      penitent_three_hits_attack_combo_no_slashes_14: -550618479
+      penitent_three_hits_attack_combo_no_slashes_15: 96207224
+      penitent_three_hits_attack_combo_no_slashes_16: -1530307105
+      penitent_three_hits_attack_combo_no_slashes_17: 1958965107
+      penitent_three_hits_attack_combo_no_slashes_18: 1019103524
+      penitent_three_hits_attack_combo_no_slashes_19: -2071685156
+      penitent_three_hits_attack_combo_no_slashes_2: 1953146831
+      penitent_three_hits_attack_combo_no_slashes_20: 1262806767
+      penitent_three_hits_attack_combo_no_slashes_21: -1911661787
+      penitent_three_hits_attack_combo_no_slashes_22: 1050519386
+      penitent_three_hits_attack_combo_no_slashes_23: 828268359
+      penitent_three_hits_attack_combo_no_slashes_24: -973919183
+      penitent_three_hits_attack_combo_no_slashes_25: -1211622901
+      penitent_three_hits_attack_combo_no_slashes_26: 1180185412
+      penitent_three_hits_attack_combo_no_slashes_27: 835921856
+      penitent_three_hits_attack_combo_no_slashes_28: 1085549197
+      penitent_three_hits_attack_combo_no_slashes_29: -1811306916
+      penitent_three_hits_attack_combo_no_slashes_3: 966824592
+      penitent_three_hits_attack_combo_no_slashes_30: -125649266
+      penitent_three_hits_attack_combo_no_slashes_31: 1654583561
+      penitent_three_hits_attack_combo_no_slashes_32: 1965573933
+      penitent_three_hits_attack_combo_no_slashes_33: 660981129
+      penitent_three_hits_attack_combo_no_slashes_34: -1801230492
+      penitent_three_hits_attack_combo_no_slashes_35: 255955638
+      penitent_three_hits_attack_combo_no_slashes_36: 1723816195
+      penitent_three_hits_attack_combo_no_slashes_37: 671438452
+      penitent_three_hits_attack_combo_no_slashes_38: -989413578
+      penitent_three_hits_attack_combo_no_slashes_39: 1430300957
+      penitent_three_hits_attack_combo_no_slashes_4: -383845958
+      penitent_three_hits_attack_combo_no_slashes_40: -1658766065
+      penitent_three_hits_attack_combo_no_slashes_41: 1672815179
+      penitent_three_hits_attack_combo_no_slashes_42: -530033014
+      penitent_three_hits_attack_combo_no_slashes_43: -1862356291
+      penitent_three_hits_attack_combo_no_slashes_44: -1054873368
+      penitent_three_hits_attack_combo_no_slashes_45: 581995532
+      penitent_three_hits_attack_combo_no_slashes_46: 597499089
+      penitent_three_hits_attack_combo_no_slashes_47: 1725161860
+      penitent_three_hits_attack_combo_no_slashes_48: -1966041748
+      penitent_three_hits_attack_combo_no_slashes_49: 1065218900
+      penitent_three_hits_attack_combo_no_slashes_5: 1145678062
+      penitent_three_hits_attack_combo_no_slashes_50: 1465724379
+      penitent_three_hits_attack_combo_no_slashes_51: -1333359920
+      penitent_three_hits_attack_combo_no_slashes_52: -233443739
+      penitent_three_hits_attack_combo_no_slashes_53: -1484005213
+      penitent_three_hits_attack_combo_no_slashes_6: 699504745
+      penitent_three_hits_attack_combo_no_slashes_7: -1413556894
+      penitent_three_hits_attack_combo_no_slashes_8: -764627620
+      penitent_three_hits_attack_combo_no_slashes_9: -2076652103
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

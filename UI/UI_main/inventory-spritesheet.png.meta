@@ -1,0 +1,4936 @@
+fileFormatVersion: 2
+guid: 01c79ae5f32578f4b99b71d2437f76ca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: inventory-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 486
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1346d7b0f774f0e42992496e918ffe55
+      internalID: 798289009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 486
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2416ee3cae5824498884aaa42a3b7f
+      internalID: 523533194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 488
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77d5373bdae17147b78de5b3d84c692
+      internalID: -1793828091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 486
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ee2de59680e0f4ca0854bf26b641d9
+      internalID: -1983775864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 486
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa758a65af7b6149851aef79689b86d
+      internalID: 856421262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 484
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dac9f98c188a8646bb95f28d3bb829c
+      internalID: 1701291679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 490
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4046e87185c4d343975bab2bc0a53bb
+      internalID: 1915036094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 502
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e210616e09a94f47ad57ea26f3f088a
+      internalID: -617204975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 503
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2afb818118a464cbbc62b0ea116c82
+      internalID: 260220633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 488
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f66e063ba40b454d82c03de6b481182
+      internalID: 593147164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 497
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b134ffc8042aa364da1758621ebd4312
+      internalID: -96581945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 452
+        width: 91
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed1256989659f0408150d8052a28281
+      internalID: -1606623337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 494
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8a84f96dd06b0448004c5b90b57108
+      internalID: -1289864228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 505
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e266e7b3a0480204ebc295fb95d77344
+      internalID: 891399091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 501
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e016d9b5f6ed2345b9befbe3b989a64
+      internalID: -1699375217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 487
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3eab6c231042341a562527057bbcf1
+      internalID: 156419230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 487
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4f37586bd09564f89af84dbc9f15c2
+      internalID: -298399796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 493
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436118648c0c94d4bb92a9ae0dfd9c45
+      internalID: -784816309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 493
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a96875417e8d4a41b44bf351a033371
+      internalID: 354014365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 493
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b08fe0ebd22d54d9f9124a4dec15e0
+      internalID: -907688148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 492
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3a675cc9331ee4eba6602f97e70833
+      internalID: -1726162915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 484
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e4dda8c1c5fda46bc08a954611fe01
+      internalID: -1398546098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 497
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322e0886895c8614d9004cef046a014e
+      internalID: -2051466058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 493
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6b7c61f027736459c6376b3d127d4e
+      internalID: 706086534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 472
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79421f54b40625d40a63d726b07fff32
+      internalID: 373008459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 472
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cad057267d53984b8a89d7df92d1716
+      internalID: 194850294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 472
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea9d3de40987da44b3103eb88c34540
+      internalID: 336603287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 472
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ebec6329b31774eadf474148bed31a
+      internalID: -983116666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 453
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455b85596498f3e4ea580b0a4e3b582c
+      internalID: -91818816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 453
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2119f05ed8c7224429c8b3ec0810703a
+      internalID: -1950346475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 460
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98144e66f25a48a419e66090d4e69f5d
+      internalID: 1966100458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 466
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4232143dfd86b44a4edf8c4aa8dc55
+      internalID: -323449282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 470
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b047300631c96e4faffb86bbd73ec40
+      internalID: 284994422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 470
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9426ad857d38ff458ee80523e5dc8b1
+      internalID: 1135004963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 470
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a02a924ef495e4498673d78dd77eb3
+      internalID: 215893118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 467
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34172aac3bfa28047aa18e80ecc205de
+      internalID: 519095241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 472
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d31f4835cdea342a6395a111dd6e57
+      internalID: 1097822158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 483
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1f61f6e2aff3945a466c9b76e068d3
+      internalID: -1330668549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 478
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133cd0eab084a5543a72364cfb5a0c4d
+      internalID: -197780730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 480
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8077d9eb508621646904d3d65c04fe61
+      internalID: 826991190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 474
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff8bab84628e79489e3656bdb74a9c3
+      internalID: 758368742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 474
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd5ada3d33868641abe8bdb6c4993f0
+      internalID: 1221624128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 474
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817c06ecc43c1c548b7290ff44c04aad
+      internalID: -827233304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 472
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfef6ab81fd10a4191c630e62035562
+      internalID: 315247747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 434
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5213d2896ed0d64da045c2845422744
+      internalID: 874787688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 454
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bc07c75aadf9d4cbfdcff1cee557b9
+      internalID: 12484210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 450
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39b5bb250e713a4bb36d42f032585a7
+      internalID: -1336527108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 455
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669ac84c2a274c04d9758825a1f05f72
+      internalID: 321849879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 439
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93411f13fb204354b9d25f2a8e766b21
+      internalID: 2040488605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 439
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfd4f8f3bfaa8448ab008d35af75db1
+      internalID: -689381838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 455
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e1a7378ef0f6945895ff6ece7332f2
+      internalID: 1549428457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 456
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6191e0ec0dbb94580b72f2ef066601
+      internalID: -345587384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 450
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be6775bcae090e4f8cac287fbb7266e
+      internalID: 240954116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 440
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eefba9d8798e5f4a95f509162326d2b
+      internalID: 1911136008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 450
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd1e80d1d0f5414685d343ad24ab51f
+      internalID: -1515192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 455
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95da3dfa8daa1c4ca7e48a3049a857e
+      internalID: -554284545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 442
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37cf75dfb20b4154f968b9fdccacb9ba
+      internalID: 312016379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 456
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557e49d0edc51bc4b9ebe0e8b6590726
+      internalID: -1814977389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 456
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd51885d7e4c7c44a20c7918af04985
+      internalID: -527747945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 456
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d0f1bef85dad342bb75b0362dc753f
+      internalID: 1253422088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 456
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8991186395647fe4ab1b65dd01dcc931
+      internalID: 195148027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 428
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c6bd9aca3af98438cad38b843e5b97
+      internalID: 1793329910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 424
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71080ab260f853a4b96a848016ac8019
+      internalID: -618753589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 441
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66025eec0e36a26419a697eef898ff7e
+      internalID: -1067460172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 442
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067483c3d544d7a47a863c127e12214e
+      internalID: 1048105793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 425
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1a4101dbc6790488691cfdbfed37b7
+      internalID: -1541202804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 420
+        width: 93
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8003187876494aa4fabdffe543db5cf6
+      internalID: -409920312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 440
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfc6bddb9905c340ab8b7c82174c540
+      internalID: -633795617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 435
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e3d0ae14ad8464984488e32f420469
+      internalID: -510663422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 436
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dbe667b522d1a41aef2affd6a744a2
+      internalID: 1159287235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 436
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb663612dd3015843a1bcf1c5c7c4e66
+      internalID: -292476812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 424
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1820e25125a9034c9082e0cfbbb166e
+      internalID: 1053651371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 424
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f4f70eecd044b47bfa3fa77cdf3c27
+      internalID: 1170223473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 424
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a440ea82bbad2b94588dceb0cc59aaa9
+      internalID: 1442025836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 424
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfa651782bf52447a98805e4426bc50
+      internalID: 923080309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 391
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caea11e282da1eb4b9dcd8b0635b548d
+      internalID: 1049879077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 422
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07395998669fb84380e4e4a9258f8df
+      internalID: -132900641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 422
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca8be20a6c488942bade2b78c373ee8
+      internalID: -1819507310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 421
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1687ae9350f61c94f855cefcf92d94e0
+      internalID: -1757224700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 419
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf29f6282c802f34e8887df08eec9534
+      internalID: 738818352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 423
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4726b58dce8ccbd4888b0b933b92dc81
+      internalID: 852346323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 423
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12cf9d9036fefb4a97ef4f7604cc8d0
+      internalID: -11357249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 423
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683b38e0f39d6b04a930aa90dc25c76d
+      internalID: -846251594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 420
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3d01f312447a04dbbe6bef0c65ab35
+      internalID: 863418814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 422
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e974a5fc47f0372408518c51d5a03c0e
+      internalID: -1978312033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 417
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d2637ba5f347a45bde8808e8da2b2e
+      internalID: -1725505213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 418
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b2c2e024abfac4bbaa610c59704d83
+      internalID: 2073862179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 417
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763b19113342ef54e86fe75425928554
+      internalID: -1129690756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 388
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e8cbccaf0342e4dbb1dc1edcb1654c
+      internalID: 403814811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 384
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdf3d37c194e224c87936b9ab01f100
+      internalID: -2028660643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 410
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ff7afccac16644e8176a267d68e46e
+      internalID: -1322319550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 401
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8cca78a89fa7b4dbff6cbf934ed3d8
+      internalID: 1522353969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 404
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ef9e3afe4318e4ab656eb8f7b2a288
+      internalID: -549379244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 407
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c932a4756fe4414197de4e41abbc740
+      internalID: -326845541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 407
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0ef9d1c5f29e4469e977717371e8fc
+      internalID: 1237083634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 128
+        width: 31
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d178d907f12148543bc5eaf130e9d8ea
+      internalID: 1357012986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 407
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1685249b10778b143855554b183dfe07
+      internalID: -1414429710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 184
+        width: 272
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5223cec2bab8dec48a750ccae4f1ef5d
+      internalID: -760105044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 388
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e25227b1fe2aa44a209938400afd09
+      internalID: 1522957974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 388
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4d75bc1bb9bd949a7e02099616d151
+      internalID: -320677482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 385
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca714c20bc60c7b439173ac11ecb6317
+      internalID: 1961097177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 384
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3403176638246cc49927ad680cf7d5de
+      internalID: 1924292457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 395
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9771fb2a63ba2f47b3959c5cfa15dea
+      internalID: -916951146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 395
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2137286294b2f54482b08ec69a4cd64
+      internalID: -1803387866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 395
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e5b5bbd006fdd48a055371aa0f86b6
+      internalID: -64134709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 327
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28af578db17297844b59ddd01dd28047
+      internalID: -833345996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422c4d62341cd094db2eac55e93285fe
+      internalID: -566918400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 319
+        width: 10
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036f53524f30e184691b9bf50e773672
+      internalID: -926408358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 324
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ad71af879bda0489642cecc3d74410
+      internalID: 1030847776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 383
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c329b76e68c07dc48af3bb640475ea8b
+      internalID: 690458338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 383
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5828498ee8c4551428f376a5983ac43b
+      internalID: 1131956612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 383
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4990acb5057edd47aa9afce423aca96
+      internalID: -772650338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69da56299e797bb4a99eff314bb76f43
+      internalID: 485451497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 366
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11b8d606d4b76f499453d7d8a175ea1
+      internalID: -940761132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 368
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90e924854b89ed47b79603a46b4b9dd
+      internalID: -325519736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 357
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ca5d03e9689134c83cd4ab7c5467aa
+      internalID: -31314295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 359
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f076884a4d9f47e44a898de77b3303f4
+      internalID: -739485324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 371
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475c6ee7bcfd5e84ea327c73dc8f20b5
+      internalID: 499450788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 371
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd6be99c4902b24ab95aaeec131865e
+      internalID: 2125588307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 359
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a11a0d9fcd87e428c8defc80ef2e1d
+      internalID: -599294605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 359
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ec5b7d853ecb74b9531d6223f22443
+      internalID: 842359934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 371
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e5b1e0d8f06264da2df9ef8fdd15f6
+      internalID: 139836102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efc427b059a2e24fa4618826f2eed34
+      internalID: 182649693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 338
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4f49b8ddd978641b852de206915ce2
+      internalID: -1377508363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 338
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7c8d3662ca71b479ac394812b35284
+      internalID: -1567622338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 347
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69780486904411041a166509968e5f85
+      internalID: -362364309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 344
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eb5b34c0c1dbc4d8034a4437904087
+      internalID: -1107848089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 347
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e79f8ecc25b6c4d80c0665a584f511
+      internalID: 1453067644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 347
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f166547018e31f4da1cb9ec4e0aac8b
+      internalID: -1696445176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 347
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136f060672e86674fabd30a2dc6be8cd
+      internalID: -433400364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 322
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae214c1f83276f41a296f9bd08b1122
+      internalID: 1583313676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 336
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c98ed7ba55d5ec40a8f1895d230d348
+      internalID: 1324364196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 321
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bad0d48109699644aa7ce31396dc150
+      internalID: 399794403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 322
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3edfa66ba9c3943929239245b4899d
+      internalID: 193452528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 323
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303f432d302316e49af4c8bbb6d9887c
+      internalID: -123246286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 335
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb92aad4065c0b408ca1ec75efd5d65
+      internalID: 1019269044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 335
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c8c273c66adbc4e8ac025a5f331158
+      internalID: -1131990928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 304
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014c401de91caa84db90ec8cc44fc9f1
+      internalID: -1102100477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 320
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faaa590e9d3d2049981998a18fcc9a1
+      internalID: 1984211955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 329
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c22ba7c13bfd03469943e0b3196ff1d
+      internalID: -26820676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 321
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0756185853cde4eac12a1a9d166ad2
+      internalID: -1045702430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 323
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb12c3ed9e3071b489420ec00f32427f
+      internalID: 1183715646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 323
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74f98d6d5c0dc14fa1aa3950abc3d7b
+      internalID: 1813188849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 321
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c5453fb58810741afc58502b87cbd9
+      internalID: -693791515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 304
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e4207ef6c65f74bbd39beaac7d0075
+      internalID: -1025238667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 312
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3828b1a71e26c21488040588019dcefd
+      internalID: 1872633054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 311
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5468d61711fe1f4fbcd8f94a6bc232d
+      internalID: 1373029889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 311
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f0418d72addf740ae49537c6a41f0b
+      internalID: 1968901681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 311
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c0c5c0b2c784042962575de93ac242
+      internalID: -94859063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 298
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e588c9faa03444ba547ed2ecff361c
+      internalID: -519915437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 292
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff15126312d62a4bad69ca53b18711a
+      internalID: -261705371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 299
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dbd566fe50b5c468abe0c47d941a11
+      internalID: -86645195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 299
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e68e4d2950d5840b6e7e00be325d31
+      internalID: -468666523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 205
+        width: 57
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb6fd67ab1ea644788c4286d8865705
+      internalID: 220520862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 282
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1171276ce97ccf84daa21e216c635556
+      internalID: -1404303996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 275
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e32bf11a9140947921a7bac3d07da2
+      internalID: 856956374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 287
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7587b1bdde0897c4782904e3b9a64868
+      internalID: -14656978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 275
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed613005b133da84e82d2af7132199d5
+      internalID: -1182527238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 287
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cec92d54a5ff6c4792cf6c9ce983756
+      internalID: -1160650532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 275
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76f86ccd173592468bee28bb438ecc6
+      internalID: -425960214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 287
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8fd30dff9ae6a4c87a004386f3ca42
+      internalID: -823071241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 263
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03cd9f5fc9134046b2b928162aa56c1
+      internalID: 2116026795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 263
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd221d72c01163c47ac9c7ac6d1b07dc
+      internalID: -74913998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 263
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2fc7dfc2c6bcf499f5392f097c517d
+      internalID: 1986118236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 256
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d126cb195b629644e915659ff0df4b2d
+      internalID: -1134573739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 251
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7921a27df5b345d4d95ed8dcac3a9934
+      internalID: -1625820817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 251
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d38d204668405540b74ddf0a573a267
+      internalID: -1147994324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 251
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3b87c59343017439e2ab513e4fdc11
+      internalID: 2053138832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 91
+        width: 57
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f458e7e99b94c074eaa67c8d148af002
+      internalID: 2033183725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 69
+        width: 89
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992f537c332089d438795e1ef8587d7c
+      internalID: -1786252202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_170
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 235
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d7f1d2d3fa98246b79d42ebee93362
+      internalID: -1392597500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 227
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79333f2a41c956741a78ff2f9c5757ae
+      internalID: -1813044957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_172
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 239
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb18725e9f6ea24c9e9756f31b4cd28
+      internalID: 1315995265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 239
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1700782604c99b9408c2357297d9d57f
+      internalID: 873558908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_174
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 227
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df399593b36173f489bd244b528f2ccb
+      internalID: 710974175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 227
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87f108e9a92a1c45bced2f0abf0c011
+      internalID: -518933164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_176
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 239
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e695737d0011c1540afe019a1c50ca46
+      internalID: -1470183193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_177
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 145
+        width: 5
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cdc6c99159b354ba573a14587cd9b8
+      internalID: 893126768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 198
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e490fd1d533bb9941a826b8dbdcbc074
+      internalID: 858022869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_179
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 203
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e7eedbefe639543a9c08a59d7b4375
+      internalID: 1055158541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_180
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 115
+        width: 12
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aeb2b7dd01f0a74cbfd2027e7a118d8
+      internalID: 16880786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_181
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 136
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685694a77bcf7c94a9a3e5a0755aa76a
+      internalID: -513191964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_182
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 154
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83422241ee126a34fb6a47f5c3023b51
+      internalID: -1343236687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_183
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 109
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de8da0a37c77b44b83d31d0ac881b56
+      internalID: 1295901200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_184
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 176
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8996b43484987ed41a5e725f536e5f9b
+      internalID: -1010869528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_185
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 131
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98584f23a90b15244906ba4caac167c3
+      internalID: 992571617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_186
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 158
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e558f50b1b1322b4c8332a27ca34a089
+      internalID: 665871735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_187
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 110
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624910fa443c3d1409b721f69ef04359
+      internalID: -84040861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_188
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 138
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03cb60adab475574594ae8e6a39ae53e
+      internalID: 457838929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_189
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 175
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1583217553f3e488a15ba19aadec8c
+      internalID: 2115359439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_190
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 153
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052f20d4dbf5b924c92c9fdcf8ff9246
+      internalID: -1619804450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_191
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 168
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26c2fe2a8fc1724690ff8ee6c37ca5a
+      internalID: -145098572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_192
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 156
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5079b0e2adaddf04db101bb45d10756d
+      internalID: 566347311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_193
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 21
+        width: 297
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee88a372e295fd242abb880bb64d4a34
+      internalID: 645763673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_194
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 84
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff9deda94285f8429387a2ec1cb0a4e
+      internalID: 1274417222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_195
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 80
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ef8d4c38a7df24391856aa301aad4c
+      internalID: -935005632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_196
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 100
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2860d5076e03b04e817ea953f731ae6
+      internalID: -1704392402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_197
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 98
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad6699425c539a4485b11d4f08fe2fb
+      internalID: 476672231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_198
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 73
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd086f854696ee04d8397bd6ca758710
+      internalID: -569216222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_199
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d513f5e09d31d794ca5e716131dee9bd
+      internalID: 236330319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_200
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 28
+        width: 217
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0d7de0b80c54d4e8006bb48d92ffae
+      internalID: 907941311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_201
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 350
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549617fd4fafb3048a1b548d22fc2d8e
+      internalID: -1543309017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_202
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 20
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3619a3efdd12da47a67caeb9211300a
+      internalID: 1257092028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_203
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 16
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d201e37de9e378a41a703896a7c984f6
+      internalID: 1674404024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_204
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 14
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f74203d9e3cfc4ea301162cbd5c441
+      internalID: 80675963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_205
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 14
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fe374237a0ccb498a78145b6fd0cdb
+      internalID: 782500390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_206
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f39106919ea2c8418d2a57123582bec
+      internalID: 1831709198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_207
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 20
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb4fbd8bb69bed4583a24a4f4d1fe1c
+      internalID: 2136708992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_208
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f1b1952310e1b4da04a2cdf4089ac2
+      internalID: 1072247341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_209
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 20
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63f591c17481524ba117c3696316f8c
+      internalID: 1604612421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_210
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 18
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48201e11b1c8e1478e1a76eb0e474c5
+      internalID: 831309117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_211
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 15
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f540fb66734faa24b8834d1bda7657df
+      internalID: 355835710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_212
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 13
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78cdb6ffdcf1f74a9f6c6ea9142b578
+      internalID: -374479753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_213
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 5
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6242ebfd6d1783d4aaf25a59b8cfd2ae
+      internalID: 1381048897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_214
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 10
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b2df7076a7a8049b7403a2a70d4773
+      internalID: 1792628901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_215
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 9
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e64af4357698544aef4b2e40b4d600
+      internalID: 1898879846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_216
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 10
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dad889de09d6ef4f9c60e90facb0f6e
+      internalID: 170469619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory-spritesheet_217
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 0
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3819ae3cbacc2e24ab591ac9f89ecacf
+      internalID: 1245507809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      inventory-spritesheet_0: 798289009
+      inventory-spritesheet_1: 523533194
+      inventory-spritesheet_10: -96581945
+      inventory-spritesheet_100: 1961097177
+      inventory-spritesheet_101: 1924292457
+      inventory-spritesheet_102: -916951146
+      inventory-spritesheet_103: -1803387866
+      inventory-spritesheet_104: -64134709
+      inventory-spritesheet_105: -833345996
+      inventory-spritesheet_106: -566918400
+      inventory-spritesheet_107: -926408358
+      inventory-spritesheet_108: 1030847776
+      inventory-spritesheet_109: 690458338
+      inventory-spritesheet_11: -1606623337
+      inventory-spritesheet_110: 1131956612
+      inventory-spritesheet_111: -772650338
+      inventory-spritesheet_112: 485451497
+      inventory-spritesheet_113: -940761132
+      inventory-spritesheet_114: -325519736
+      inventory-spritesheet_115: -31314295
+      inventory-spritesheet_116: -739485324
+      inventory-spritesheet_117: 499450788
+      inventory-spritesheet_118: 2125588307
+      inventory-spritesheet_119: -599294605
+      inventory-spritesheet_12: -1289864228
+      inventory-spritesheet_120: 842359934
+      inventory-spritesheet_121: 139836102
+      inventory-spritesheet_122: 182649693
+      inventory-spritesheet_123: -1377508363
+      inventory-spritesheet_124: -1567622338
+      inventory-spritesheet_125: -362364309
+      inventory-spritesheet_126: -1107848089
+      inventory-spritesheet_127: 1453067644
+      inventory-spritesheet_128: -1696445176
+      inventory-spritesheet_129: -433400364
+      inventory-spritesheet_13: 891399091
+      inventory-spritesheet_130: 1583313676
+      inventory-spritesheet_131: 1324364196
+      inventory-spritesheet_132: 399794403
+      inventory-spritesheet_133: 193452528
+      inventory-spritesheet_134: -123246286
+      inventory-spritesheet_135: 1019269044
+      inventory-spritesheet_136: -1131990928
+      inventory-spritesheet_137: -1102100477
+      inventory-spritesheet_138: 1984211955
+      inventory-spritesheet_139: -26820676
+      inventory-spritesheet_14: -1699375217
+      inventory-spritesheet_140: -1045702430
+      inventory-spritesheet_141: 1183715646
+      inventory-spritesheet_142: 1813188849
+      inventory-spritesheet_143: -693791515
+      inventory-spritesheet_144: -1025238667
+      inventory-spritesheet_145: 1872633054
+      inventory-spritesheet_146: 1373029889
+      inventory-spritesheet_147: 1968901681
+      inventory-spritesheet_148: -94859063
+      inventory-spritesheet_149: -519915437
+      inventory-spritesheet_15: 156419230
+      inventory-spritesheet_150: -261705371
+      inventory-spritesheet_151: -86645195
+      inventory-spritesheet_152: -468666523
+      inventory-spritesheet_153: 220520862
+      inventory-spritesheet_154: -1404303996
+      inventory-spritesheet_155: 856956374
+      inventory-spritesheet_156: -14656978
+      inventory-spritesheet_157: -1182527238
+      inventory-spritesheet_158: -1160650532
+      inventory-spritesheet_159: -425960214
+      inventory-spritesheet_16: -298399796
+      inventory-spritesheet_160: -823071241
+      inventory-spritesheet_161: 2116026795
+      inventory-spritesheet_162: -74913998
+      inventory-spritesheet_163: 1986118236
+      inventory-spritesheet_164: -1134573739
+      inventory-spritesheet_165: -1625820817
+      inventory-spritesheet_166: -1147994324
+      inventory-spritesheet_167: 2053138832
+      inventory-spritesheet_168: 2033183725
+      inventory-spritesheet_169: -1786252202
+      inventory-spritesheet_17: -784816309
+      inventory-spritesheet_170: -1392597500
+      inventory-spritesheet_171: -1813044957
+      inventory-spritesheet_172: 1315995265
+      inventory-spritesheet_173: 873558908
+      inventory-spritesheet_174: 710974175
+      inventory-spritesheet_175: -518933164
+      inventory-spritesheet_176: -1470183193
+      inventory-spritesheet_177: 893126768
+      inventory-spritesheet_178: 858022869
+      inventory-spritesheet_179: 1055158541
+      inventory-spritesheet_18: 354014365
+      inventory-spritesheet_180: 16880786
+      inventory-spritesheet_181: -513191964
+      inventory-spritesheet_182: -1343236687
+      inventory-spritesheet_183: 1295901200
+      inventory-spritesheet_184: -1010869528
+      inventory-spritesheet_185: 992571617
+      inventory-spritesheet_186: 665871735
+      inventory-spritesheet_187: -84040861
+      inventory-spritesheet_188: 457838929
+      inventory-spritesheet_189: 2115359439
+      inventory-spritesheet_19: -907688148
+      inventory-spritesheet_190: -1619804450
+      inventory-spritesheet_191: -145098572
+      inventory-spritesheet_192: 566347311
+      inventory-spritesheet_193: 645763673
+      inventory-spritesheet_194: 1274417222
+      inventory-spritesheet_195: -935005632
+      inventory-spritesheet_196: -1704392402
+      inventory-spritesheet_197: 476672231
+      inventory-spritesheet_198: -569216222
+      inventory-spritesheet_199: 236330319
+      inventory-spritesheet_2: -1793828091
+      inventory-spritesheet_20: -1726162915
+      inventory-spritesheet_200: 907941311
+      inventory-spritesheet_201: -1543309017
+      inventory-spritesheet_202: 1257092028
+      inventory-spritesheet_203: 1674404024
+      inventory-spritesheet_204: 80675963
+      inventory-spritesheet_205: 782500390
+      inventory-spritesheet_206: 1831709198
+      inventory-spritesheet_207: 2136708992
+      inventory-spritesheet_208: 1072247341
+      inventory-spritesheet_209: 1604612421
+      inventory-spritesheet_21: -1398546098
+      inventory-spritesheet_210: 831309117
+      inventory-spritesheet_211: 355835710
+      inventory-spritesheet_212: -374479753
+      inventory-spritesheet_213: 1381048897
+      inventory-spritesheet_214: 1792628901
+      inventory-spritesheet_215: 1898879846
+      inventory-spritesheet_216: 170469619
+      inventory-spritesheet_217: 1245507809
+      inventory-spritesheet_22: -2051466058
+      inventory-spritesheet_23: 706086534
+      inventory-spritesheet_24: 373008459
+      inventory-spritesheet_25: 194850294
+      inventory-spritesheet_26: 336603287
+      inventory-spritesheet_27: -983116666
+      inventory-spritesheet_28: -91818816
+      inventory-spritesheet_29: -1950346475
+      inventory-spritesheet_3: -1983775864
+      inventory-spritesheet_30: 1966100458
+      inventory-spritesheet_31: -323449282
+      inventory-spritesheet_32: 284994422
+      inventory-spritesheet_33: 1135004963
+      inventory-spritesheet_34: 215893118
+      inventory-spritesheet_35: 519095241
+      inventory-spritesheet_36: 1097822158
+      inventory-spritesheet_37: -1330668549
+      inventory-spritesheet_38: -197780730
+      inventory-spritesheet_39: 826991190
+      inventory-spritesheet_4: 856421262
+      inventory-spritesheet_40: 758368742
+      inventory-spritesheet_41: 1221624128
+      inventory-spritesheet_42: -827233304
+      inventory-spritesheet_43: 315247747
+      inventory-spritesheet_44: 874787688
+      inventory-spritesheet_45: 12484210
+      inventory-spritesheet_46: -1336527108
+      inventory-spritesheet_47: 321849879
+      inventory-spritesheet_48: 2040488605
+      inventory-spritesheet_49: -689381838
+      inventory-spritesheet_5: 1701291679
+      inventory-spritesheet_50: 1549428457
+      inventory-spritesheet_51: -345587384
+      inventory-spritesheet_52: 240954116
+      inventory-spritesheet_53: 1911136008
+      inventory-spritesheet_54: -1515192
+      inventory-spritesheet_55: -554284545
+      inventory-spritesheet_56: 312016379
+      inventory-spritesheet_57: -1814977389
+      inventory-spritesheet_58: -527747945
+      inventory-spritesheet_59: 1253422088
+      inventory-spritesheet_6: 1915036094
+      inventory-spritesheet_60: 195148027
+      inventory-spritesheet_61: 1793329910
+      inventory-spritesheet_62: -618753589
+      inventory-spritesheet_63: -1067460172
+      inventory-spritesheet_64: 1048105793
+      inventory-spritesheet_65: -1541202804
+      inventory-spritesheet_66: -409920312
+      inventory-spritesheet_67: -633795617
+      inventory-spritesheet_68: -510663422
+      inventory-spritesheet_69: 1159287235
+      inventory-spritesheet_7: -617204975
+      inventory-spritesheet_70: -292476812
+      inventory-spritesheet_71: 1053651371
+      inventory-spritesheet_72: 1170223473
+      inventory-spritesheet_73: 1442025836
+      inventory-spritesheet_74: 923080309
+      inventory-spritesheet_75: 1049879077
+      inventory-spritesheet_76: -132900641
+      inventory-spritesheet_77: -1819507310
+      inventory-spritesheet_78: -1757224700
+      inventory-spritesheet_79: 738818352
+      inventory-spritesheet_8: 260220633
+      inventory-spritesheet_80: 852346323
+      inventory-spritesheet_81: -11357249
+      inventory-spritesheet_82: -846251594
+      inventory-spritesheet_83: 863418814
+      inventory-spritesheet_84: -1978312033
+      inventory-spritesheet_85: -1725505213
+      inventory-spritesheet_86: 2073862179
+      inventory-spritesheet_87: -1129690756
+      inventory-spritesheet_88: 403814811
+      inventory-spritesheet_89: -2028660643
+      inventory-spritesheet_9: 593147164
+      inventory-spritesheet_90: -1322319550
+      inventory-spritesheet_91: 1522353969
+      inventory-spritesheet_92: -549379244
+      inventory-spritesheet_93: -326845541
+      inventory-spritesheet_94: 1237083634
+      inventory-spritesheet_95: 1357012986
+      inventory-spritesheet_96: -1414429710
+      inventory-spritesheet_97: -760105044
+      inventory-spritesheet_98: 1522957974
+      inventory-spritesheet_99: -320677482
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

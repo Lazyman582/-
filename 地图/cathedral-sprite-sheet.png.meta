@@ -1,0 +1,4716 @@
+fileFormatVersion: 2
+guid: 72b0a8eb607e24c4e9f97405f60c6940
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 988
+        width: 101
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859c467120fc98747b26fd46ca814d34
+      internalID: -631277587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 989
+        width: 100
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714bc50e84f431d41827605a529c99bf
+      internalID: -1927706389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 971
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac4ead1f1e0da9419299258218ee331
+      internalID: 681615559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 972
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bedc1776bcf7f46957c45787eb5973
+      internalID: 1804672352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 993
+        width: 109
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb7a9d8f0169294b8a05f78ba9ae642
+      internalID: -501746124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 957
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e06a0dd0d7b35448bcfe7e58cde651
+      internalID: -586375030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 955
+        width: 77
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f90589cd10a0bb4d92cfe99db9f42b4
+      internalID: -483901330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 969
+        width: 73
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc24363e02cc046b0237a89f22b363
+      internalID: -1198164290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 984
+        width: 82
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92216c36270bdf40b8a7ae3cf19ebe1
+      internalID: -898702292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 996
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6189e9a6f9db74f8a28994505c0076
+      internalID: -1317956809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 989
+        width: 73
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc49a789409f7554dafeb82c5a42abd5
+      internalID: 1773050737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1002
+        width: 45
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c98886aecfc34047887e55f0c054f29
+      internalID: 632407776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 945
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9417091e28022794583a2df3934c4150
+      internalID: -810613041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 954
+        width: 19
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b103b4ed8625c64298cbb0ffd385a8c
+      internalID: -1071469025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 989
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2d81de2d0661c4fa7fec628e7ab675
+      internalID: -988667339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 986
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67368349fd2802241b57aa65af8b7c5f
+      internalID: -2106470378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 903
+        width: 109
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e06ffc073dc8d49bc58d0c4c405c4a
+      internalID: 890909918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 947
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debfbe2cad0e50343aae0962ddacea2d
+      internalID: 1576649177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 958
+        width: 101
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43595a7be729554d8f043745818721f
+      internalID: 591893345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 963
+        width: 100
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fed16a04f92f64ea9ea3d4f2010277
+      internalID: -1806541356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 932
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275b13855d3e7a446b97750727ba97aa
+      internalID: -2130035309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 920
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe114875a92ccd48b81f3ae382dde53
+      internalID: 1030073692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 923
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3919dbd2c33504d4396d5c0bdc7796a8
+      internalID: -776356255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 907
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65156d252a65fca449820143a069c81f
+      internalID: -427920270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 870
+        width: 36
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3118f3a05508f43a0d6457c3cadf8c
+      internalID: 551222579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 870
+        width: 73
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66785cceb27023847a8dc0768c8f9270
+      internalID: 1692022758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 938
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf69d7188a89054bba84c2a66ded87a
+      internalID: -398231368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 940
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad8af4fef9644e48abbc338d536d089
+      internalID: -1225003671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 932
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7edfd683d4f524cacd8e810e63ca51
+      internalID: -985558790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 923
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2733e0b30615847934b121dc75393f
+      internalID: 2145410616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 939
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84d9e82269b6c949b6f75e636914c28
+      internalID: -1189683280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 943
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942da9e3044992d4a8cf8253285a69f7
+      internalID: 1077124285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 943
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f97412cea87674c8ffdccf4e21e3cd
+      internalID: 1021091857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 944
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4761605037921459cf4a5d2927e83c
+      internalID: -1865521186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 920
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f371cac4c6c8644b2a161795a201fe
+      internalID: 1653522591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 944
+        width: 47
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eff0aa5669d4af4da0b19e024cf4ab2
+      internalID: 201215362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 870
+        width: 30
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88b31e5679bd0e4899e017429307e1d
+      internalID: -1374160121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 923
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376417e50b83ca04b8a782c34dd2529e
+      internalID: -418289372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 936
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c893630cf52694597a435c49d15e51
+      internalID: 14613106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 885
+        width: 22
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6888a979a9a8b5549ad8a12a144cad77
+      internalID: -253244984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_40
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 894
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d52028a8c868f4a9d2cda7bf03196d
+      internalID: -212962081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_41
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 930
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab87de4fd5b5226498f37f14730df403
+      internalID: -1330969515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_42
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 872
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afca0ffd0156884a8067a683d904f41
+      internalID: 196951409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_43
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 867
+        width: 31
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73696d5794db96341b47e9ae815d7dbd
+      internalID: -1525979337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_44
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 895
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01315946af571b64094caf053a54b66d
+      internalID: -315024727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_45
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 917
+        width: 73
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58cd8cbbdbee6b489af5dcb2bbd115c
+      internalID: 1265647106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_46
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 896
+        width: 67
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51182b235dda40346b8088e18f50b8d7
+      internalID: 1494293538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_47
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 911
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450e89b761dff064cac9e79bef399cba
+      internalID: 693704240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_48
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 873
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3608462b300d7444390031c93d6dacdf
+      internalID: 1608097704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_49
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 906
+        width: 37
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cb5bd72cdd519479b419a2f823f931
+      internalID: 270352761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_50
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 749
+        width: 28
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2065225c81d72f54582256c1a6363ddf
+      internalID: 1499872505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_51
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 750
+        width: 18
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ea418e0f57a0a4599b12b7fdf906b2
+      internalID: 1836534494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_52
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 844
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10de12a163dc7c409fbba4b01b67aec
+      internalID: 988345774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_53
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 884
+        width: 89
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f34e4b2bde99146ac0f10004f547a6
+      internalID: 1819745526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_54
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 857
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf6a409de2b7f84591aefec66cd3734
+      internalID: 802981808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_55
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 862
+        width: 109
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945907f800f6d6d4ba7be525030b9140
+      internalID: 679664354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_56
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 883
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa088d81bc64414590238df87fd0eca
+      internalID: -325471041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_57
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 827
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f2a1586fd78554088a7294297bd61c
+      internalID: -24766762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_58
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 832
+        width: 80
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652dcd35c57cf6446bee8a9143f85a54
+      internalID: 768074888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_59
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 861
+        width: 57
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d349f1bd2541f4a8701ddbdef5d989
+      internalID: -350798350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_60
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 847
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5465b175822a494da493e14982fd421
+      internalID: -1642503225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_61
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 820
+        width: 61
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2cf2405e4ba36459b4a20d77bd0bc0
+      internalID: -755375590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_62
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 814
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dff9704631ca64a9248f0b1486abe0
+      internalID: -253312363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_63
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 850
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be11851694effc4696ab5487618d930
+      internalID: 768902539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_64
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 819
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f02e827507c5244a28d819dacde6fc
+      internalID: -755359397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_65
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 855
+        width: 55
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f4d2edebda61f46ac099a812786356
+      internalID: 959118842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_66
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 851
+        width: 64
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44ef0ee25a5cb943963f7e494bc54f0
+      internalID: 345778357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_67
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 763
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba7c12d39bd1f745acbde73fc4f3ff3
+      internalID: -793228627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_68
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 765
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb2d07210d421d408a7707db8be5256
+      internalID: -133436024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_69
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 822
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013fa468f45cbfa479da5f4935f6c8f6
+      internalID: -154740633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_70
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 811
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69fcad0c58335246a912631be87616d
+      internalID: -565445830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_71
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 803
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff02ae7e2f0c9af439f698e5e75ef797
+      internalID: 1346799736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_72
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 791
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e366b6a733883f04db6b6b0aca6bc5e5
+      internalID: -1366783344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_73
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 787
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e066a2fde7a0bf44a49133ac6217a1c
+      internalID: 615270637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_74
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 805
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5393dbb6410de56449c3065f5a9ea045
+      internalID: 2042317396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_75
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 826
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f87badc89cad74993f29226d1a6387
+      internalID: -2041969141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_76
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 820
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874c5c708e268224ca761bf071d636af
+      internalID: 1280365051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_77
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 817
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ce95e8e5aeaa94bae1d79b95545f2a
+      internalID: -1566792616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_78
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 826
+        width: 51
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817b5f26fa29f5d4ab62ccd2e4086b61
+      internalID: -2065548653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_79
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 826
+        width: 51
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00ca5dcfe0700545bd03aed27f3a277
+      internalID: 476119426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_80
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 810
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b12994143679a40be0d1d9ecfa578d
+      internalID: 146417786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_81
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 760
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6388d55b20b397844aa3086f98e23478
+      internalID: 1127361921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_82
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 817
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c6924ac8871ea4abcb02886e179a75
+      internalID: -58634557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_83
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 753
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a800bbd3bc7654ba3215a7ca7ca77e
+      internalID: 1876524050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_84
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 774
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dcd53947acb594993efcbedb76b35f
+      internalID: 113979501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_85
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 802
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b3757dc780c2948b7fc279bcf4301e
+      internalID: 1773227924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_86
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 600
+        width: 63
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfeba7e26b7bc844bfc642736047905
+      internalID: -370092051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_87
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 753
+        width: 120
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9053a7f2d193cf84ab5525ad25d58674
+      internalID: 1749681816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 51
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3350a9abf7d2241a9d61eb475c4501
+      internalID: -1793881373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_89
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 786
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25882050f22970e43851b5a32b9bd47c
+      internalID: -1980737816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_90
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 785
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d87e426cbfe6c4fac660a68893e81e
+      internalID: -1469186474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_91
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 788
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e94dbfb552e35479b658b17e2e5de2
+      internalID: -1273345810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_92
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 730
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b4690e9bdc4494aa6859417f9c0452
+      internalID: -1363686479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_93
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 715
+        width: 42
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada9fc20347d2f940ab294e610b0d437
+      internalID: -788178280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_94
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 613
+        width: 30
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90ee22f6e7642749861eb714faa8596
+      internalID: -1340375444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_95
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 691
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b556f82010eb253458f5ecd63e7c333a
+      internalID: 1963588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_96
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 708
+        width: 71
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0093d799b531594bb9a9c1ddc6ff633
+      internalID: 906309516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_97
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 729
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00aae14624901404a813111d955ad7d3
+      internalID: -660720695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_98
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 768
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e489e9867cab9eb42967430537f6b0ea
+      internalID: 1315062864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_99
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 750
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df984bbdbfa4e84183d9965d7f8281a
+      internalID: 1264631898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_100
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 768
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab203443f1e2914699f100c920f35fc
+      internalID: -1750076889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_101
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 758
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5956265cb52c5154385fff2509f64456
+      internalID: 691134045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_102
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 752
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bff90d5f33845418f4d36ae8636077
+      internalID: 659167709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_103
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 652
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de3a65484b609f46a7006ba6ed0a2c0
+      internalID: 145315786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_104
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 689
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95744cddb35285f44bd4393a650dd88d
+      internalID: -365823172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_105
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 683
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea291ff1108c571459ab795e808fe1ea
+      internalID: -1543863314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 686
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4b6718518194b47a502460960ec825
+      internalID: 238250973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_107
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 679
+        width: 24
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4df599294a43484f8307bdde3b07961
+      internalID: 1584655731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_108
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 704
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b703e561ff33a40ac9c5e5190f7e20
+      internalID: 2122422294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_109
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 657
+        width: 24
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e98720b9f4abe458e26d28f2b2d42d
+      internalID: -1143247074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_110
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 656
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a3a03fb54d44e4ab4b4912506e98ea
+      internalID: -1663558874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_111
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 743
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ea4a1a8393078499cc64c73ea54b1e
+      internalID: -865858931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_112
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 734
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533e95f553c276c4f91e066641142606
+      internalID: 2133780027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_113
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 687
+        width: 95
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc01ccceee93db44db1e024a202f1b38
+      internalID: 729939026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_114
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 721
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd3261bd6f0920449d2b57064820864
+      internalID: 1417202012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_115
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 719
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f966318fa364b498f500f49f8bd289
+      internalID: 551097966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_116
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 699
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367a5ba0ada48f04a8ecf5739d09b8a4
+      internalID: -1717641906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_117
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 578
+        width: 146
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28b40d5917fb8141abec56faf74ab1f
+      internalID: -262960889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_118
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 692
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb56f42742478544b48f4cf80ba0ca6
+      internalID: 454142938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_119
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 702
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1480844023c948478ac6cd5bda3ac99
+      internalID: 1907295940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_120
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 701
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1f2182f654d7c469dd9127600b6a39
+      internalID: 1290263683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_121
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 701
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5131ef94c6ade469a52e29e609ede6
+      internalID: 1058809861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_122
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 701
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7847495be9f6a344e98e800b26c5aa77
+      internalID: 1526727537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_123
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 622
+        width: 42
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf29f1d231ed20d46afd42912ade11ef
+      internalID: -796423981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_124
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 552
+        width: 42
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970869681f55e3b499a4e54e0b08f2ed
+      internalID: 556466185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_125
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 623
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cbe07abce04114ab4d508ec1d8f65a
+      internalID: 1996099982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_126
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 611
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29f4dc0478c34d4f88b9614cf4d8405
+      internalID: 350241927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_127
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94366725ae40b841a7d8632a6aa649a
+      internalID: -2140689981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_128
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 614
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e36b0b2a8870342930edf0ec8bfc1b
+      internalID: -464602999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_129
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 575
+        width: 90
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2c8fd2691acd745823ce31b6202f5f
+      internalID: -507417009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_130
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 580
+        width: 96
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d73cbd38a1d75645b66a848ab3ba0c2
+      internalID: -1117282570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_131
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 636
+        width: 129
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3820fac1630cc149824c80e46c1886a
+      internalID: -1772765895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_132
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 594
+        width: 55
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0034a3f85077744fb8064ad50941aa2
+      internalID: 2074081354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_133
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 488
+        width: 96
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1ef8937a953a54ca8ef5844f82ad49
+      internalID: 295890491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_134
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 486
+        width: 146
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b16b6ac2805374abcad9158eb047ba
+      internalID: 1355453899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_135
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 579
+        width: 135
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645267bdaa307db4b8d31e0adb155068
+      internalID: 859878126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_136
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 499
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05a1faa39d175e4885b8097638ba248
+      internalID: -531757948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_137
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 559
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e47c1f54e1478b44b5e09d4ad4ed95b
+      internalID: -2060795669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_138
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 517
+        width: 85
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aafeb7391535f6498d7a0445dd1aaa6
+      internalID: 689610454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_139
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 549
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c32186f4ffc33b4a96de7f371769c91
+      internalID: 339009311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_140
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 461
+        width: 127
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b911bd7b79f6614e845199b86a3dc36
+      internalID: -2034614563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_141
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 549
+        width: 136
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8336d1353ad3a740bd6cf9600196c21
+      internalID: 73876577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_142
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 461
+        width: 100
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b58cddae7b4036429ad46a125d76a73
+      internalID: -1043992119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_143
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 522
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c295a73a9ec7d4693216dea650f9b7
+      internalID: -142136922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_144
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 487
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c40398d99998d40a8b1a23d70be3dd
+      internalID: -2032139312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_145
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 479
+        width: 22
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41064134744244f4a8179c86e37660cb
+      internalID: -991407305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_146
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 516
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa59ae7dabcf7704e853906b49197fa8
+      internalID: -496445541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_147
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 525
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111191611ecef004bad8fc80ab54388a
+      internalID: -997311807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_148
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 525
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d600c2a08c5d7004ba4468c955372183
+      internalID: 1229719803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_149
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 488
+        width: 50
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af84c1b435fc84e468a4189d05c2d51c
+      internalID: -2009711681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_150
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 461
+        width: 80
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa98e31bf74add46ba2647ad5868560
+      internalID: 1768247187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_151
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 502
+        width: 135
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aff6bd934e4a884b9b67e26c77972c5
+      internalID: 353938971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_152
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 448
+        width: 101
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51193f90976fd8d45a343a61ef50caef
+      internalID: 820109303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_153
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 449
+        width: 100
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08f6068a1b1a3343a888df661bfe239
+      internalID: -1112184887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_154
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 422
+        width: 91
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a7e7af891523d43b3a8e3777176895
+      internalID: 1351637446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_155
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 457
+        width: 82
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ac075a0f31d0e49a6f2a7bbe7245ba
+      internalID: -700326201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_156
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 456
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07accb490fa35a4080af0e838b0f958
+      internalID: -783555293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_157
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 474
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff6c272708f8d049b57539975ff7601
+      internalID: -261726435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_158
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 474
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97236b704b985d54fbc47b12d48cbb54
+      internalID: 1247975479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_159
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 315
+        width: 84
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11feff99789203a408a431e43af00bd4
+      internalID: -2122923575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_160
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 404
+        width: 127
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e616a315c9f91f4a8b4dc31cfda2737
+      internalID: -1601104518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_161
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 422
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3412a5de76d91c442850b497653b5315
+      internalID: 1663965772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_162
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 445
+        width: 42
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9016622790f5dbb4db121d34cabec9b2
+      internalID: -2001381743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_163
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 397
+        width: 14
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09ea2ee179ef8644a4e28e42d70a6f8
+      internalID: -914153208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_164
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 380
+        width: 8
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2d0f6890f91b0449550da1eb84f8d3
+      internalID: -1633389061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_165
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 449
+        width: 58
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af9d71446bc1b847bfe86ff6ca61aa6
+      internalID: -454527268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_166
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 443
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911cef071bd1f9545a85bb82781dfe10
+      internalID: -331149238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_167
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 448
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470b10d81cb622648aad035f8abc15f2
+      internalID: -549651171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_168
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 444
+        width: 43
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d841b36823eecb642a4fe32b6c9007b6
+      internalID: 1427506591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_169
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 300
+        width: 114
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee80db0227a45f14a968f40c483dc58f
+      internalID: 1983853490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_170
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 418
+        width: 101
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894062814e77d6743b22f1107742525a
+      internalID: 2133700708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_171
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 423
+        width: 100
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebb577587713504585bcbfb9504cc23
+      internalID: -745773828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_172
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 377
+        width: 91
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7f6531da9603b408b6d6969988e602
+      internalID: 1512790355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_173
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 394
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5dfe1470cf01d4896a808725f9b142
+      internalID: -2137649347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_174
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 415
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfe77798132f5649a4a91c20ee5017f
+      internalID: 303480016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_175
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 421
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5831ae6ae0d1a73448fac09d244889df
+      internalID: -2057910375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_176
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 421
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da83ff1d8e23ee4998fcee822cbcc84
+      internalID: -387840396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_177
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 420
+        width: 18
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ddedb6c8984bd42a8a7deb5daae0a2
+      internalID: 1202136802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_178
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 396
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed476d37203ca0e4e9874fc9edd44ce7
+      internalID: -652741828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_179
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 402
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b049abf7409956644ba4e684b5985ce4
+      internalID: 1702155684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_180
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 388
+        width: 83
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ef8f9e8e8536343ab1dce7efdc262e
+      internalID: 830814825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_181
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 410
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43320f6eade3255499cccd5bf746186b
+      internalID: 715123468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_182
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 346
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d765743e07ec0488a24ecece9ce3f7
+      internalID: -601557911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_183
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 311
+        width: 25
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738fb702746133343971ff798e84bdeb
+      internalID: 174714283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_184
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 310
+        width: 32
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bad1d09bad15743b953714bff99c76
+      internalID: 357767541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_185
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 284
+        width: 134
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677d20198a85675449601d2c3a9ece62
+      internalID: -1747936031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_186
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 388
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468c74c09838f7d45a54754796b19906
+      internalID: 2111326277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_187
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 323
+        width: 151
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54896d9c774b2b849b2d5e66b643e534
+      internalID: 1205121392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_188
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 352
+        width: 107
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfecc975f5ce5d488ecc082b54e53ab
+      internalID: -648379871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_189
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 310
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a42ca15d8fae4541b65251e0e1fd6d1
+      internalID: -806505916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_190
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 357
+        width: 71
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a13906688b111447969f043b1dff3f9
+      internalID: -282901285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_191
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 240
+        width: 133
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0057bd737af2af4787a5e2c3209f9d6
+      internalID: -1991359764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_192
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 304
+        width: 71
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d9f2aac5c4cd7449f64900e405df84
+      internalID: 275836700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_193
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 261
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5c868305ab45048a818ee844d74401
+      internalID: -1050740312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_194
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 260
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16090fde10c51e6458720b3ad3aae88e
+      internalID: 1311900184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_195
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 244
+        width: 100
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2192043289d6e48b42923330d97798
+      internalID: 1391387584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_196
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 163
+        width: 134
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30e7dec923557b4a8993b86b185e1d6
+      internalID: -1724361505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_197
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 162
+        width: 126
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c321f57748b60ce4e9c970cb79562dd6
+      internalID: -1164688023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_198
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 70
+        width: 47
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1980986787c2bc84a99ca9f8ace2960a
+      internalID: 1908997749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_199
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 70
+        width: 47
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270e56e44abfb8747843df23507c93f6
+      internalID: -1311103912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_200
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 84
+        width: 62
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce1f54da173e784aa1e94c8222d974f
+      internalID: -2083792978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_201
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 199
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68213d6284fa084c9cfed1e2692f68a
+      internalID: 1882925136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_202
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 114
+        width: 62
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3b32c0cf4cfd844a233280023e3885
+      internalID: 1851638429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_203
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 146
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23dffaa385cfb34b86b375cfab531bd
+      internalID: 2130562624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_204
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 188
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69bc31df17f6c443966b0d1d46aa1b2
+      internalID: -1117404957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_205
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 178
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3373579e16918ef46bac3c76df0c6f60
+      internalID: -1301751211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_206
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 178
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67094ceb3ec026d47a612a6ae556192b
+      internalID: -195982184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cathedral-sprite-sheet_207
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7
+        width: 128
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4d0ba74662f3c4dadf33b4d36363f6
+      internalID: 276463077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cathedral-sprite-sheet_0: -631277587
+      cathedral-sprite-sheet_1: -1927706389
+      cathedral-sprite-sheet_10: 1773050737
+      cathedral-sprite-sheet_100: -1750076889
+      cathedral-sprite-sheet_101: 691134045
+      cathedral-sprite-sheet_102: 659167709
+      cathedral-sprite-sheet_103: 145315786
+      cathedral-sprite-sheet_104: -365823172
+      cathedral-sprite-sheet_105: -1543863314
+      cathedral-sprite-sheet_106: 238250973
+      cathedral-sprite-sheet_107: 1584655731
+      cathedral-sprite-sheet_108: 2122422294
+      cathedral-sprite-sheet_109: -1143247074
+      cathedral-sprite-sheet_11: 632407776
+      cathedral-sprite-sheet_110: -1663558874
+      cathedral-sprite-sheet_111: -865858931
+      cathedral-sprite-sheet_112: 2133780027
+      cathedral-sprite-sheet_113: 729939026
+      cathedral-sprite-sheet_114: 1417202012
+      cathedral-sprite-sheet_115: 551097966
+      cathedral-sprite-sheet_116: -1717641906
+      cathedral-sprite-sheet_117: -262960889
+      cathedral-sprite-sheet_118: 454142938
+      cathedral-sprite-sheet_119: 1907295940
+      cathedral-sprite-sheet_12: -810613041
+      cathedral-sprite-sheet_120: 1290263683
+      cathedral-sprite-sheet_121: 1058809861
+      cathedral-sprite-sheet_122: 1526727537
+      cathedral-sprite-sheet_123: -796423981
+      cathedral-sprite-sheet_124: 556466185
+      cathedral-sprite-sheet_125: 1996099982
+      cathedral-sprite-sheet_126: 350241927
+      cathedral-sprite-sheet_127: -2140689981
+      cathedral-sprite-sheet_128: -464602999
+      cathedral-sprite-sheet_129: -507417009
+      cathedral-sprite-sheet_13: -1071469025
+      cathedral-sprite-sheet_130: -1117282570
+      cathedral-sprite-sheet_131: -1772765895
+      cathedral-sprite-sheet_132: 2074081354
+      cathedral-sprite-sheet_133: 295890491
+      cathedral-sprite-sheet_134: 1355453899
+      cathedral-sprite-sheet_135: 859878126
+      cathedral-sprite-sheet_136: -531757948
+      cathedral-sprite-sheet_137: -2060795669
+      cathedral-sprite-sheet_138: 689610454
+      cathedral-sprite-sheet_139: 339009311
+      cathedral-sprite-sheet_14: -988667339
+      cathedral-sprite-sheet_140: -2034614563
+      cathedral-sprite-sheet_141: 73876577
+      cathedral-sprite-sheet_142: -1043992119
+      cathedral-sprite-sheet_143: -142136922
+      cathedral-sprite-sheet_144: -2032139312
+      cathedral-sprite-sheet_145: -991407305
+      cathedral-sprite-sheet_146: -496445541
+      cathedral-sprite-sheet_147: -997311807
+      cathedral-sprite-sheet_148: 1229719803
+      cathedral-sprite-sheet_149: -2009711681
+      cathedral-sprite-sheet_15: -2106470378
+      cathedral-sprite-sheet_150: 1768247187
+      cathedral-sprite-sheet_151: 353938971
+      cathedral-sprite-sheet_152: 820109303
+      cathedral-sprite-sheet_153: -1112184887
+      cathedral-sprite-sheet_154: 1351637446
+      cathedral-sprite-sheet_155: -700326201
+      cathedral-sprite-sheet_156: -783555293
+      cathedral-sprite-sheet_157: -261726435
+      cathedral-sprite-sheet_158: 1247975479
+      cathedral-sprite-sheet_159: -2122923575
+      cathedral-sprite-sheet_16: 890909918
+      cathedral-sprite-sheet_160: -1601104518
+      cathedral-sprite-sheet_161: 1663965772
+      cathedral-sprite-sheet_162: -2001381743
+      cathedral-sprite-sheet_163: -914153208
+      cathedral-sprite-sheet_164: -1633389061
+      cathedral-sprite-sheet_165: -454527268
+      cathedral-sprite-sheet_166: -331149238
+      cathedral-sprite-sheet_167: -549651171
+      cathedral-sprite-sheet_168: 1427506591
+      cathedral-sprite-sheet_169: 1983853490
+      cathedral-sprite-sheet_17: 1576649177
+      cathedral-sprite-sheet_170: 2133700708
+      cathedral-sprite-sheet_171: -745773828
+      cathedral-sprite-sheet_172: 1512790355
+      cathedral-sprite-sheet_173: -2137649347
+      cathedral-sprite-sheet_174: 303480016
+      cathedral-sprite-sheet_175: -2057910375
+      cathedral-sprite-sheet_176: -387840396
+      cathedral-sprite-sheet_177: 1202136802
+      cathedral-sprite-sheet_178: -652741828
+      cathedral-sprite-sheet_179: 1702155684
+      cathedral-sprite-sheet_18: 591893345
+      cathedral-sprite-sheet_180: 830814825
+      cathedral-sprite-sheet_181: 715123468
+      cathedral-sprite-sheet_182: -601557911
+      cathedral-sprite-sheet_183: 174714283
+      cathedral-sprite-sheet_184: 357767541
+      cathedral-sprite-sheet_185: -1747936031
+      cathedral-sprite-sheet_186: 2111326277
+      cathedral-sprite-sheet_187: 1205121392
+      cathedral-sprite-sheet_188: -648379871
+      cathedral-sprite-sheet_189: -806505916
+      cathedral-sprite-sheet_19: -1806541356
+      cathedral-sprite-sheet_190: -282901285
+      cathedral-sprite-sheet_191: -1991359764
+      cathedral-sprite-sheet_192: 275836700
+      cathedral-sprite-sheet_193: -1050740312
+      cathedral-sprite-sheet_194: 1311900184
+      cathedral-sprite-sheet_195: 1391387584
+      cathedral-sprite-sheet_196: -1724361505
+      cathedral-sprite-sheet_197: -1164688023
+      cathedral-sprite-sheet_198: 1908997749
+      cathedral-sprite-sheet_199: -1311103912
+      cathedral-sprite-sheet_2: 681615559
+      cathedral-sprite-sheet_20: -2130035309
+      cathedral-sprite-sheet_200: -2083792978
+      cathedral-sprite-sheet_201: 1882925136
+      cathedral-sprite-sheet_202: 1851638429
+      cathedral-sprite-sheet_203: 2130562624
+      cathedral-sprite-sheet_204: -1117404957
+      cathedral-sprite-sheet_205: -1301751211
+      cathedral-sprite-sheet_206: -195982184
+      cathedral-sprite-sheet_207: 276463077
+      cathedral-sprite-sheet_21: 1030073692
+      cathedral-sprite-sheet_22: -776356255
+      cathedral-sprite-sheet_23: -427920270
+      cathedral-sprite-sheet_24: 551222579
+      cathedral-sprite-sheet_25: 1692022758
+      cathedral-sprite-sheet_26: -398231368
+      cathedral-sprite-sheet_27: -1225003671
+      cathedral-sprite-sheet_28: -985558790
+      cathedral-sprite-sheet_29: 2145410616
+      cathedral-sprite-sheet_3: 1804672352
+      cathedral-sprite-sheet_30: -1189683280
+      cathedral-sprite-sheet_31: 1077124285
+      cathedral-sprite-sheet_32: 1021091857
+      cathedral-sprite-sheet_33: -1865521186
+      cathedral-sprite-sheet_34: 1653522591
+      cathedral-sprite-sheet_35: 201215362
+      cathedral-sprite-sheet_36: -1374160121
+      cathedral-sprite-sheet_37: -418289372
+      cathedral-sprite-sheet_38: 14613106
+      cathedral-sprite-sheet_39: -253244984
+      cathedral-sprite-sheet_4: -501746124
+      cathedral-sprite-sheet_40: -212962081
+      cathedral-sprite-sheet_41: -1330969515
+      cathedral-sprite-sheet_42: 196951409
+      cathedral-sprite-sheet_43: -1525979337
+      cathedral-sprite-sheet_44: -315024727
+      cathedral-sprite-sheet_45: 1265647106
+      cathedral-sprite-sheet_46: 1494293538
+      cathedral-sprite-sheet_47: 693704240
+      cathedral-sprite-sheet_48: 1608097704
+      cathedral-sprite-sheet_49: 270352761
+      cathedral-sprite-sheet_5: -586375030
+      cathedral-sprite-sheet_50: 1499872505
+      cathedral-sprite-sheet_51: 1836534494
+      cathedral-sprite-sheet_52: 988345774
+      cathedral-sprite-sheet_53: 1819745526
+      cathedral-sprite-sheet_54: 802981808
+      cathedral-sprite-sheet_55: 679664354
+      cathedral-sprite-sheet_56: -325471041
+      cathedral-sprite-sheet_57: -24766762
+      cathedral-sprite-sheet_58: 768074888
+      cathedral-sprite-sheet_59: -350798350
+      cathedral-sprite-sheet_6: -483901330
+      cathedral-sprite-sheet_60: -1642503225
+      cathedral-sprite-sheet_61: -755375590
+      cathedral-sprite-sheet_62: -253312363
+      cathedral-sprite-sheet_63: 768902539
+      cathedral-sprite-sheet_64: -755359397
+      cathedral-sprite-sheet_65: 959118842
+      cathedral-sprite-sheet_66: 345778357
+      cathedral-sprite-sheet_67: -793228627
+      cathedral-sprite-sheet_68: -133436024
+      cathedral-sprite-sheet_69: -154740633
+      cathedral-sprite-sheet_7: -1198164290
+      cathedral-sprite-sheet_70: -565445830
+      cathedral-sprite-sheet_71: 1346799736
+      cathedral-sprite-sheet_72: -1366783344
+      cathedral-sprite-sheet_73: 615270637
+      cathedral-sprite-sheet_74: 2042317396
+      cathedral-sprite-sheet_75: -2041969141
+      cathedral-sprite-sheet_76: 1280365051
+      cathedral-sprite-sheet_77: -1566792616
+      cathedral-sprite-sheet_78: -2065548653
+      cathedral-sprite-sheet_79: 476119426
+      cathedral-sprite-sheet_8: -898702292
+      cathedral-sprite-sheet_80: 146417786
+      cathedral-sprite-sheet_81: 1127361921
+      cathedral-sprite-sheet_82: -58634557
+      cathedral-sprite-sheet_83: 1876524050
+      cathedral-sprite-sheet_84: 113979501
+      cathedral-sprite-sheet_85: 1773227924
+      cathedral-sprite-sheet_86: -370092051
+      cathedral-sprite-sheet_87: 1749681816
+      cathedral-sprite-sheet_88: -1793881373
+      cathedral-sprite-sheet_89: -1980737816
+      cathedral-sprite-sheet_9: -1317956809
+      cathedral-sprite-sheet_90: -1469186474
+      cathedral-sprite-sheet_91: -1273345810
+      cathedral-sprite-sheet_92: -1363686479
+      cathedral-sprite-sheet_93: -788178280
+      cathedral-sprite-sheet_94: -1340375444
+      cathedral-sprite-sheet_95: 1963588
+      cathedral-sprite-sheet_96: 906309516
+      cathedral-sprite-sheet_97: -660720695
+      cathedral-sprite-sheet_98: 1315062864
+      cathedral-sprite-sheet_99: 1264631898
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

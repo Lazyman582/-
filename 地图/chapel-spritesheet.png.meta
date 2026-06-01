@@ -1,0 +1,1658 @@
+fileFormatVersion: 2
+guid: 30fd9300d46ad904f901972789a150ee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chapel-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 976
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59f10b34dbcb384abbd49c275fd281a
+      internalID: 409000512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 976
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20db2bf4b7db52244a33b545e6c0c327
+      internalID: 1226173403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 976
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7fc56dd5c75e449ac90f96dac99745
+      internalID: 1299198250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 752
+        width: 96
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f35acc62ddef44cbdee53de04daf60
+      internalID: -1147003060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 752
+        width: 96
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006d5077d7d0dff4a821199cb198052b
+      internalID: 153938860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 752
+        width: 64
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aba4fdb2b1e784db53f51aacd41dce
+      internalID: 1930337002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 960
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1485ef840b9231740a91a164b5ae361b
+      internalID: -185663234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521c62a6347dfe84ebd0388aaeccdfd8
+      internalID: 529596126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 991
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b487b2e3d7fe804ab448d7a1adb1e5b
+      internalID: -1507737352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 834
+        width: 105
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c94f4ff5126a1e45ab8649612eab896
+      internalID: 391459596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa3312cc0e5be340a7264b90a83028c
+      internalID: 1154702074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5836a2c9db12e1041b9e95d554f8164a
+      internalID: -2073532516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec33c4636cd09d43b4f04e5a2f830cd
+      internalID: -2146065106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 560
+        width: 178
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8438548584a4df7438eef2ccb9b80a71
+      internalID: -565133668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9958e2a0da056c40bdbbf7eaa589239
+      internalID: 1548886566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 847
+        width: 64
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8aa3ab6715cbe4c9803c33384461e3
+      internalID: -471518434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 848
+        width: 73
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816deb8b82f41a24bbee447ee0e612ea
+      internalID: 1414633953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fb9971a046fe040a287cfa778ded2b
+      internalID: -872360650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 801
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6fe0e400d59804d81e27ae7d0081c5
+      internalID: 1557672146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 800
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd1481103b389f4c8134de11e6ffbc7
+      internalID: 1756468705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 224
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e279a4ebbe3ef20429726c95b04ecf96
+      internalID: 1086446724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 709
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906bedc2d1109e34783485f1c12c8e74
+      internalID: 466165407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 704
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dda25ece2f7cf49b01a237c397177b
+      internalID: 1260793858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 709
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d87f69356b88b64b844a36649b0997a
+      internalID: 1528072717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 560
+        width: 180
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10c9a236d5d06145a6749eccfa80f4b
+      internalID: -1400433172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 697
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb1b14285915ee49b2ae901dd1a1043
+      internalID: -792442336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 560
+        width: 160
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ef649634c8f954ea66067bd770dcff
+      internalID: -257047052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 562
+        width: 58
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7ed0ba5676e044ebc3322c5a5408a7
+      internalID: -607343048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 336
+        width: 70
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c805a9fcc4b05c4ba7a9142a4921c95
+      internalID: 324653322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 371
+        width: 44
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e112d04faf8d3484e9c9aa8ef8e6beea
+      internalID: -229676507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 336
+        width: 70
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d6c83ee7871524fb82dad43ac68b84
+      internalID: -1429906598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 457
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9bdd771370c3f4eafa2ade47c65cd9
+      internalID: 1126050122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 415
+        width: 74
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe6ab71d1aa95644a804b4a27d3ba68
+      internalID: -1590255350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 448
+        width: 25
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685d7aedf51e776409a983d5f276fc28
+      internalID: -1112136378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 336
+        width: 21
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768a81e9bc9950e41802eba741d095f0
+      internalID: 455520233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 325
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146cd1e37588e6f4cb6b888615252524
+      internalID: -1714251065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 157
+        width: 4
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c79d10fbc444784c9149bc4b8ad79e5
+      internalID: 88713940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 65
+        width: 56
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1070fcec6864ff649915fd49a3ca1cff
+      internalID: -342991196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 67
+        width: 37
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2450e7982edfb3f44992747f19473e28
+      internalID: 1450376909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 67
+        width: 37
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f32f5c1832713a49b66244538176852
+      internalID: 669249365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 67
+        width: 76
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b4b2c2b1189fd41a1abbbe71f07c80
+      internalID: 171091420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 105
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefba89e070dd0a4fa9fa670afb6835a
+      internalID: 1776282871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 109
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b40a1efb543bc641876603d74998e4b
+      internalID: 457319360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 103
+        width: 45
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b62eca374d5ed40a5c46e59c37f89e
+      internalID: 1266249178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 102
+        width: 22
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0574a057bc51be843b6590d2811209c1
+      internalID: -254647772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 5
+        width: 73
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141f7a1055826d64b8f5dea63910db3f
+      internalID: 1694598020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 7
+        width: 134
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f811f72e74cb4bd47904b34b2e274247
+      internalID: 2077440677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 67
+        width: 44
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7bea2ed241aec4f8a5e56ec0dbbf1c
+      internalID: 551576978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 117
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33eca236f5b2d514caed2098e5408eb4
+      internalID: -2090327702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2
+        width: 52
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc09c1ff15f8f04cb7d16af488ef9fc
+      internalID: 491659419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 10
+        width: 16
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f25ff3adda9454dafa18d814a79c1a
+      internalID: -292879020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 10
+        width: 33
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee2de573739bbf44b5b14cf86731ac0
+      internalID: -1477881596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 84
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab6320625bf9604ca2ad8f6c8373d39
+      internalID: 490597622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 8
+        width: 26
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19740a8bee4d2a489eee47c36ca1bc8
+      internalID: -2066268412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 61
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5622808f70858a742be4072e5d3adae3
+      internalID: 1801705977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 2
+        width: 44
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0129156d302840041834fe7b135d75f9
+      internalID: 1589484303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 63
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d2be487b9b41440861b9bcc7c6bbf6
+      internalID: 1495269475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 63
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573245d33fa95bf46a2b431591981460
+      internalID: -1388456171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 3
+        width: 38
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01dc7bf27cd30e744beda238f149c507
+      internalID: -1200522996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 27
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58b43a58926f4843a1bce2c4a325310
+      internalID: -393308033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 27
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09496f19fef17964c88b776c63bf36c2
+      internalID: -1149010171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 27
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dffce6097d41e49a43ef7964aeb5ab
+      internalID: -273483991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 27
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e03388e2a85c9489f2eb4557472286
+      internalID: 1158308310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 26
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe96038a7bccad4195dfe0c43e7482b
+      internalID: 1073792136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 11
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5aceb6f1ea4164391cd63e508e32d0
+      internalID: -488269155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 10
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbf8c5144d062140804e609551c7fa9
+      internalID: -2049436044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 10
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c200cd6d9d0a4479ee67681dc414d0
+      internalID: -2031046548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 6
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35d02fac2be8ae45a1dad3dc4969778
+      internalID: 2099623078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chapel-spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 4
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f208514543a7e4a94b62310b96b4d7
+      internalID: -108253422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      chapel-spritesheet_0: 409000512
+      chapel-spritesheet_1: 1226173403
+      chapel-spritesheet_10: 1154702074
+      chapel-spritesheet_11: -2073532516
+      chapel-spritesheet_12: -2146065106
+      chapel-spritesheet_13: -565133668
+      chapel-spritesheet_14: 1548886566
+      chapel-spritesheet_15: -471518434
+      chapel-spritesheet_16: 1414633953
+      chapel-spritesheet_17: -872360650
+      chapel-spritesheet_18: 1557672146
+      chapel-spritesheet_19: 1756468705
+      chapel-spritesheet_2: 1299198250
+      chapel-spritesheet_20: 1086446724
+      chapel-spritesheet_21: 466165407
+      chapel-spritesheet_22: 1260793858
+      chapel-spritesheet_23: 1528072717
+      chapel-spritesheet_24: -1400433172
+      chapel-spritesheet_25: -792442336
+      chapel-spritesheet_26: -257047052
+      chapel-spritesheet_27: -607343048
+      chapel-spritesheet_28: 324653322
+      chapel-spritesheet_29: -229676507
+      chapel-spritesheet_3: -1147003060
+      chapel-spritesheet_30: -1429906598
+      chapel-spritesheet_31: 1126050122
+      chapel-spritesheet_32: -1590255350
+      chapel-spritesheet_33: -1112136378
+      chapel-spritesheet_34: 455520233
+      chapel-spritesheet_35: -1714251065
+      chapel-spritesheet_36: 88713940
+      chapel-spritesheet_37: -342991196
+      chapel-spritesheet_38: 1450376909
+      chapel-spritesheet_39: 669249365
+      chapel-spritesheet_4: 153938860
+      chapel-spritesheet_40: 171091420
+      chapel-spritesheet_41: 1776282871
+      chapel-spritesheet_42: 457319360
+      chapel-spritesheet_43: 1266249178
+      chapel-spritesheet_44: -254647772
+      chapel-spritesheet_45: 1694598020
+      chapel-spritesheet_46: 2077440677
+      chapel-spritesheet_47: 551576978
+      chapel-spritesheet_48: -2090327702
+      chapel-spritesheet_49: 491659419
+      chapel-spritesheet_5: 1930337002
+      chapel-spritesheet_50: -292879020
+      chapel-spritesheet_51: -1477881596
+      chapel-spritesheet_52: 490597622
+      chapel-spritesheet_53: -2066268412
+      chapel-spritesheet_54: 1801705977
+      chapel-spritesheet_55: 1589484303
+      chapel-spritesheet_56: 1495269475
+      chapel-spritesheet_57: -1388456171
+      chapel-spritesheet_58: -1200522996
+      chapel-spritesheet_59: -393308033
+      chapel-spritesheet_6: -185663234
+      chapel-spritesheet_60: -1149010171
+      chapel-spritesheet_61: -273483991
+      chapel-spritesheet_62: 1158308310
+      chapel-spritesheet_63: 1073792136
+      chapel-spritesheet_64: -488269155
+      chapel-spritesheet_65: -2049436044
+      chapel-spritesheet_66: -2031046548
+      chapel-spritesheet_67: 2099623078
+      chapel-spritesheet_68: -108253422
+      chapel-spritesheet_7: 529596126
+      chapel-spritesheet_8: -1507737352
+      chapel-spritesheet_9: 391459596
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
