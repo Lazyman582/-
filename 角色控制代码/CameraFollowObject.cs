@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraFollowObject : MonoBehaviour
 {
@@ -10,22 +10,52 @@ public class CameraFollowObject : MonoBehaviour
     [Header("Flip Rotation Stats")]
     [SerializeField] private float _flipYRotationTime = 0.5f;
 
-    [SerializeField] private bool _isFacingRight; // 玩家当前朝向
+    [SerializeField] private bool _isFacingRight;
 
     private Coroutine _turnCoroutine;
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += HandleSceneLoaded;
+        BindPlayer();
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= HandleSceneLoaded;
+    }
+
     private void Update()
     {
-        // 让 cameraFollowObject 跟随玩家的位置
         if (_playerTransform != null)
         {
             transform.position = _playerTransform.position;
         }
     }
 
-    /// <summary>
-    /// 开始平滑旋转（在玩家朝向改变时调用）
-    /// </summary>
+    private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        BindPlayer();
+    }
+
+    private void BindPlayer()
+    {
+        if (PersistentPlayer.Instance != null)
+        {
+            _playerTransform = PersistentPlayer.Instance.PlayerTransform;
+        }
+        else
+        {
+            var player = GameObject.FindGameObjectWithTag("Player");
+            _playerTransform = player != null ? player.transform : null;
+        }
+
+        if (_playerTransform != null)
+        {
+            transform.position = _playerTransform.position;
+        }
+    }
+
     public void StartFlipRotation(bool newFacingRight)
     {
         _isFacingRight = newFacingRight;
@@ -46,21 +76,16 @@ public class CameraFollowObject : MonoBehaviour
         while (elapsedTime < _flipYRotationTime)
         {
             elapsedTime += Time.deltaTime;
-
-            // 平滑插值旋转
             float yRotation = Mathf.Lerp(startRotation, endRotationAmount, elapsedTime / _flipYRotationTime);
             transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
-
             yield return null;
         }
 
-        // 确保最终旋转精确
         transform.rotation = Quaternion.Euler(0f, endRotationAmount, 0f);
     }
 
     private float DetermineEndRotation()
     {
-        // 注意：这里根据图片中的逻辑，先取反再判断
         bool facingRight = !_isFacingRight;
 
         if (!facingRight)
@@ -68,6 +93,6 @@ public class CameraFollowObject : MonoBehaviour
             return 180f;
         }
 
-        return 0f; // 面向右侧时返回0度
+        return 0f;
     }
 }

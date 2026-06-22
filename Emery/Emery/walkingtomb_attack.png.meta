@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4048c7299464fff4c891797609ec5f98
+guid: 69d0d1ab3b6d0ed4cb94473fb2b556ff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,160 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death_anim_blood_0
+      name: walkingtomb_attack_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 237
-        width: 83
-        height: 17
-      alignment: 9
-      pivot: {x: 0.5, y: 2.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82c5943b475ab9a498b5488fa9bcdaaa
-      internalID: -1608736229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_1
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 237
-        width: 82
-        height: 17
-      alignment: 9
-      pivot: {x: 0.5, y: 2.1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3570fb77938adf34d8a1a0aa84a7abd4
-      internalID: 290671799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_2
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 237
-        width: 82
-        height: 15
-      alignment: 9
-      pivot: {x: 0.5, y: 2.4}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de6f364c740abd54c92bfb9c0dc5307a
-      internalID: 532013106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_3
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 196
-        width: 67
-        height: 60
-      alignment: 9
-      pivot: {x: 0.5, y: 0.7}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5a6f8e255101554aa468557a66fdafc
-      internalID: 685861812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 156
-        width: 87
-        height: 81
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e6d19d69c0d14241ba7b676641c305d
-      internalID: -2068224950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_5
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 158
-        width: 84
-        height: 79
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71751532158e65641a24ef393537aa1e
-      internalID: -478017756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_8
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 208
-        width: 82
-        height: 24
-      alignment: 9
-      pivot: {x: 0.5, y: 1.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3771e8c5229553f4a9d5c3b20ae87710
-      internalID: -1663164721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_9
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 139
-        width: 93
-        height: 69
+        y: 408
+        width: 69
+        height: 73
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,167 +137,188 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8150f8993ac254e47b1107905107aa34
-      internalID: -766845219
+      spriteID: 57557b04311958e43a58091bffa4df60
+      internalID: -296849414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_anim_blood_12
+      name: walkingtomb_attack_1
       rect:
         serializedVersion: 2
-        x: 264
-        y: 132
-        width: 70
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1a87bf745f789c48963a542c793241e
-      internalID: 356220578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_13
-      rect:
-        serializedVersion: 2
-        x: 334
-        y: 121
-        width: 51
-        height: 74
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d158611a18f67f8469dcf3e17b83b705
-      internalID: 2023463297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_14
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 121
-        width: 42
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 603efcd8dbbfc7146b7c13788431c35b
-      internalID: -476895963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_15
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 121
-        width: 41
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58901fdfa510467458750ba489fc7f63
-      internalID: 64290826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_17
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 78
-        width: 94
-        height: 78
-      alignment: 9
-      pivot: {x: 0.45, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45e26e945369a784da9a5c692762ca21
-      internalID: -1718330078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_18
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 76
-        width: 73
-        height: 82
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: deb3793fad0097c41a1bc5d3e9babc24
-      internalID: 1149253248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_20
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 67
-        width: 92
+        x: 95
+        y: 409
+        width: 69
         height: 72
-      alignment: 9
-      pivot: {x: 0.45, y: 0.55}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 435317fc5ec7db146b4c9ad8ecb004e0
-      internalID: 1610311793
+      spriteID: 8e40d005f3190474db3a50a62561b9a6
+      internalID: -1670692244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_anim_blood_22
+      name: walkingtomb_attack_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 69
+        x: 0
+        y: 336
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540fe764f8c1f1a4dbefe01ee3d4fe09
+      internalID: -1331773007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 336
         width: 70
-        height: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d68b51c6b22b742a915f5b445d7f8c
+      internalID: 2013364429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 199
+        width: 80
+        height: 65
+      alignment: 9
+      pivot: {x: 0.55, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fdbefb6b5d4bd469301c7af340f139
+      internalID: -1147944575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 264
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57978141ebbf0dc4db5aeb6282ebac7a
+      internalID: -2031105138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 77
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd96fba40416bea4ea47a160a82829bf
+      internalID: 1225258639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 192
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0e5e38639a1b745810fde30ea2da5b
+      internalID: -736154054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_9
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 185
+        width: 67
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8ae6f0308552343b815ff1f0d97a3a
+      internalID: -243760275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_10
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 185
+        width: 74
+        height: 65
       alignment: 9
       pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,20 +326,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f40e54858cab007499f332bd7b4a3446
-      internalID: 635608681
+      spriteID: dcbf7c3f0c589cf499c78f61aedf02f6
+      internalID: 168802166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_anim_blood_24
+      name: walkingtomb_attack_11
       rect:
         serializedVersion: 2
-        x: 334
-        y: 69
-        width: 79
-        height: 52
+        x: 311
+        y: 186
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62234d59e5fda634c9165e6acc86856c
+      internalID: -1306479184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 125
+        width: 74
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcf95c7cf84474419e521a16903c018
+      internalID: -1984501252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 125
+        width: 84
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e3e29d100d3a640a10a6c4e4adee7a
+      internalID: -1097301995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_15
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 110
+        height: 53
       alignment: 9
       pivot: {x: 0.5, y: 0.65}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,146 +410,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21654277532dbba45a5b3aa6eb04e683
-      internalID: -625733824
+      spriteID: f23fd95e037103c42ac79bf0b91f3abd
+      internalID: 1655566218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_anim_blood_25
+      name: walkingtomb_attack_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 95
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a36ffb337ac33e408b56dda2f62d459
+      internalID: 1079480230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_17
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 71
+        width: 99
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.62}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ceacc21e0bda748a7e2d3a6f2b0eb0
+      internalID: 134237386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_18
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 113
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2fafa384676ac4d9c6d997efe00026
+      internalID: -397606845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_19
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 87
-        height: 78
+        width: 123
+        height: 71
       alignment: 9
-      pivot: {x: 0.45, y: 0.5}
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 796eb672491cf2847ba6d19c3d98d2fc
-      internalID: -2139853209
+      spriteID: c72a36b89d2e7b745bf6527149471d71
+      internalID: 866769600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death_anim_blood_26
+      name: walkingtomb_attack_20
       rect:
         serializedVersion: 2
-        x: 87
+        x: 236
         y: 0
-        width: 84
-        height: 76
-      alignment: 9
-      pivot: {x: 0.4, y: 0.52}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ecf94e4359bac5428b4e587309de64f
-      internalID: -169343273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_27
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 0
-        width: 93
-        height: 67
-      alignment: 9
-      pivot: {x: 0.45, y: 0.58}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67f3eed793ba25048ab9cec44e2a8683
-      internalID: 874234611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_29
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 69
-        width: 83
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5, y: 1.8}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca205bb11f62ee54493cdb1ca645a602
-      internalID: 1970923059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_31
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 0
-        width: 78
-        height: 69
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b51caf94818186d4886d27cf72cb0f00
-      internalID: 474068624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_32
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 0
-        width: 77
-        height: 69
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 804fd30f4c75df94bb94ce4755dc2305
-      internalID: -1822577778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: death_anim_blood_33
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 0
-        width: 76
-        height: 59
+        width: 109
+        height: 53
       alignment: 9
       pivot: {x: 0.5, y: 0.65}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,8 +515,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5263f1bf8c6b4c640af72535c08064ef
-      internalID: 1538448573
+      spriteID: 0b17af69336286841bda8769f2b7efc9
+      internalID: -1907277583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_attack_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57156600f447cfd4e9c1c887c44a676b
+      internalID: -1301421292
       vertices: []
       indices: 
       edges: []
@@ -637,41 +553,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      death_anim_blood_0: -1608736229
-      death_anim_blood_1: 290671799
-      death_anim_blood_10: 1227142331
-      death_anim_blood_11: 722338874
-      death_anim_blood_12: 356220578
-      death_anim_blood_13: 2023463297
-      death_anim_blood_14: -476895963
-      death_anim_blood_15: 64290826
-      death_anim_blood_16: 399293896
-      death_anim_blood_17: -1718330078
-      death_anim_blood_18: 1149253248
-      death_anim_blood_19: -2012076249
-      death_anim_blood_2: 532013106
-      death_anim_blood_20: 1610311793
-      death_anim_blood_21: -530522006
-      death_anim_blood_22: 635608681
-      death_anim_blood_23: 1213009751
-      death_anim_blood_24: -625733824
-      death_anim_blood_25: -2139853209
-      death_anim_blood_26: -169343273
-      death_anim_blood_27: 874234611
-      death_anim_blood_28: -83933246
-      death_anim_blood_29: 1970923059
-      death_anim_blood_3: 685861812
-      death_anim_blood_30: -1575594808
-      death_anim_blood_31: 474068624
-      death_anim_blood_32: -1822577778
-      death_anim_blood_33: 1538448573
-      death_anim_blood_34: 1472744078
-      death_anim_blood_4: -2068224950
-      death_anim_blood_5: -478017756
-      death_anim_blood_6: -122902321
-      death_anim_blood_7: -1910425658
-      death_anim_blood_8: -1663164721
-      death_anim_blood_9: -766845219
+      walkingtomb_attack_0: -296849414
+      walkingtomb_attack_1: -1670692244
+      walkingtomb_attack_10: 168802166
+      walkingtomb_attack_11: -1306479184
+      walkingtomb_attack_12: -1984501252
+      walkingtomb_attack_13: -1097301995
+      walkingtomb_attack_14: 490524766
+      walkingtomb_attack_15: 1655566218
+      walkingtomb_attack_16: 1079480230
+      walkingtomb_attack_17: 134237386
+      walkingtomb_attack_18: -397606845
+      walkingtomb_attack_19: 866769600
+      walkingtomb_attack_2: -1331773007
+      walkingtomb_attack_20: -1907277583
+      walkingtomb_attack_3: -1301421292
+      walkingtomb_attack_4: 2013364429
+      walkingtomb_attack_5: -1147944575
+      walkingtomb_attack_6: -2031105138
+      walkingtomb_attack_7: 1225258639
+      walkingtomb_attack_8: -736154054
+      walkingtomb_attack_9: -243760275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

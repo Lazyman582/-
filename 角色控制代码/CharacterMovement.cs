@@ -1,190 +1,161 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.IO.LowLevel.Unsafe;
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static ActionIgnoreMask;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class CharacterMovement : MonoBehaviour
 {
-    [Header("ÒÆ¶¯²ÎÊı")]
-    [Tooltip("½ÇÉ«µÄÒÆ¶¯ËÙ¶È£¨Ã×/Ãë£©")]
+    [Header("ç§»åŠ¨å‚æ•°")]
+    [Tooltip("è§’è‰²çš„ç§»åŠ¨é€Ÿåº¦ï¼ˆç±³/ç§’ï¼‰")]
     public float moveSpeed = 5f;
 
-    [Header("ÌøÔ¾²ÎÊı")]
+    [Header("è·³è·ƒå‚æ•°")]
     public float jumpForce = 7f;
     public Transform groundCheckPoint;
     public float groundCheckRadius = 0.3f;
     public LayerMask groundLayer;
 
-    public  bool IsFacingRight;
-
+    public bool IsFacingRight;
     public float groundpostion;
-
     public Collider2D Idle_collider;
     public Collider2D Dodge_collider;
     public Collider2D Crouch_collider;
-
     public bool groundDetected;
 
     private CharacterData characterData;
+    private UserInput _userInput;
+    private List<ActionIgnore> _actionIgnores;
+    private float _fallSpeedYDampingChangeThreshould;
 
     public Rigidbody2D Rigidbody { get; private set; }
     public Animator Animator { get; private set; }
     public bool IsGrounded { get; private set; }
 
-    // Ë½ÓĞ×Ö¶Î
-    private UserInput _userInput;
-    private List<ActionIgnore> _actionIgnores;
-
-    private float _fallSpeedYDampingChangeThreshould;
-    // ¹«¹²ÊôĞÔ
     public static CharacterMovement Instance { get; private set; }
 
-    void Awake()
+    private void Awake()
     {
-        // µ¥ÀıÉèÖÃ
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
-        Instance = this;
 
-        // »ñÈ¡×é¼ş
+        Instance = this;
         Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
 
         if (Rigidbody == null)
-            Debug.LogError("CharacterMovement: È±ÉÙRigidbody2D×é¼ş£¡");
+        {
+            Debug.LogError("CharacterMovement: ç¼ºå°‘Rigidbody2Dç»„ä»¶ï¼");
+        }
 
         _actionIgnores = new List<ActionIgnore>();
-
-
-        _fallSpeedYDampingChangeThreshould = CameraManager.instance._fallSpeedDampingChangeThreshold;
+        RefreshCameraDependencies();
     }
 
-    void Start()
+    private void Start()
     {
-        characterData = FindObjectOfType<CharacterData>();
-
+        characterData = GetComponent<CharacterData>();
+        if (characterData == null)
+        {
+            characterData = FindObjectOfType<CharacterData>();
+        }
 
         _userInput = UserInput.Instance;
         if (_userInput == null)
-            Debug.LogError("CharacterMovement: ÕÒ²»µ½UserInputÊµÀı£¡");
+        {
+            Debug.LogError("CharacterMovement: æ‰¾ä¸åˆ°UserInputå®ä¾‹ï¼");
+        }
+
+        SceneManager.sceneLoaded += HandleSceneLoaded;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.V))
         {
-
-         OnDamge();
-
+            OnDamge();
         }
 
-#if UNITY_2022
-        if (Input.GetKeyDown(KeyCode.C)) {
-
-            Time.timeScale = 0.33f;
-        
-        }
-#endif
-        if (Rigidbody.velocity.y< _fallSpeedYDampingChangeThreshould &&!CameraManager.instance.IsLeapingDamping && !CameraManager.instance.LeppedFromPlayerFalling) {
-
-            Debug.Log(CameraManager.instance.IsLeapingDamping);
-            CameraManager.instance.LrepDumping(true);
-        
-        }
-
-        if (Rigidbody.velocity.y >=0f&& !CameraManager.instance.IsLeapingDamping && CameraManager.instance.LeppedFromPlayerFalling)
+        if (CameraManager.instance != null &&
+            Rigidbody.velocity.y < _fallSpeedYDampingChangeThreshould &&
+            !CameraManager.instance.IsLeapingDamping &&
+            !CameraManager.instance.LeppedFromPlayerFalling)
         {
-            Debug.Log(CameraManager.instance.IsLeapingDamping);
-            CameraManager.instance.LeppedFromPlayerFalling = false;
+            CameraManager.instance.LrepDumping(true);
+        }
 
+        if (CameraManager.instance != null &&
+            Rigidbody.velocity.y >= 0f &&
+            !CameraManager.instance.IsLeapingDamping &&
+            CameraManager.instance.LeppedFromPlayerFalling)
+        {
+            CameraManager.instance.LeppedFromPlayerFalling = false;
             CameraManager.instance.LrepDumping(false);
         }
 
         GroundCheck();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         RefreshActionIgnores();
     }
 
     private void GroundCheck()
     {
-        if (groundCheckPoint == null) return;
+        if (groundCheckPoint == null)
+        {
+            return;
+        }
 
-        // µÚÒ»²½£ºÊ¹ÓÃ OverlapCircle ½øĞĞ³õ²½¼ì²â£¨±£ÁôÔ­ÓĞÂß¼­£©
         IsGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
-        //Animator.SetBool("IsGround", IsGrounded);
 
-        // µÚ¶ş²½£ºÈç¹û OverlapCircle ¼ì²âµ½ÁËµØÃæ£¬ÎÒÃÇ½øĞĞ½øÒ»²½È·ÈÏ
         if (IsGrounded)
         {
-            // ·¢ÉäÒ»¸ö¼«¶ÌµÄ BoxCast£¬Ö»ÏòÏÂÌ½²â 0.05 µ¥Î»¾àÀë
-            // Õâ¸öºĞ×ÓµÄ¿í¶ÈÊÇ¼ì²âÔ²µÄÖ±¾¶£¬¸ß¶È·Ç³£±¡£¨0.01£©£¬·½ÏòÏòÏÂ
             RaycastHit2D hit = Physics2D.BoxCast(
-                groundCheckPoint.position,           // Æğµã£¨½Åµ×ÖĞĞÄ£©
-                new Vector2(groundCheckRadius * 2, 0.01f), // ºĞ×ÓµÄ³ß´ç£¨¿í¶È = ¼ì²âÔ²µÄÖ±¾¶£¬ºñ¶È¼«±¡£©
-                0f,                                 // ½Ç¶È
-                Vector2.down,                       // ·½ÏòÏòÏÂ
-                0.05f,                              // Ì½²â¾àÀë£¨·Ç³£¶Ì£¬Ö»¼ì²âµ½µØÃæ£©
-                groundLayer                         // Ö»¼ì²âµØÃæ²ã
+                groundCheckPoint.position,
+                new Vector2(groundCheckRadius * 2, 0.01f),
+                0f,
+                Vector2.down,
+                0.05f,
+                groundLayer
             );
 
-            // Èç¹û BoxCast Ã»ÓĞ¼ì²âµ½ÈÎºÎ¶«Î÷£¬ËµÃ÷½ÇÉ«Êµ¼ÊÉÏÊÇÕ¾ÔÚÇ½±Ú²àÃæ£¬¶ø²»ÊÇµØÃæÉÏ
             if (hit.collider == null)
             {
                 IsGrounded = false;
             }
         }
 
-        // ¸üĞÂ¶¯»­×´Ì¬
         Animator.SetBool("Is Ground", IsGrounded);
     }
 
-    private void HandcollisionDetection()
+    private void OnDamge()
     {
-
-
-        groundDetected = Physics.Raycast(transform.position, Vector2.down, groundpostion, groundLayer);
-
-    }
-
-    private void OnDamge() {
-
-        characterData.TakeDamage(10);
-
-
-
-
-
+        if (characterData != null)
+        {
+            characterData.TakeDamage(10);
+        }
     }
 
     public void UpdateFacingDirection()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
-
-        
         if (horizontalInput != 0)
         {
             Vector3 scale = transform.localScale;
             scale.x = Mathf.Abs(scale.x) * Mathf.Sign(horizontalInput);
             transform.localScale = scale;
         }
-
-      
     }
 
     public void AddActionIgnore(float duration, params ActionIgnoreTag[] tags)
     {
         var mask = ActionIgnoreMask.GetMask(tags);
 
-        // ²éÕÒÊÇ·ñÒÑÓĞÏàÍ¬mask
         for (int i = 0; i < _actionIgnores.Count; i++)
         {
             if (_actionIgnores[i].Mask.Equals(mask))
@@ -194,7 +165,6 @@ public class CharacterMovement : MonoBehaviour
             }
         }
 
-        // Ìí¼ÓĞÂÆÁ±Î
         _actionIgnores.Add(new ActionIgnore(mask, duration));
     }
 
@@ -203,23 +173,45 @@ public class CharacterMovement : MonoBehaviour
         foreach (var ignore in _actionIgnores)
         {
             if (ignore.Mask.ContainTag(tag))
+            {
                 return true;
+            }
         }
+
         return false;
     }
 
-
-    public void  RefreshActionIgnores()
+    public void RefreshActionIgnores()
     {
         for (int i = _actionIgnores.Count - 1; i >= 0; i--)
         {
             _actionIgnores[i].timer -= Time.fixedDeltaTime;
             if (_actionIgnores[i].timer <= 0)
+            {
                 _actionIgnores.RemoveAt(i);
+            }
         }
     }
 
-    void OnDrawGizmosSelected()
+    private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        RefreshCameraDependencies();
+    }
+
+    private void RefreshCameraDependencies()
+    {
+        if (CameraManager.instance != null)
+        {
+            _fallSpeedYDampingChangeThreshould = CameraManager.instance._fallSpeedDampingChangeThreshold;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= HandleSceneLoaded;
+    }
+
+    private void OnDrawGizmosSelected()
     {
         if (groundCheckPoint != null)
         {
@@ -230,11 +222,6 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(transform.position,transform.position+new Vector3(0,-groundpostion));
+        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundpostion));
     }
-
 }
-
-
-
-

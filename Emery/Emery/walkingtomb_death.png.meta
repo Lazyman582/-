@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30fd9300d46ad904f901972789a150ee
+guid: 8055e3cf0a22e77498f57ba97788ac1a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,349 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chapel-spritesheet_0
+      name: walkingtomb_death_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 976
-        width: 64
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d59f10b34dbcb384abbd49c275fd281a
-      internalID: 409000512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 976
-        width: 64
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20db2bf4b7db52244a33b545e6c0c327
-      internalID: 1226173403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 976
-        width: 48
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba7fc56dd5c75e449ac90f96dac99745
-      internalID: 1299198250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 752
-        width: 96
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88f35acc62ddef44cbdee53de04daf60
-      internalID: -1147003060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 339
-        y: 752
-        width: 96
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 006d5077d7d0dff4a821199cb198052b
-      internalID: 153938860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 752
-        width: 64
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26aba4fdb2b1e784db53f51aacd41dce
-      internalID: 1930337002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 960
-        width: 61
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1485ef840b9231740a91a164b5ae361b
-      internalID: -185663234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 601
-        y: 960
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 521c62a6347dfe84ebd0388aaeccdfd8
-      internalID: 529596126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 670
-        y: 991
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b487b2e3d7fe804ab448d7a1adb1e5b
-      internalID: -1507737352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 916
-        y: 834
-        width: 105
-        height: 186
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c94f4ff5126a1e45ab8649612eab896
-      internalID: 391459596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 896
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efa3312cc0e5be340a7264b90a83028c
-      internalID: 1154702074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 896
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5836a2c9db12e1041b9e95d554f8164a
-      internalID: -2073532516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 896
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ec33c4636cd09d43b4f04e5a2f830cd
-      internalID: -2146065106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 560
-        width: 178
-        height: 384
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8438548584a4df7438eef2ccb9b80a71
-      internalID: -565133668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 848
-        width: 64
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9958e2a0da056c40bdbbf7eaa589239
-      internalID: 1548886566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_15
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 847
-        width: 64
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d8aa3ab6715cbe4c9803c33384461e3
-      internalID: -471518434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_16
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 848
+        y: 491
         width: 73
-        height: 36
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,565 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 816deb8b82f41a24bbee447ee0e612ea
-      internalID: 1414633953
+      spriteID: 12a85e7a89be0de45a2641ee5824071d
+      internalID: -529700479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_17
+      name: walkingtomb_death_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7fb9971a046fe040a287cfa778ded2b
-      internalID: -872360650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_18
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 801
-        width: 64
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b6fe0e400d59804d81e27ae7d0081c5
-      internalID: 1557672146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_19
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 800
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbd1481103b389f4c8134de11e6ffbc7
-      internalID: 1756468705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_20
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 224
-        height: 464
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e279a4ebbe3ef20429726c95b04ecf96
-      internalID: 1086446724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_21
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 709
-        width: 11
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 906bedc2d1109e34783485f1c12c8e74
-      internalID: 466165407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_22
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 704
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34dda25ece2f7cf49b01a237c397177b
-      internalID: 1260793858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_23
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 709
-        width: 32
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d87f69356b88b64b844a36649b0997a
-      internalID: 1528072717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_24
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 560
-        width: 180
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b10c9a236d5d06145a6749eccfa80f4b
-      internalID: -1400433172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_25
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 697
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bb1b14285915ee49b2ae901dd1a1043
-      internalID: -792442336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_26
-      rect:
-        serializedVersion: 2
-        x: 688
-        y: 560
-        width: 160
-        height: 144
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7ef649634c8f954ea66067bd770dcff
-      internalID: -257047052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_27
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 562
-        width: 58
-        height: 126
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c7ed0ba5676e044ebc3322c5a5408a7
-      internalID: -607343048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_28
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 336
-        width: 70
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c805a9fcc4b05c4ba7a9142a4921c95
-      internalID: 324653322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_29
-      rect:
-        serializedVersion: 2
-        x: 349
-        y: 371
-        width: 44
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e112d04faf8d3484e9c9aa8ef8e6beea
-      internalID: -229676507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_30
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 336
-        width: 70
-        height: 210
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42d6c83ee7871524fb82dad43ac68b84
-      internalID: -1429906598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_31
-      rect:
-        serializedVersion: 2
-        x: 505
-        y: 457
-        width: 18
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da9bdd771370c3f4eafa2ade47c65cd9
-      internalID: 1126050122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_32
-      rect:
-        serializedVersion: 2
-        x: 555
-        y: 415
-        width: 74
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fe6ab71d1aa95644a804b4a27d3ba68
-      internalID: -1590255350
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_33
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 448
-        width: 25
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 685d7aedf51e776409a983d5f276fc28
-      internalID: -1112136378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_34
-      rect:
-        serializedVersion: 2
-        x: 509
-        y: 336
-        width: 21
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 768a81e9bc9950e41802eba741d095f0
-      internalID: 455520233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_35
-      rect:
-        serializedVersion: 2
-        x: 582
-        y: 325
-        width: 56
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 146cd1e37588e6f4cb6b888615252524
-      internalID: -1714251065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_36
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 157
-        width: 4
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c79d10fbc444784c9149bc4b8ad79e5
-      internalID: 88713940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_37
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 65
-        width: 56
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1070fcec6864ff649915fd49a3ca1cff
-      internalID: -342991196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_38
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 67
-        width: 37
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2450e7982edfb3f44992747f19473e28
-      internalID: 1450376909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_39
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 67
-        width: 37
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f32f5c1832713a49b66244538176852
-      internalID: 669249365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_40
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 67
-        width: 76
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90b4b2c2b1189fd41a1abbbe71f07c80
-      internalID: 171091420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_41
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 105
-        width: 39
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eefba89e070dd0a4fa9fa670afb6835a
-      internalID: 1776282871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_42
-      rect:
-        serializedVersion: 2
-        x: 377
-        y: 109
-        width: 43
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b40a1efb543bc641876603d74998e4b
-      internalID: 457319360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_43
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 103
-        width: 45
+        y: 419
+        width: 356
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1040,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82b62eca374d5ed40a5c46e59c37f89e
-      internalID: 1266249178
+      spriteID: 0a857662fd8912d46b3fd81f1b957386
+      internalID: 1583548464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_44
+      name: walkingtomb_death_2
       rect:
         serializedVersion: 2
-        x: 477
-        y: 102
-        width: 22
-        height: 76
+        x: 0
+        y: 347
+        width: 295
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1061,20 +179,377 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0574a057bc51be843b6590d2811209c1
-      internalID: -254647772
+      spriteID: b83a24ca36d31a94496d7fe823ab4485
+      internalID: 917152122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_45
+      name: walkingtomb_death_3
       rect:
         serializedVersion: 2
-        x: 809
-        y: 5
+        x: 0
+        y: 203
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b682912b2e65d0e478625a048fb74655
+      internalID: -489159378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 109
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf0e15c98bd3f349a6e8e554f124012
+      internalID: -538582186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 259
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a63f1df288d35e47ac39ec7972b55c0
+      internalID: -1769360361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 252
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b4f41321de3c148828c745806b2d09
+      internalID: 130873395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 255
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73150ea840ad5e24c98b99b877c4241d
+      internalID: 442461796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 235
+        width: 65
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b16d186c229ac42bd4d3e638049570
+      internalID: -1999104890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 250
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59f11d48058a804b870481bac994ec0
+      internalID: -1605117132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_10
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 241
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af9ff07e69d2a54ca4ee6fb387cc0a5
+      internalID: 372170257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7011d2501911eb4abd62df455cdb274
+      internalID: 40527393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 172
+        width: 77
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8cf56ebcece624fbbdb770d4471edc
+      internalID: 500346258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 182
+        width: 72
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070c1ed7cb5d43148bdaf4a900b6381e
+      internalID: 1197521364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_14
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 137
+        width: 106
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3cce0514ae7314ab589957fd8ea5b7
+      internalID: -2115648148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 65
+        width: 91
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fd8e7d72e6fac48bb230a1dee0a280
+      internalID: -614161943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 164
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e01efd0da3cd2448119331e8ab8489
+      internalID: 546803809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_17
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 161
+        width: 75
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff04c4ec08c1cf343baf9fe4524ae27c
+      internalID: 742442033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_18
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 167
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d979041ade0843945941facc11a8b8d5
+      internalID: -133363892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_19
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 163
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a319e5206bf20a4db321500a57394e6
+      internalID: -1202972972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_20
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 152
         width: 73
-        height: 179
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1082,20 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 141f7a1055826d64b8f5dea63910db3f
-      internalID: 1694598020
+      spriteID: 2e159854013162b4b91c525cef460722
+      internalID: 1418309595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_46
+      name: walkingtomb_death_21
       rect:
         serializedVersion: 2
-        x: 882
-        y: 7
-        width: 134
-        height: 229
+        x: 289
+        y: 137
+        width: 90
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1103,20 +578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f811f72e74cb4bd47904b34b2e274247
-      internalID: 2077440677
+      spriteID: 734c25ae2311ba54292c7c0d5a6690c8
+      internalID: 2055894254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_47
+      name: walkingtomb_death_22
       rect:
         serializedVersion: 2
-        x: 4
-        y: 67
-        width: 44
-        height: 84
+        x: 370
+        y: 153
+        width: 10
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1124,20 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d7bea2ed241aec4f8a5e56ec0dbbf1c
-      internalID: 551576978
+      spriteID: 98c6eccf4cd8ec14491b281c26415172
+      internalID: -2125820105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_48
+      name: walkingtomb_death_23
       rect:
         serializedVersion: 2
-        x: 325
-        y: 117
-        width: 47
-        height: 38
+        x: 379
+        y: 139
+        width: 17
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1145,20 +620,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33eca236f5b2d514caed2098e5408eb4
-      internalID: -2090327702
+      spriteID: b0f6acca434e8b54eb5a157bdcad13b8
+      internalID: 1208417152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_49
+      name: walkingtomb_death_24
       rect:
         serializedVersion: 2
-        x: 756
-        y: 2
-        width: 52
-        height: 130
+        x: 404
+        y: 137
+        width: 75
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1166,20 +641,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccc09c1ff15f8f04cb7d16af488ef9fc
-      internalID: 491659419
+      spriteID: 0f8d140bacefe4c41a000b3fee2964c7
+      internalID: -1630063463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_50
+      name: walkingtomb_death_25
       rect:
         serializedVersion: 2
-        x: 277
-        y: 10
-        width: 16
-        height: 89
+        x: 11
+        y: 93
+        width: 5
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1187,20 +662,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68f25ff3adda9454dafa18d814a79c1a
-      internalID: -292879020
+      spriteID: b3ed217fe19876c49b0ae0b7d20bca7c
+      internalID: 1486020329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_51
+      name: walkingtomb_death_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 66
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bdffaf594fae24a829ce4e93d15218
+      internalID: -398365374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_27
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 65
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261c4551cad0ae0449db4c939558a092
+      internalID: -465800933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_28
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 65
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46863cb4754cb1d44aacb1093c5acc54
+      internalID: 487246372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_29
       rect:
         serializedVersion: 2
         x: 298
-        y: 10
-        width: 33
-        height: 75
+        y: 65
+        width: 70
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1208,20 +746,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ee2de573739bbf44b5b14cf86731ac0
-      internalID: -1477881596
+      spriteID: 2ce32ccc2f083e24d8d3e4efce273d59
+      internalID: 896626093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_52
+      name: walkingtomb_death_30
       rect:
         serializedVersion: 2
-        x: 346
-        y: 84
-        width: 18
-        height: 27
+        x: 366
+        y: 65
+        width: 74
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1229,40 +767,397 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ab6320625bf9604ca2ad8f6c8373d39
-      internalID: 490597622
+      spriteID: 0b9049d03f25e3f459d4f6db2bca94fb
+      internalID: -1303237832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_53
+      name: walkingtomb_death_31
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 65
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5ae1de81b66024b957ae495a896392
+      internalID: 115610132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1834f373f332f44a519b7e2431576f
+      internalID: -1105525372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_33
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 68
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8c9f71753fbad41be159c02d9a48f4
+      internalID: 1345105726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_34
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 80
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8940687fe68eae4395d0dee04961571
+      internalID: -1751543458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_35
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b37261d31b82bf4fac3a65a548f45e9
+      internalID: 561874516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_36
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 88
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf0a32ca79ed194cabdacafcd2d34f4
+      internalID: 1261809561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_37
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 35
+        width: 87
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1ff9806388673419445643d374f499
+      internalID: -778822037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_38
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 46
+        width: 79
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac26a1d9e789904a9546d3999ccd351
+      internalID: 1165707734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_39
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 55
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d6e2864534ba64d8e7a94b369fad87
+      internalID: 702169058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_40
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 48
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea75b65c23100fa40a2320926adcc3ed
+      internalID: -2030913278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_41
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 46
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27270e6bc4c2d8546a4d01cd67c6508c
+      internalID: -1770411458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_42
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 34
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76bb5750f6d13541a5e1a8be77d2c10
+      internalID: 752946884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_43
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 39
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30aa6b8175e167448cf4cb5f519e0ad
+      internalID: 992533144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_44
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 41
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94bd56d4016d064aa0c8b058dc14373
+      internalID: 40450594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_45
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 39
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bddda1d91ad034f9ed5a59a3ac24d7
+      internalID: 919026119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_46
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 95
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3e79e88c24c3b40840a1466ecffe92
+      internalID: 1130228006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_47
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 32
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54315758544914a4facb494b47bf411e
+      internalID: 213780971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_48
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 36
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a1d8ef4ee34384cb42a0bdcf0e2980
+      internalID: -2024307113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_49
       rect:
         serializedVersion: 2
         x: 380
-        y: 8
-        width: 26
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c19740a8bee4d2a489eee47c36ca1bc8
-      internalID: -2066268412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_54
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 61
-        width: 51
+        y: 0
+        width: 88
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1271,20 +1166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5622808f70858a742be4072e5d3adae3
-      internalID: 1801705977
+      spriteID: dbd835cf696dcc24ca297848590fbab3
+      internalID: -1922369610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_55
+      name: walkingtomb_death_50
       rect:
         serializedVersion: 2
-        x: 709
-        y: 2
-        width: 44
-        height: 98
+        x: 361
+        y: 16
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1292,20 +1187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0129156d302840041834fe7b135d75f9
-      internalID: 1589484303
+      spriteID: 1876a892570d88e46b10d461e3707c81
+      internalID: -1929135384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_56
+      name: walkingtomb_death_51
       rect:
         serializedVersion: 2
-        x: 340
-        y: 63
-        width: 32
-        height: 17
+        x: 362
+        y: 25
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1313,20 +1208,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07d2be487b9b41440861b9bcc7c6bbf6
-      internalID: 1495269475
+      spriteID: 58f2768d57c032e4d8c740bdadf036ce
+      internalID: 1377296207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_57
+      name: walkingtomb_death_52
       rect:
         serializedVersion: 2
-        x: 484
-        y: 63
+        x: 464
+        y: 20
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55eca06dca9a8ed458fa69b1423b5237
+      internalID: 1295730568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
         width: 9
-        height: 16
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1334,20 +1250,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 573245d33fa95bf46a2b431591981460
-      internalID: -1388456171
+      spriteID: 90110daddcfc3d447a0642af4b0bd40e
+      internalID: 651763527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chapel-spritesheet_58
+      name: walkingtomb_death_54
       rect:
         serializedVersion: 2
-        x: 668
+        x: 92
+        y: 13
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e30cceb3a6ac7640a03618f0cadaa2d
+      internalID: 1138675762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_55
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 15
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ef3f95fe8d448479dce9b03fae0984
+      internalID: -1921794924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_56
+      rect:
+        serializedVersion: 2
+        x: 372
         y: 3
-        width: 38
-        height: 73
+        width: 7
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1355,218 +1313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01dc7bf27cd30e744beda238f149c507
-      internalID: -1200522996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_59
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 27
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c58b43a58926f4843a1bce2c4a325310
-      internalID: -393308033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_60
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 27
-        width: 52
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09496f19fef17964c88b776c63bf36c2
-      internalID: -1149010171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_61
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 27
-        width: 52
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24dffce6097d41e49a43ef7964aeb5ab
-      internalID: -273483991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_62
-      rect:
-        serializedVersion: 2
-        x: 163
-        y: 27
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17e03388e2a85c9489f2eb4557472286
-      internalID: 1158308310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_63
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 26
-        width: 80
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fe96038a7bccad4195dfe0c43e7482b
-      internalID: 1073792136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_64
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 11
-        width: 21
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e5aceb6f1ea4164391cd63e508e32d0
-      internalID: -488269155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_65
-      rect:
-        serializedVersion: 2
-        x: 413
-        y: 10
-        width: 25
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bbf8c5144d062140804e609551c7fa9
-      internalID: -2049436044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_66
-      rect:
-        serializedVersion: 2
-        x: 441
-        y: 10
-        width: 68
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84c200cd6d9d0a4479ee67681dc414d0
-      internalID: -2031046548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_67
-      rect:
-        serializedVersion: 2
-        x: 587
-        y: 6
-        width: 33
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b35d02fac2be8ae45a1dad3dc4969778
-      internalID: 2099623078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chapel-spritesheet_68
-      rect:
-        serializedVersion: 2
-        x: 626
-        y: 4
-        width: 37
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43f208514543a7e4a94b62310b96b4d7
-      internalID: -108253422
+      spriteID: b97504204c2188d45b71b898a5493887
+      internalID: 1023860920
       vertices: []
       indices: 
       edges: []
@@ -1582,75 +1330,63 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chapel-spritesheet_0: 409000512
-      chapel-spritesheet_1: 1226173403
-      chapel-spritesheet_10: 1154702074
-      chapel-spritesheet_11: -2073532516
-      chapel-spritesheet_12: -2146065106
-      chapel-spritesheet_13: -565133668
-      chapel-spritesheet_14: 1548886566
-      chapel-spritesheet_15: -471518434
-      chapel-spritesheet_16: 1414633953
-      chapel-spritesheet_17: -872360650
-      chapel-spritesheet_18: 1557672146
-      chapel-spritesheet_19: 1756468705
-      chapel-spritesheet_2: 1299198250
-      chapel-spritesheet_20: 1086446724
-      chapel-spritesheet_21: 466165407
-      chapel-spritesheet_22: 1260793858
-      chapel-spritesheet_23: 1528072717
-      chapel-spritesheet_24: -1400433172
-      chapel-spritesheet_25: -792442336
-      chapel-spritesheet_26: -257047052
-      chapel-spritesheet_27: -607343048
-      chapel-spritesheet_28: 324653322
-      chapel-spritesheet_29: -229676507
-      chapel-spritesheet_3: -1147003060
-      chapel-spritesheet_30: -1429906598
-      chapel-spritesheet_31: 1126050122
-      chapel-spritesheet_32: -1590255350
-      chapel-spritesheet_33: -1112136378
-      chapel-spritesheet_34: 455520233
-      chapel-spritesheet_35: -1714251065
-      chapel-spritesheet_36: 88713940
-      chapel-spritesheet_37: -342991196
-      chapel-spritesheet_38: 1450376909
-      chapel-spritesheet_39: 669249365
-      chapel-spritesheet_4: 153938860
-      chapel-spritesheet_40: 171091420
-      chapel-spritesheet_41: 1776282871
-      chapel-spritesheet_42: 457319360
-      chapel-spritesheet_43: 1266249178
-      chapel-spritesheet_44: -254647772
-      chapel-spritesheet_45: 1694598020
-      chapel-spritesheet_46: 2077440677
-      chapel-spritesheet_47: 551576978
-      chapel-spritesheet_48: -2090327702
-      chapel-spritesheet_49: 491659419
-      chapel-spritesheet_5: 1930337002
-      chapel-spritesheet_50: -292879020
-      chapel-spritesheet_51: -1477881596
-      chapel-spritesheet_52: 490597622
-      chapel-spritesheet_53: -2066268412
-      chapel-spritesheet_54: 1801705977
-      chapel-spritesheet_55: 1589484303
-      chapel-spritesheet_56: 1495269475
-      chapel-spritesheet_57: -1388456171
-      chapel-spritesheet_58: -1200522996
-      chapel-spritesheet_59: -393308033
-      chapel-spritesheet_6: -185663234
-      chapel-spritesheet_60: -1149010171
-      chapel-spritesheet_61: -273483991
-      chapel-spritesheet_62: 1158308310
-      chapel-spritesheet_63: 1073792136
-      chapel-spritesheet_64: -488269155
-      chapel-spritesheet_65: -2049436044
-      chapel-spritesheet_66: -2031046548
-      chapel-spritesheet_67: 2099623078
-      chapel-spritesheet_68: -108253422
-      chapel-spritesheet_7: 529596126
-      chapel-spritesheet_8: -1507737352
-      chapel-spritesheet_9: 391459596
+      walkingtomb_death_0: -529700479
+      walkingtomb_death_1: 1583548464
+      walkingtomb_death_10: 372170257
+      walkingtomb_death_11: 40527393
+      walkingtomb_death_12: 500346258
+      walkingtomb_death_13: 1197521364
+      walkingtomb_death_14: -2115648148
+      walkingtomb_death_15: -614161943
+      walkingtomb_death_16: 546803809
+      walkingtomb_death_17: 742442033
+      walkingtomb_death_18: -133363892
+      walkingtomb_death_19: -1202972972
+      walkingtomb_death_2: 917152122
+      walkingtomb_death_20: 1418309595
+      walkingtomb_death_21: 2055894254
+      walkingtomb_death_22: -2125820105
+      walkingtomb_death_23: 1208417152
+      walkingtomb_death_24: -1630063463
+      walkingtomb_death_25: 1486020329
+      walkingtomb_death_26: -398365374
+      walkingtomb_death_27: -465800933
+      walkingtomb_death_28: 487246372
+      walkingtomb_death_29: 896626093
+      walkingtomb_death_3: -489159378
+      walkingtomb_death_30: -1303237832
+      walkingtomb_death_31: 115610132
+      walkingtomb_death_32: -1105525372
+      walkingtomb_death_33: 1345105726
+      walkingtomb_death_34: -1751543458
+      walkingtomb_death_35: 561874516
+      walkingtomb_death_36: 1261809561
+      walkingtomb_death_37: -778822037
+      walkingtomb_death_38: 1165707734
+      walkingtomb_death_39: 702169058
+      walkingtomb_death_4: -538582186
+      walkingtomb_death_40: -2030913278
+      walkingtomb_death_41: -1770411458
+      walkingtomb_death_42: 752946884
+      walkingtomb_death_43: 992533144
+      walkingtomb_death_44: 40450594
+      walkingtomb_death_45: 919026119
+      walkingtomb_death_46: 1130228006
+      walkingtomb_death_47: 213780971
+      walkingtomb_death_48: -2024307113
+      walkingtomb_death_49: -1922369610
+      walkingtomb_death_5: -1769360361
+      walkingtomb_death_50: -1929135384
+      walkingtomb_death_51: 1377296207
+      walkingtomb_death_52: 1295730568
+      walkingtomb_death_53: 651763527
+      walkingtomb_death_54: 1138675762
+      walkingtomb_death_55: -1921794924
+      walkingtomb_death_56: 1023860920
+      walkingtomb_death_6: 130873395
+      walkingtomb_death_7: 442461796
+      walkingtomb_death_8: -1999104890
+      walkingtomb_death_9: -1605117132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
