@@ -20,7 +20,7 @@ public class ChaseTask : Task
             return Staus.Failure;
         }
 
-        var position = Vector2.MoveTowards(agent.position, player.transform.position, Time.deltaTime * speed);
+        var position = Vector2.MoveTowards(agent.position, player.transform.position, TimeManager.GameplayDT * speed);
         agent.position = new Vector3(position.x, agent.position.y, agent.position.z);
 
         if (anim != null)

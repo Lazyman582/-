@@ -8,6 +8,7 @@ public class EmeryAnimalContrller : MonoBehaviour
 
     private static readonly int IsMoving = Animator.StringToHash("IsMoving");
     private static readonly int IsAttacking = Animator.StringToHash("IsAttacking");
+    private static readonly int IsDeath = Animator.StringToHash("IsDeath");
     private int attackStateHash;
 
     private void Awake()
@@ -45,6 +46,19 @@ public class EmeryAnimalContrller : MonoBehaviour
         animator.SetBool(IsAttacking, isAttacking);
     }
 
+    public void SetDeath(bool isDeath) {
+
+
+        if (animator == null)
+        {
+            return;
+        }
+
+        animator.SetBool(IsDeath, isDeath);
+
+
+    }
+
     public bool IsInAttackState()
     {
         if (animator == null)
@@ -65,6 +79,16 @@ public class EmeryAnimalContrller : MonoBehaviour
 
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         return stateInfo.shortNameHash == attackStateHash && stateInfo.normalizedTime >= 1f;
+    }
+
+    public bool IsFacingRight()
+    {
+        if (spriteRenderer != null)
+        {
+            return !spriteRenderer.flipX;
+        }
+
+        return transform.localScale.x >= 0f;
     }
 
     public void FaceTarget(Vector3 from, Vector3 to)

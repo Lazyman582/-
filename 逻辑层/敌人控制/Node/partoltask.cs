@@ -36,7 +36,7 @@ public class Partoltask : Task
             speed = blackboardSpeed;
         }
 
-        agent.position = Vector2.MoveTowards(agent.position, currentWaypoint.position, Time.deltaTime * speed);
+        agent.position = Vector2.MoveTowards(agent.position, currentWaypoint.position, TimeManager.GameplayDT * speed);
 
         if (anim != null)
         {

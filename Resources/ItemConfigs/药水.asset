@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33fa894cf178a4e43a5f1971ecd5faad, type: 3}
+  m_Name: "\u836F\u6C34"
+  m_EditorClassIdentifier: 
+  itemId: item_000
+  itemName: "\u836F\u6C34"
+  itemType: 0
+  icon: {fileID: -132900641, guid: 01c79ae5f32578f4b99b71d2437f76ca, type: 3}
+  description: "\u795E\u4EBA\u559D\u7684\u836F\u6C34\uFF0C\u4F7F\u7528\u540E\u53EF\u4EE5\u51CF\u5C11\u81EA\u5DF1\u5341\u70B9\u751F\u547D\u503C"
+  maxStack: 99
+  effectType: 1
+  effectValue: 20

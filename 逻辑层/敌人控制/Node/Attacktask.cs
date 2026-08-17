@@ -8,7 +8,7 @@ public class Attacktask : Task
     private bool isAttacking;
     private bool enteredAttackState;
     private GameObject currentTarget;
-
+   
     protected override Staus OnEvaluate(Transform agent, Blackboard blackboard)
     {
         var anim = blackboard.Get<EmeryAnimalContrller>("anim");
@@ -26,7 +26,7 @@ public class Attacktask : Task
 
         if (cooldownTimer > 0f)
         {
-            cooldownTimer -= Time.deltaTime;
+            cooldownTimer -= TimeManager.GameplayDT;
 
             if (anim != null)
             {
@@ -73,7 +73,7 @@ public class Attacktask : Task
 
     private Staus UpdateAttack(Transform agent, EmeryAnimalContrller anim, float attackDuration, float attackCooldown)
     {
-        attackTimer += Time.deltaTime;
+        attackTimer += TimeManager.GameplayDT;
 
         if (anim != null)
         {

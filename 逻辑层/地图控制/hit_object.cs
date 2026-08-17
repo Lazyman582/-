@@ -9,7 +9,7 @@ public class hit_object : MonoBehaviour
     
     private Collider2D myCollider;
    
-    // ÊÇ·ñ´¥·¢¹ı£¨±ÜÃâÖØ¸´Ö´ĞĞ£©
+    // æ˜¯å¦è§¦å‘è¿‡ï¼ˆé¿å…é‡å¤æ‰§è¡Œï¼‰
     private bool hasCollision = false;
 
     private void Awake()
@@ -18,12 +18,12 @@ public class hit_object : MonoBehaviour
      
 
 
-        // »ñÈ¡×ÔÉíµÄCollider2D×é¼ş
+        // è·å–è‡ªèº«çš„Collider2Dç»„ä»¶
         myCollider = GetComponent<Collider2D>();
 
         if (myCollider == null)
         {
-            Debug.LogError(gameObject.name + " È±ÉÙ Collider2D ×é¼ş");
+            Debug.LogError(gameObject.name + " ç¼ºå°‘ Collider2D ç»„ä»¶");
         }
 
        
@@ -47,7 +47,7 @@ public class hit_object : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            EventManager.Instance.TriggerDamage(10,collision.transform.position);
+            EventManager.Instance.TriggerDamage(10, transform.position);
         }
     }
 }

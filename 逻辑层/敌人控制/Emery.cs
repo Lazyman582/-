@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Emery : BehaviorTrees
 {
+    [SerializeField] private EnemyConfig enemyConfig;
     [SerializeField] private Transform[] waypoints = null;
-    [SerializeField] private float speed = 10f;
-    [SerializeField] private float attackRange = 1.5f;
-    [SerializeField] private float attackDuration = 0.45f;
-    [SerializeField] private float attackCooldown = 0.25f;
-    [SerializeField] private float seeRadius = 2f;
     [SerializeField] private LayerMask obstacleMask;
     [SerializeField] private LayerMask playerMask;
     [SerializeField] private EmeryAnimalContrller animationController;
+
+    public EnemyConfig Config => enemyConfig;
 
     protected override void Onsetup()
     {
@@ -21,11 +19,11 @@ public class Emery : BehaviorTrees
             animationController = GetComponent<EmeryAnimalContrller>();
         }
 
-        Blackboard.Add("speed", speed);
-        Blackboard.Add("attackRange", attackRange);
-        Blackboard.Add("attackDuration", attackDuration);
-        Blackboard.Add("attackCooldown", attackCooldown);
-        Blackboard.Add("seeRadius", seeRadius);
+        Blackboard.Add("speed", GetMoveSpeed());
+        Blackboard.Add("attackRange", GetAttackRange());
+        Blackboard.Add("attackDuration", GetAttackDuration());
+        Blackboard.Add("attackCooldown", GetAttackCooldown());
+        Blackboard.Add("seeRadius", GetSeeRadius());
         Blackboard.Add("obstacleMask", obstacleMask);
         Blackboard.Add("playerMask", playerMask);
         Blackboard.Add("anim", animationController);
@@ -51,6 +49,7 @@ public class Emery : BehaviorTrees
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
+        float seeRadius = GetSeeRadius();
         Gizmos.DrawWireSphere(transform.position, seeRadius);
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -79,6 +78,31 @@ public class Emery : BehaviorTrees
 
         Gizmos.color = hit.collider.CompareTag("Player") ? Color.green : Color.red;
         Gizmos.DrawLine(transform.position, hit.point);
-      
+       
+    }
+
+    private float GetMoveSpeed()
+    {
+        return enemyConfig != null ? enemyConfig.MoveSpeed : 10f;
+    }
+
+    private float GetAttackRange()
+    {
+        return enemyConfig != null ? enemyConfig.AttackRange : 1.5f;
+    }
+
+    private float GetAttackDuration()
+    {
+        return enemyConfig != null ? enemyConfig.AttackDuration : 0.45f;
+    }
+
+    private float GetAttackCooldown()
+    {
+        return enemyConfig != null ? enemyConfig.AttackCooldown : 0.25f;
+    }
+
+    private float GetSeeRadius()
+    {
+        return enemyConfig != null ? enemyConfig.SeeRadius : 2f;
     }
 }

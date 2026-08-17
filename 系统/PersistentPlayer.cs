@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[DefaultExecutionOrder(-200)]
+[DefaultExecutionOrder(-300)]
 public class PersistentPlayer : MonoBehaviour
 {
     public static PersistentPlayer Instance { get; private set; }
@@ -21,6 +21,11 @@ public class PersistentPlayer : MonoBehaviour
         Instance = this;
         RefreshCachedComponents();
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        TryInitialSpawn();
     }
 
     private void OnEnable()
@@ -67,6 +72,28 @@ public class PersistentPlayer : MonoBehaviour
         if (selectedSpawn != null)
         {
             transform.position = selectedSpawn.transform.position;
+        }
+    }
+
+    /// <summary>
+    /// 角色首次激活时，在已加载的所有场景中找出生点
+    /// —— 解决关卡先于角色加载、sceneLoaded 事件已错过的问题
+    /// </summary>
+    private void TryInitialSpawn()
+    {
+        PlayerSpawnPoint best = null;
+
+        foreach (var spawn in FindObjectsOfType<PlayerSpawnPoint>(true))
+        {
+            if (!spawn.UseOnSceneLoad) continue;
+
+            if (best == null || spawn.Priority > best.Priority)
+                best = spawn;
+        }
+
+        if (best != null)
+        {
+            transform.position = best.transform.position;
         }
     }
 }

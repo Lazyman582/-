@@ -27,20 +27,20 @@ public interface ICharacterState
     CharacterStateEnum StateType { get; }
     void OnEnter();
     void OnUpdate();
-    void OnFixedUpdate();  // ĞÂÔö£º·ÖÀëÎïÀí¸üĞÂ
+    void OnFixedUpdate();  // æ–°å¢ï¼šåˆ†ç¦»ç‰©ç†æ›´æ–°
     void OnExit();
 }
 
 
 public abstract class CharacterStateBase : ICharacterState
 {
-    protected CharacterMovement character;  // ¸ÄÃû£ºcharactermove -> CharacterMovement
+    protected CharacterMovement character;  // æ”¹åï¼šcharactermove -> CharacterMovement
     protected UserInput userInput;
     protected StateController stateController;
     protected CameraFollowObject followObject;
     public abstract CharacterStateEnum StateType { get; }
 
-    // ¹¹Ôìº¯Êı£ºÇ¿ÖÆÒªÇóÒÀÀµ×¢Èë
+    // æ„é€ å‡½æ•°ï¼šå¼ºåˆ¶è¦æ±‚ä¾èµ–æ³¨å…¥
     public CharacterStateBase(CharacterMovement character, UserInput userInput, StateController stateController)
     {
         this.character = character;
@@ -53,7 +53,7 @@ public abstract class CharacterStateBase : ICharacterState
     public virtual void OnFixedUpdate() { }
     public virtual void OnExit() { }
 
-    // ¸¨Öú·½·¨£º´¦ÀíË®Æ½ÒÆ¶¯
+    // è¾…åŠ©æ–¹æ³•ï¼šå¤„ç†æ°´å¹³ç§»åŠ¨
     protected void HandleHorizontalMovement(float multiplier = 1f)
     {
         if (Mathf.Abs(userInput.HorizontalInput) > 0.01f && !character.IsActionIgnored(ActionIgnoreTag.Move))
@@ -64,7 +64,7 @@ public abstract class CharacterStateBase : ICharacterState
         }
     }
 
-    // ¸¨Öú·½·¨£º¸üĞÂ³¯Ïò
+    // è¾…åŠ©æ–¹æ³•ï¼šæ›´æ–°æœå‘
     protected void UpdateFacingDirection()
     {
         if (userInput.HorizontalInput > 0)
@@ -99,22 +99,23 @@ public class JumpState : CharacterStateBase
     {
         _hasReachedApex = false;
 
-        // Ê©¼ÓÌøÔ¾Á¦
+        // æ–½åŠ è·³è·ƒåŠ›
         character.Rigidbody.velocity = new Vector2(
             character.Rigidbody.velocity.x,
             character.jumpForce
         );
 
-        // Ìí¼Ó¶¯×÷ÆÁ±Î
+        // æ·»åŠ åŠ¨ä½œå±è”½
         character.AddActionIgnore(0.1f, ActionIgnoreTag.Move);
 
         character.Animator.SetBool("Is Jumping", true);
         character.Animator.Play("Jump");
+        AudioManager.Instance?.PlayJumpSFX();
     }
 
     public override void OnUpdate()
     {
-        // ¼ì²éÊÇ·ñµ½´ï×î¸ßµã
+        // æ£€æŸ¥æ˜¯å¦åˆ°è¾¾æœ€é«˜ç‚¹
         if (character.Rigidbody.velocity.y <= 0 && !_hasReachedApex)
         {
             _hasReachedApex = true;
@@ -122,7 +123,7 @@ public class JumpState : CharacterStateBase
             return;
         }
 
-        // ¿ÕÖĞË®Æ½¿ØÖÆ£¨¼õÈõ£©
+        // ç©ºä¸­æ°´å¹³æ§åˆ¶ï¼ˆå‡å¼±ï¼‰
         HandleHorizontalMovement(0.8f);
     }
 
@@ -149,16 +150,17 @@ public class FallState : CharacterStateBase
 
     public override void OnUpdate()
     {
-        // ¿ÕÖĞË®Æ½¿ØÖÆ
+        // ç©ºä¸­æ°´å¹³æ§åˆ¶
         HandleHorizontalMovement(0.7f);
 
-        // ÂäµØ¼ì²â
+        // è½åœ°æ£€æµ‹
         if (character.IsGrounded && !_hasLanded)
         {
             _hasLanded = true;
             character.Animator.SetBool("Is Falling", false);
+            AudioManager.Instance?.PlayLandSFX();
 
-            // ¸ù¾İÊÇ·ñÓĞÊäÈë¾ö¶¨ÇĞ»»µ½Run»¹ÊÇIdle
+            // æ ¹æ®æ˜¯å¦æœ‰è¾“å…¥å†³å®šåˆ‡æ¢åˆ°Runè¿˜æ˜¯Idle
             stateController.ChangeState(
                 Mathf.Abs(userInput.HorizontalInput) > 0.01f ?
                 CharacterStateEnum.Run : CharacterStateEnum.Idle
@@ -180,7 +182,7 @@ public class IdleState : CharacterStateBase
 
     public override void OnEnter()
     {
-      
+       
         character.Animator.SetBool("Is Idle", true);
         character.Animator.SetBool("Is Running", false);
         character.Animator.SetBool("Is Jumping", false);
@@ -190,14 +192,14 @@ public class IdleState : CharacterStateBase
 
     public override void OnUpdate()
     {
-        // ¼ì²éÊÇ·ñÓ¦¸ÃÀë¿ªIdle×´Ì¬
+        // æ£€æŸ¥æ˜¯å¦åº”è¯¥ç¦»å¼€IdleçŠ¶æ€
         if (!character.IsGrounded)
         {
             stateController.ChangeState(CharacterStateEnum.Fall);
             return;
         }
 
-        if (Mathf.Abs(userInput.HorizontalInput) > 0.01f)
+        if (!userInput.stop && Mathf.Abs(userInput.HorizontalInput) > 0.01f)
         {
             stateController.ChangeState(CharacterStateEnum.Run);
         }
@@ -205,6 +207,8 @@ public class IdleState : CharacterStateBase
 }
 public class RunState : CharacterStateBase
 {
+    private float _stepTimer;
+    private const float StepInterval = 0.3f;
     public override CharacterStateEnum StateType => CharacterStateEnum.Run;
 
     public RunState(CharacterMovement character, UserInput userInput, StateController stateController)
@@ -230,26 +234,43 @@ public class RunState : CharacterStateBase
         //    return;
         //}
 
-        // ÒÆ¶¯´¦Àí
+        // ç§»åŠ¨å¤„ç†
         HandleHorizontalMovement();
-
-        // Í£Ö¹¼ì²é
+        if (character.IsGrounded && Mathf.Abs(userInput.HorizontalInput) > 0.01f)
+        {
+            _stepTimer -= TimeManager.GameplayDT;
+            if (_stepTimer <= 0f)
+            {
+                AudioManager.Instance?.PlayMoveSFX();
+                _stepTimer = StepInterval;
+            }
+        }
+        else
+        {
+            _stepTimer = 0f;
+            AudioManager.Instance?.StopMoveSFX();
+        }
+        // åœæ­¢æ£€æŸ¥
         if (Mathf.Abs(userInput.HorizontalInput) <= 0.01f && !character.IsActionIgnored(ActionIgnoreTag.Move))
         {
+            AudioManager.Instance?.StopMoveSFX();
             character.Animator.SetBool("Is Running", false);
             character.Animator.Play("stoprun");
             stateController.ChangeState(CharacterStateEnum.Idle);
+          
         }
+        
     }
 
     public override void OnExit()
     {
-      
+        AudioManager.Instance?.StopMoveSFX();
+
         if (character.IsGrounded)
         {
-           
+
         }
-       
+
     }
 }
 public class RunJumpState : CharacterStateBase
@@ -267,12 +288,13 @@ public class RunJumpState : CharacterStateBase
         _hasReachedApex = false;
         character.Animator.SetBool("Is Run Jumping", true);
         character.Animator.Play("RunJump");
-        // ¹Ø¼ü£º½øÈëRunJumpÊ±ÆÁ±Î×´Ì¬ÇĞ»»
-        // ÆÁ±ÎËùÓĞ¿ÉÄÜ¸ÉÈÅµÄ×´Ì¬£¨0.2ÃëÄÚ²»ÔÊĞíÇĞ»»µ½ÆäËû×´Ì¬£©
-        character.AddActionIgnore(1f, ActionIgnoreTag.Jump,ActionIgnoreTag.Damage,ActionIgnoreTag.Attack,ActionIgnoreTag.crouch,ActionIgnoreTag.Move  // ·ÀÖ¹¹¥»÷´ò¶Ï
-                                                             // ¿ÉÒÔ¸ù¾İĞèÒªÌí¼Ó¸ü¶à
+        AudioManager.Instance?.PlayJumpSFX();
+        // å…³é”®ï¼šè¿›å…¥RunJumpæ—¶å±è”½çŠ¶æ€åˆ‡æ¢
+        // å±è”½æ‰€æœ‰å¯èƒ½å¹²æ‰°çš„çŠ¶æ€ï¼ˆ0.2ç§’å†…ä¸å…è®¸åˆ‡æ¢åˆ°å…¶ä»–çŠ¶æ€ï¼‰
+        character.AddActionIgnore(1f, ActionIgnoreTag.Jump,ActionIgnoreTag.Damage,ActionIgnoreTag.Attack,ActionIgnoreTag.crouch,ActionIgnoreTag.Move  // é˜²æ­¢æ”»å‡»æ‰“æ–­
+                                                             // å¯ä»¥æ ¹æ®éœ€è¦æ·»åŠ æ›´å¤š
         );
-        // ¸ù¾İÊäÈë·½ÏòÊ©¼ÓÌøÔ¾Á¦
+        // æ ¹æ®è¾“å…¥æ–¹å‘æ–½åŠ è·³è·ƒåŠ›
         float horizontalVelocity = userInput.HorizontalInput * character.moveSpeed;
         character.Rigidbody.velocity = new Vector2(horizontalVelocity, character.jumpForce);
 
@@ -280,30 +302,31 @@ public class RunJumpState : CharacterStateBase
 
 
 
-        Debug.Log("[RunJump] ½øÈë×´Ì¬£¬Ìí¼Ó¶¯×÷ÆÁ±Î0.2Ãë");
+        Debug.Log("[RunJump] è¿›å…¥çŠ¶æ€ï¼Œæ·»åŠ åŠ¨ä½œå±è”½0.2ç§’");
     }
 
     public override void OnUpdate()
     {
-        // ¿ÕÖĞË®Æ½¼ÓËÙ
+        // ç©ºä¸­æ°´å¹³åŠ é€Ÿ
         if (Mathf.Abs(userInput.HorizontalInput) > 0.01f)
         {
             float newHorizontalSpeed = character.Rigidbody.velocity.x +
-                userInput.HorizontalInput * _airControlBoost * Time.deltaTime;
+                userInput.HorizontalInput * _airControlBoost * TimeManager.GameplayDT;
             character.Rigidbody.velocity = new Vector2(newHorizontalSpeed, character.Rigidbody.velocity.y);
             UpdateFacingDirection();
         }
 
-        // µ½´ï×î¸ßµã¼ì²â
+        // åˆ°è¾¾æœ€é«˜ç‚¹æ£€æµ‹
         if (character.Rigidbody.velocity.y <= 0 && !_hasReachedApex)
         {
             _hasReachedApex = true;
         }
 
-        // ÂäµØ¼ì²â - ¼ì²éÊÇ·ñ±»ÆÁ±Î
+        // è½åœ°æ£€æµ‹ - æ£€æŸ¥æ˜¯å¦è¢«å±è”½
         if (character.IsGrounded && !character.IsActionIgnored(ActionIgnoreTag.Move))
         {
-            Debug.Log("[RunJump] ÂäµØ£¬ÆÁ±ÎÒÑ½â³ı");
+            Debug.Log("[RunJump] è½åœ°ï¼Œå±è”½å·²è§£é™¤");
+            AudioManager.Instance?.PlayLandSFX();
 
             CharacterStateEnum nextState = Mathf.Abs(userInput.HorizontalInput) > 0.01f ?
                 CharacterStateEnum.Run : CharacterStateEnum.Idle;
@@ -329,89 +352,90 @@ public class RunJumpState : CharacterStateBase
 }
 public class DodgeState : CharacterStateBase
 {
-    // ---------- 1. »ù´¡ÊôĞÔ ----------
-    // ÉÁ±ÜµÄ³ÖĞøÊ±¼ä£¨Ãë£©
+    // ---------- 1. åŸºç¡€å±æ€§ ----------
+    // é—ªé¿çš„æŒç»­æ—¶é—´ï¼ˆç§’ï¼‰
     private const float DODGE_DURATION = 0.72f;
-    // ÉÁ±Ü¹ı³ÌÖĞµÄË®Æ½ËÙ¶È±¶ÂÊ£¨Ïà¶ÔÓÚ½ÇÉ«Ô­Ê¼ËÙ¶È£©
+    // é—ªé¿è¿‡ç¨‹ä¸­çš„æ°´å¹³é€Ÿåº¦å€ç‡ï¼ˆç›¸å¯¹äºè§’è‰²åŸå§‹é€Ÿåº¦ï¼‰
     private const float DODGE_SPEED_MULTIPLIER = 2.5f;
-    // ÊÇ·ñÒÑ¾­½áÊøÁËÉÁ±Ü¶¯×÷
+    // æ˜¯å¦å·²ç»ç»“æŸäº†é—ªé¿åŠ¨ä½œ
     private bool _isDodgeFinished = false;
 
-    // ---------- 2. ¹¹Ôìº¯Êı ----------
+    // ---------- 2. æ„é€ å‡½æ•° ----------
     public DodgeState(CharacterMovement character, UserInput userInput, StateController stateController)
         : base(character, userInput, stateController) { }
 
-    // ---------- 3. ×´Ì¬±êÊ¶ ----------
+    // ---------- 3. çŠ¶æ€æ ‡è¯† ----------
     public override CharacterStateEnum StateType => CharacterStateEnum.Dodge;
 
-    // ---------- 4. ½øÈë×´Ì¬ ----------
+    // ---------- 4. è¿›å…¥çŠ¶æ€ ----------
     public override void OnEnter()
     {
         character.Animator.Play("dodge");
-        // 1. ÖØÖÃ±ê¼Ç
+        AudioManager.Instance?.PlayDodgeSFX();
+        // 1. é‡ç½®æ ‡è®°
         _isDodgeFinished = false;
 
-        // 2.ÉèÖÃÅö×²Ìå
+        // 2.è®¾ç½®ç¢°æ’ä½“
         CharacterMovement.Instance.Idle_collider.GetComponent<Collider2D>().enabled = false;
         CharacterMovement.Instance.Dodge_collider.GetComponent<Collider2D>().enabled = true;
 
-        // 3. ÉèÖÃ¶¯×÷ÆÁ±Î£¨0.4ÃëÄÚ²»ÔÊĞíÇĞ»»µ½¹¥»÷»òÒÆ¶¯£©
+        // 3. è®¾ç½®åŠ¨ä½œå±è”½ï¼ˆ0.4ç§’å†…ä¸å…è®¸åˆ‡æ¢åˆ°æ”»å‡»æˆ–ç§»åŠ¨ï¼‰
         character.AddActionIgnore(0.5f,
-            ActionIgnoreTag.Attack,   // ·ÀÖ¹±»¹¥»÷´ò¶Ï
-            ActionIgnoreTag.Move,     // ·ÀÖ¹ÔÚÉÁ±ÜÍ¾ÖĞ±»ÆÈÍ£Ö¹
+            ActionIgnoreTag.Attack,   // é˜²æ­¢è¢«æ”»å‡»æ‰“æ–­
+            ActionIgnoreTag.Move,     // é˜²æ­¢åœ¨é—ªé¿é€”ä¸­è¢«è¿«åœæ­¢
             ActionIgnoreTag.Dodge,
-            ActionIgnoreTag.crouch// ·ÀÖ¹Á¬ĞøÉÁ±Üµş¼Ó
+            ActionIgnoreTag.crouch// é˜²æ­¢è¿ç»­é—ªé¿å åŠ 
         );
 
-        // 4. ¼ÆËãÉÁ±Ü·½Ïò£¨¸ù¾İÍæ¼Òµ±Ç°ÊäÈë»ò½ÇÉ«³¯Ïò£©
+        // 4. è®¡ç®—é—ªé¿æ–¹å‘ï¼ˆæ ¹æ®ç©å®¶å½“å‰è¾“å…¥æˆ–è§’è‰²æœå‘ï¼‰
         float dodgeDirection = userInput.HorizontalInput != 0
-            ? Mathf.Sign(userInput.HorizontalInput) // °´×¡·½Ïò¼üÉÁ±Ü
-            : Mathf.Sign(character.transform.localScale.x); // Ã»ÓĞÊäÈëÔòÏò½ÇÉ«µ±Ç°³¯ÏòÉÁ±Ü
+            ? Mathf.Sign(userInput.HorizontalInput) // æŒ‰ä½æ–¹å‘é”®é—ªé¿
+            : Mathf.Sign(character.transform.localScale.x); // æ²¡æœ‰è¾“å…¥åˆ™å‘è§’è‰²å½“å‰æœå‘é—ªé¿
 
-        // 5. Ê©¼ÓË®Æ½³åÁ¿£¨Ë²¼äÎ»ÒÆ£©
+        // 5. æ–½åŠ æ°´å¹³å†²é‡ï¼ˆç¬é—´ä½ç§»ï¼‰
         Vector2 dodgeVelocity = new Vector2(dodgeDirection * character.moveSpeed * DODGE_SPEED_MULTIPLIER, character.Rigidbody.velocity.y);
         character.Rigidbody.velocity = dodgeVelocity;
 
-        // 6. µ÷Õû½ÇÉ«³¯Ïò
+        // 6. è°ƒæ•´è§’è‰²æœå‘
         if (dodgeDirection > 0) character.transform.localScale = new Vector3(3, 3, 3);
         else if (dodgeDirection < 0) character.transform.localScale = new Vector3(-3, 3, 3);
 
-        // 7. ÉèÖÃ½áÊø¼ÆÊ±Æ÷£¨0.35Ãëºó×Ô¶¯½áÊø£©
+        // 7. è®¾ç½®ç»“æŸè®¡æ—¶å™¨ï¼ˆ0.35ç§’åè‡ªåŠ¨ç»“æŸï¼‰
         character.StartCoroutine(EndDodgeAfterDelay(DODGE_DURATION - 0.18f));
 
 
-        Debug.Log("[Dodge] ½øÈëÉÁ±Ü×´Ì¬£¬·½Ïò£º" + dodgeDirection);
+        Debug.Log("[Dodge] è¿›å…¥é—ªé¿çŠ¶æ€ï¼Œæ–¹å‘ï¼š" + dodgeDirection);
     }
 
-    // ---------- 8. ÉÁ±Ü½áÊø¼ÆÊ± ----------
+    // ---------- 8. é—ªé¿ç»“æŸè®¡æ—¶ ----------
     private System.Collections.IEnumerator EndDodgeAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         _isDodgeFinished = true;
     }
 
-    // ---------- 9. ¸üĞÂÂß¼­ ----------
+    // ---------- 9. æ›´æ–°é€»è¾‘ ----------
     public override void OnUpdate()
     {
         if (userInput.IsJumpPressed && character.IsGrounded && !character.IsActionIgnored(ActionIgnoreTag.Jump))
         {
-            // ÌøÔ¾Âß¼­£ºÁ¢¼´ÇĞ»»µ½ Jump ×´Ì¬
+            // è·³è·ƒé€»è¾‘ï¼šç«‹å³åˆ‡æ¢åˆ° Jump çŠ¶æ€
             stateController.ChangeState(CharacterStateEnum.RunJump);
-            return; // ÌøÔ¾ºóÍË³öµ±Ç°µÄ Update£¬·ÀÖ¹ºóÃæµÄÂß¼­¸ÉÈÅ
+            return; // è·³è·ƒåé€€å‡ºå½“å‰çš„ Updateï¼Œé˜²æ­¢åé¢çš„é€»è¾‘å¹²æ‰°
         }
-        // 1. ½áÊø¼ì²â£ºÈç¹ûÉÁ±ÜÊ±¼äµ½ÁË
+        // 1. ç»“æŸæ£€æµ‹ï¼šå¦‚æœé—ªé¿æ—¶é—´åˆ°äº†
         if (_isDodgeFinished && !character.IsActionIgnored(ActionIgnoreTag.Dodge))
         {
-            // 2. ¸ù¾İµ±Ç°ÊäÈë¾ö¶¨ÂäµØºóµÄ×´Ì¬
+            // 2. æ ¹æ®å½“å‰è¾“å…¥å†³å®šè½åœ°åçš„çŠ¶æ€
             CharacterStateEnum nextState;
             if (!character.IsGrounded)
             {
-                // ¿ÕÖĞ½áÊø£º»Øµ½ÌøÔ¾×´Ì¬
+                // ç©ºä¸­ç»“æŸï¼šå›åˆ°è·³è·ƒçŠ¶æ€
                 nextState = CharacterStateEnum.Fall;
             }
             else
             {
-                // µØÃæ½áÊø£º¸ù¾İÊÇ·ñÓĞË®Æ½ÊäÈë¾ö¶¨ÊÇÅÜ¶¯»¹ÊÇ´ı»ú
+                // åœ°é¢ç»“æŸï¼šæ ¹æ®æ˜¯å¦æœ‰æ°´å¹³è¾“å…¥å†³å®šæ˜¯è·‘åŠ¨è¿˜æ˜¯å¾…æœº
                 nextState = Mathf.Abs(userInput.HorizontalInput) > 0.01f
                     ? CharacterStateEnum.Run
                     : CharacterStateEnum.Idle;
@@ -420,19 +444,19 @@ public class DodgeState : CharacterStateBase
             stateController.ChangeState(nextState);
         }
 
-        // 2. ·ÀÖ¹ÔÚÉÁ±ÜÆÚ¼ä±»Íâ²¿´úÂëÎó¸Ä·½Ïò£¨¿ÉÑ¡£©
+        // 2. é˜²æ­¢åœ¨é—ªé¿æœŸé—´è¢«å¤–éƒ¨ä»£ç è¯¯æ”¹æ–¹å‘ï¼ˆå¯é€‰ï¼‰
         // character.Rigidbody.velocity = new Vector2(Mathf.Sign(character.transform.localScale.x) * character.moveSpeed * DODGE_SPEED_MULTIPLIER, character.Rigidbody.velocity.y);
     }
 
-    // ---------- 10. ÍË³ö×´Ì¬ ----------
+    // ---------- 10. é€€å‡ºçŠ¶æ€ ----------
     public override void OnExit()
     {
-        // 1. ÖØÖÃ¶¯»­²ÎÊı
+        // 1. é‡ç½®åŠ¨ç”»å‚æ•°
         character.Animator.ResetTrigger("Is Dodge");
 
         CharacterMovement.Instance.Idle_collider.GetComponent<Collider2D>().enabled = true;
         CharacterMovement.Instance.Dodge_collider.GetComponent<Collider2D>().enabled = false;
-        // 2. È·±£Ë®Æ½ËÙ¶È»Ö¸´Õı³££¨·ÀÖ¹²ĞÁô³åÁ¿£©
+        // 2. ç¡®ä¿æ°´å¹³é€Ÿåº¦æ¢å¤æ­£å¸¸ï¼ˆé˜²æ­¢æ®‹ç•™å†²é‡ï¼‰
         if (character.IsGrounded)
         {
             character.Rigidbody.velocity = new Vector2(0, character.Rigidbody.velocity.y);
@@ -451,70 +475,93 @@ public class AttackState : CharacterStateBase
 
     private int currentCombo = 0;
     private float attackStartTime = 0f;
-    private bool hasExitedComboWindow = false;  // ÊÇ·ñÒÑÍË³öÁ¬»÷´°¿Ú
+    private bool hasExitedComboWindow = false;  // æ˜¯å¦å·²é€€å‡ºè¿å‡»çª—å£
+    private bool hasAppliedDamage;
+    private readonly PlayerAttackDealer attackDealer;
 
     public override CharacterStateEnum StateType => CharacterStateEnum.Attack;
 
     public AttackState(CharacterMovement character, UserInput userInput, StateController stateController)
-        : base(character, userInput, stateController) { }
+        : base(character, userInput, stateController)
+    {
+        attackDealer = character.GetComponent<PlayerAttackDealer>();
+    }
 
     public override void OnEnter()
     {
-        // Ö±½Ó´ÓµÚ1¶Î¿ªÊ¼
+        // ç›´æ¥ä»ç¬¬1æ®µå¼€å§‹
         currentCombo = 1;
         attackStartTime = Time.time;
         hasExitedComboWindow = false;
+        hasAppliedDamage = false;
 
-        // Ëø¶¨¶¯×÷
+        // é”å®šåŠ¨ä½œ
         character.AddActionIgnore(attackDuration,
             ActionIgnoreTag.Move,
             ActionIgnoreTag.Jump,
             ActionIgnoreTag.Attack);
 
-        // ²¥·Å¶¯»­
+        // æ’­æ”¾åŠ¨ç”»
         character.Animator.SetBool("Is Attacking", true);
         character.Animator.SetInteger("BasicAttackIndex", currentCombo);
         character.Animator.Play($"attack{currentCombo}");
+        AudioManager.Instance?.PlayAttackSwing();
 
-        Debug.Log($"[Attack] µÚ {currentCombo} ¶Î¹¥»÷¿ªÊ¼");
+        Debug.Log($"[Attack] ç¬¬ {currentCombo} æ®µæ”»å‡»å¼€å§‹");
     }
 
     public override void OnUpdate()
     {
-        // µ±Ç°¹¥»÷¶ÎÊÇ·ñ½áÊø£¿
+        if (!hasAppliedDamage && Time.time - attackStartTime >= GetHitTime(currentCombo))
+        {
+            attackDealer?.DealDamage(currentCombo);
+            hasAppliedDamage = true;
+        }
+
+        // å½“å‰æ”»å‡»æ®µæ˜¯å¦ç»“æŸï¼Ÿ
         if (Time.time - attackStartTime >= attackDuration)
         {
-            // ÒÑ¾­ÍË³öÁ¬»÷´°¿Ú£¿
+            // å·²ç»é€€å‡ºè¿å‡»çª—å£ï¼Ÿ
             if (hasExitedComboWindow) return;
 
             float timeSinceAttackEnd = Time.time - (attackStartTime + attackDuration);
 
-            // Èç¹ûÔÚÁ¬»÷´°¿ÚÄÚ
+            // å¦‚æœåœ¨è¿å‡»çª—å£å†…
             if (timeSinceAttackEnd <= comboWindow)
             {
                
                 if (currentCombo < maxCombo && userInput.AttackPressed)
                 {
-                    // ´¥·¢ÏÂÒ»¶ÎÁ¬»÷
+                    // è§¦å‘ä¸‹ä¸€æ®µè¿å‡»
                     currentCombo++;
                     attackStartTime = Time.time;
+                    hasAppliedDamage = false;
 
-                    // ÖØĞÂËø¶¨¶¯×÷
+                    // é‡æ–°é”å®šåŠ¨ä½œ
                     character.AddActionIgnore(attackDuration,
                         ActionIgnoreTag.Move,
                         ActionIgnoreTag.Jump,
                         ActionIgnoreTag.Attack);
 
-                    // ²¥·ÅÏÂÒ»¶Î¶¯»­
+                    // æ’­æ”¾ä¸‹ä¸€æ®µåŠ¨ç”»
                     character.Animator.SetInteger("BasicAttackIndex", currentCombo);
                     character.Animator.Play($"attack{currentCombo}");
+                    if (currentCombo == maxCombo)
+                    {
+                        AudioManager.Instance?.PlayAttackFinisher();  // æœ€å¤§è¿å‡»ç»ˆç»“éŸ³æ•ˆ
+                    }
+                    else
+                    {
+                        AudioManager.Instance?.PlayAttackSwing();
+                    }
 
-                    Debug.Log($"[Attack] Á¬»÷! µÚ {currentCombo} ¶Î");
+                    Debug.Log($"[Attack] è¿å‡»! ç¬¬ {currentCombo} æ®µ");
                 }
+               
             }
             else if (!hasExitedComboWindow)
             {
-                // ³¬¹ı´°¿ÚÆÚ£¬ÍË³ö¹¥»÷
+                // è¶…è¿‡çª—å£æœŸï¼Œé€€å‡ºæ”»å‡»
                 hasExitedComboWindow = true;
                 ExitAttack();
             }
@@ -523,10 +570,10 @@ public class AttackState : CharacterStateBase
 
     private void ExitAttack()
     {
-        // ¹Ø±Õ¹¥»÷¶¯»­
+        // å…³é—­æ”»å‡»åŠ¨ç”»
         character.Animator.SetBool("Is Attacking", false);
 
-        // ¸ù¾İµØÃæ×´Ì¬ÇĞ»»
+        // æ ¹æ®åœ°é¢çŠ¶æ€åˆ‡æ¢
         if (character.IsGrounded)
         {
             if (Mathf.Abs(userInput.HorizontalInput) > 0.01f)
@@ -539,7 +586,22 @@ public class AttackState : CharacterStateBase
             stateController.ChangeState(CharacterStateEnum.Fall);
         }
 
-        Debug.Log("[Attack] ¹¥»÷½áÊø");
+        Debug.Log("[Attack] æ”»å‡»ç»“æŸ");
+    }
+
+    private float GetHitTime(int comboIndex)
+    {
+        switch (comboIndex)
+        {
+            case 1:
+                return 0.12f;
+            case 2:
+                return 0.14f;
+            case 3:
+                return 0.16f;
+            default:
+                return 0.12f;
+        }
     }
 
     public override void OnExit()
@@ -547,24 +609,25 @@ public class AttackState : CharacterStateBase
         Debug.Log("1111");
         character.Animator.SetBool("Is Attacking", false);
         character.Animator.SetInteger("BasicAttackIndex", 0);
-         
+        hasAppliedDamage = false;
     }
 }
 public class CrouchState : CharacterStateBase
 {
-    // ±êÊ¶µ±Ç°×´Ì¬Îª Crouch
+    // æ ‡è¯†å½“å‰çŠ¶æ€ä¸º Crouch
     private const float CrouchDuration = 0.1f;
     public override CharacterStateEnum StateType => CharacterStateEnum.Crouch;
 
-    // ¹¹Ôìº¯Êı£¬±£³ÖÒÀÀµ×¢Èë
+    // æ„é€ å‡½æ•°ï¼Œä¿æŒä¾èµ–æ³¨å…¥
     public CrouchState(CharacterMovement character, UserInput userInput, StateController stateController)
         : base(character, userInput, stateController) { }
 
-    // ½øÈë×´Ì¬Ê±µ÷ÓÃ
+    // è¿›å…¥çŠ¶æ€æ—¶è°ƒç”¨
     public override void OnEnter()
     {
    
         character.Animator.Play("Crouch");
+        AudioManager.Instance?.PlayCrouchSFX();
         character.Animator.SetBool("Is Crouching", true);
 
         character.AddActionIgnore(CrouchDuration,
@@ -581,7 +644,7 @@ public class CrouchState : CharacterStateBase
 
     }
 
-    // Ã¿Ö¡¸üĞÂµ÷ÓÃ
+    // æ¯å¸§æ›´æ–°è°ƒç”¨
     public override void OnUpdate()
     {
         if (userInput.IsCrouchPressed) {
@@ -605,15 +668,15 @@ public class CrouchState : CharacterStateBase
 
     }
 
-    // ÍË³ö×´Ì¬Ê±µ÷ÓÃ
+    // é€€å‡ºçŠ¶æ€æ—¶è°ƒç”¨
     public override void OnExit()
     {
         Debug.Log("222");
-        // 1. ÖØÖÃ¶¯»­²ÎÊı
+        // 1. é‡ç½®åŠ¨ç”»å‚æ•°
         character.Animator.SetBool("Is Crouching", false);
  
        
-        // 2. »Ö¸´Ô­Ê¼Åö×²Ìå
+        // 2. æ¢å¤åŸå§‹ç¢°æ’ä½“
         if (character.Crouch_collider != null && character.Crouch_collider != null)
         {
             character.Crouch_collider.enabled = false;
@@ -654,6 +717,7 @@ public class DamageState : CharacterStateBase
         scale.x = Mathf.Abs(scale.x) * Mathf.Sign(-hurtDirection.x);
         character.transform.localScale = scale;
         character.Animator.Play("hurt");
+        AudioManager.Instance?.PlayHurtSFX();
         character.Animator.SetBool("Is Hurt", true);
         character.AddActionIgnore(HurtDuration,
             ActionIgnoreTag.Move, ActionIgnoreTag.Jump, 
@@ -663,8 +727,8 @@ public class DamageState : CharacterStateBase
 
     public override void OnUpdate()
     {
-        hurtTimer -= Time.deltaTime;
-        invincibilityTimer -= Time.deltaTime;
+        hurtTimer -= TimeManager.GameplayDT;
+        invincibilityTimer -= TimeManager.GameplayDT;
         
         if (invincibilityTimer <= 0f)
             //character.Animator.SetBool("Is Invincible", false);
@@ -719,8 +783,9 @@ public class DeathState : CharacterStateBase
         EventManager.Instance.TriggerDie();
         deathTimer = DeathDuration;
         isDying = true;
-        character.Rigidbody.velocity = Vector3.zero;     // Çå³ıËÙ¶È          
+        character.Rigidbody.velocity = Vector3.zero;     // æ¸…é™¤é€Ÿåº¦          
         character.Animator.Play("Death");
+        AudioManager.Instance?.PlayDeathSFX();
         character.Animator.SetBool("Is active", true);
         character.AddActionIgnore(DeathDuration,
           ActionIgnoreTag.All);
@@ -730,8 +795,8 @@ public class DeathState : CharacterStateBase
 
     public override void OnUpdate()
     {
-        deathTimer -= Time.deltaTime;
-        responeTimer -= Time.deltaTime;
+        deathTimer -= TimeManager.GameplayDT;
+        responeTimer -= TimeManager.GameplayDT;
 
       
         if (deathTimer <= 0f && isDying)

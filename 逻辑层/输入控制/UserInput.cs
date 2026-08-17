@@ -8,17 +8,17 @@ public class UserInput : MonoBehaviour
 {
     public static UserInput Instance { get; private set; }
 
-    [Header("ÊäÈë²ÎÊý")]
+    [Header("é€Ÿåº¦")]
     [SerializeField] private float _pressThreshold = 0.2f;
     [SerializeField] private float _releaseBuffer = 0.2f;
 
-    // ¹«¹²ÊôÐÔ
+
     public float HorizontalInput { get; private set; }
     public float VerticalInput { get; private set; }
     public bool IsJumpPressed { get; private set; }
     public bool IsJumpHeld { get; private set; }
 
-    public float gameTime { get; private set; }
+    public bool stop { get; set; }
     public bool IsCrouchPressed { get; private set; }
     public bool AttackPressed { get; private set; }
 
@@ -49,6 +49,16 @@ public class UserInput : MonoBehaviour
 
     private void HandleMovementInput()
     {
+        if (stop)
+        {
+            // stop æ—¶æ¸…é›¶ï¼Œé˜²æ­¢ IdleState è¯»åˆ°æ—§å€¼åˆ‡å›ž Run
+            if (Mathf.Abs(HorizontalInput) > 0.01f)
+            {
+                HorizontalInput = 0f;
+                EventManager.Instance?.TriggerMove(0f);
+            }
+            return;
+        }
         float rawInput = Input.GetAxisRaw("Horizontal");
         float previousInput = HorizontalInput;
 
@@ -65,7 +75,7 @@ public class UserInput : MonoBehaviour
 
             _lastReleaseTime = -1f;
 
-            // Ö»ÓÐµ±ÊäÈëÖµÕæÕý±ä»¯Ê±²Å´¥·¢ÊÂ¼þ
+       
             if (Mathf.Abs(HorizontalInput - previousInput) > 0.01f)
             {
                 EventManager.Instance?.TriggerMove(HorizontalInput);
@@ -78,10 +88,10 @@ public class UserInput : MonoBehaviour
 
             if (Time.time - _lastReleaseTime >= _releaseBuffer)
             {
-                if (Mathf.Abs(HorizontalInput) > 0.01f)  // Èç¹ûÖ®Ç°ÓÐÊäÈë£¬ÏÖÔÚÍ£Ö¹ÁË
+                if (Mathf.Abs(HorizontalInput) > 0.01f)  
                 {
                     HorizontalInput = 0f;
-                    EventManager.Instance?.TriggerMove(0f);  // ´¥·¢Í£Ö¹ÒÆ¶¯
+                    EventManager.Instance?.TriggerMove(0f); 
                 }
                 _pressStartTime = 0f;
             }
@@ -90,21 +100,21 @@ public class UserInput : MonoBehaviour
 
     private void HandleJumpInput()
     {
-        // °´ÏÂË²¼ä - ´¥·¢ÌøÔ¾ÇëÇó
+        if (stop) return;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             IsJumpPressed = true;
             IsJumpHeld = true;
-            EventManager.Instance?.TriggerJump ();  // ´¥·¢ÌøÔ¾ÊÂ¼þ
+            EventManager.Instance?.TriggerJump ();  
           
         }
 
-        // ÊÍ·Å
+      
         else if (Input.GetKeyUp(KeyCode.Space))
         {
             IsJumpPressed = false;
             IsJumpHeld = false;
-            // ÌøÔ¾½áÊø²»ÐèÒª´¥·¢ÊÂ¼þ£¬×´Ì¬»ú×Ô¼º»á´¦Àí
+           
         }
         else
         {
@@ -114,7 +124,7 @@ public class UserInput : MonoBehaviour
 
 
     private void HandleCrouchInput() {
-
+        if (stop) return;
         if (Input.GetKey(KeyCode.S))
         {
 
@@ -133,9 +143,13 @@ public class UserInput : MonoBehaviour
 
     private void HandleActionInput()
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("[UserInput] E é”®æŒ‰ä¸‹ â†’ TriggerInteract");
+            EventManager.Instance?.TriggerInteract();
+        }
 
-
-        // ¹¥»÷¼üÊ¾Àý£¨Èç¹ûÐèÒª£©
+        if (stop) return;
         if (Input.GetKeyDown(KeyCode.J))
         {
             AttackPressed = true;
@@ -145,7 +159,7 @@ public class UserInput : MonoBehaviour
 
             AttackPressed = false;
         }
-        // ¼¼ÄÜ¼üÊ¾Àý
+       
         if (Input.GetKeyDown(KeyCode.K))
         {
             EventManager.Instance?.TriggerSkill();
@@ -153,8 +167,9 @@ public class UserInput : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
 
             EventManager.Instance?.TriggerDodge();
-           
+
         }
+       
     }
 
     void OnDestroy()

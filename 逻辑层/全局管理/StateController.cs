@@ -4,13 +4,13 @@ using UnityEngine;
 
 
 
-// ×´Ì¬Ã¶¾Ù£¨±£³Ö²»±ä£©
+
 
 
 
 public class StateController : MonoBehaviour
 {
-    [Header("µ±Ç°×´Ì¬")]
+    [Header("å½“å‰çŠ¶æ€")]
     [SerializeField] private CharacterStateEnum _currentStateType;
 
     private ICharacterState _currentState;
@@ -38,23 +38,23 @@ public class StateController : MonoBehaviour
 
         if (_character == null || _userInput == null)
         {
-            Debug.LogError("StateController: ÕÒ²»µ½±ØÒªµÄÒÀÀµ×é¼ş£¡");
+            Debug.LogError("StateController: æ‰¾ä¸åˆ°å¿…è¦çš„ä¾èµ–ç»„ä»¶ï¼");
             return;
         }
 
         InitializeStates();
 
-        // ¶©ÔÄÊÂ¼ş - ×¢ÒâÊÂ¼şÃûºÍEventManagerÀï¶¨ÒåµÄ±£³ÖÒ»ÖÂ
+        // è®¢é˜…äº‹ä»¶ - æ³¨æ„äº‹ä»¶åå’ŒEventManageré‡Œå®šä¹‰çš„ä¿æŒä¸€è‡´
         if (EventManager.Instance != null)
         {
-            EventManager.Instance.OnJumpRequested += HandleJumpRequest;
-            EventManager.Instance.OnRunRequested += HandleRunRequest;
-            EventManager.Instance.OnMoveRequested += HandleMoveRequest;  // ĞÂÔö£º´¦ÀíÒÆ¶¯ÊÂ¼ş
-            EventManager.Instance.OnDodgeRequested += HandleDodgeRequest;
-            EventManager.Instance.OnAttackRequested += HandleAttackRequest;
-            EventManager.Instance.OnCrouchRequested += HandCrouchRequest;
-            EventManager.Instance.OnDamgeRequested += HandleDamageRequest;
-            EventManager.Instance.OnDieRequested += HandleDieRequest;
+            EventManager.Instance.OnJumpRequested.Subscribe(HandleJumpRequest);
+            EventManager.Instance.OnRunRequested.Subscribe(HandleRunRequest);
+            EventManager.Instance.OnMoveRequested.Subscribe(HandleMoveRequest);  // æ–°å¢ï¼šå¤„ç†ç§»åŠ¨äº‹ä»¶
+            EventManager.Instance.OnDodgeRequested.Subscribe(HandleDodgeRequest);
+            EventManager.Instance.OnAttackRequested.Subscribe(HandleAttackRequest);
+            EventManager.Instance.OnCrouchRequested.Subscribe(HandCrouchRequest);
+            EventManager.Instance.OnDamgeRequested.Subscribe(HandleDamageRequest);
+            EventManager.Instance.OnDieRequested.Subscribe(HandleDieRequest);
 
         }
 
@@ -96,15 +96,15 @@ public class StateController : MonoBehaviour
             return;
 
         Debug.Log($"[StateController] {_currentState?.StateType} -> {newState}");
-        _currentState?.OnExit();
+        _currentState?.OnExit();   
 
-        // DamageState ĞèÒª¶¯Ì¬´´½¨
+        // DamageState éœ€è¦åŠ¨æ€åˆ›å»º
         if (newState == CharacterStateEnum.Damage)
         {
             _currentState = new DamageState(_character, _userInput, this, attackerPosition);
             _currentState.OnEnter();
         }
-        // ÆäËû×´Ì¬´Ó×Öµä»ñÈ¡
+        // å…¶ä»–çŠ¶æ€ä»å­—å…¸è·å–
         else if (_states.TryGetValue(newState, out var state) && state != null)
         {
             _currentState = state;
@@ -124,7 +124,7 @@ public class StateController : MonoBehaviour
             {
                 if (_character.IsActionIgnored(ActionIgnoreTag.Move))
                 {
-                    Debug.Log($"[StateController] Move±»ÆÁ±Î£¬ÎŞ·¨ÇĞ»»µ½ {newState}");
+                    Debug.Log($"[StateController] Moveè¢«å±è”½ï¼Œæ— æ³•åˆ‡æ¢åˆ° {newState}");
                     return;
                 }
             }
@@ -134,7 +134,7 @@ public class StateController : MonoBehaviour
             {
                 if (_character.IsActionIgnored(ActionIgnoreTag.Jump))
                 {
-                    Debug.Log($"[StateController] Jump±»ÆÁ±Î£¬ÎŞ·¨ÇĞ»»µ½ {newState}");
+                    Debug.Log($"[StateController] Jumpè¢«å±è”½ï¼Œæ— æ³•åˆ‡æ¢åˆ° {newState}");
                     return;
                 }
             }
@@ -153,7 +153,7 @@ public class StateController : MonoBehaviour
         }
     }
 
-    // ========== ÊÂ¼ş´¦Àí ==========
+    // ========== äº‹ä»¶å¤„ç† ==========
     private void HandleJumpRequest()
     {
 
@@ -163,15 +163,15 @@ public class StateController : MonoBehaviour
         if (_currentState == null) return;
 
         if (!_character.IsGrounded)
-            return; // ¿ÕÖĞ²»´¦ÀíÌøÔ¾
+            return; // ç©ºä¸­ä¸å¤„ç†è·³è·ƒ
 
 
-        Debug.Log($"StateController: ÊÕµ½ÌøÔ¾ÇëÇó£¬µ±Ç°×´Ì¬ {_currentState.StateType}");
+        Debug.Log($"StateController: æ”¶åˆ°è·³è·ƒè¯·æ±‚ï¼Œå½“å‰çŠ¶æ€ {_currentState.StateType}");
 
-        // ¼ì²éÊÇ·ñ±»ÆÁ±Î
+        // æ£€æŸ¥æ˜¯å¦è¢«å±è”½
         if (_character.IsActionIgnored(ActionIgnoreTag.Jump))
         {
-            Debug.Log("ÌøÔ¾±»ÆÁ±Î");
+            Debug.Log("è·³è·ƒè¢«å±è”½");
             return;
         }
 
@@ -185,7 +185,7 @@ public class StateController : MonoBehaviour
             case CharacterStateEnum.Idle:
                 ChangeState(CharacterStateEnum.Jump);
                 break;
-                // ÆäËû×´Ì¬²»´¦ÀíÌøÔ¾
+                // å…¶ä»–çŠ¶æ€ä¸å¤„ç†è·³è·ƒ
         }
     }
 
@@ -193,11 +193,11 @@ public class StateController : MonoBehaviour
     {
         if (_currentState == null) return;
 
-        // ¼ì²éÊÇ·ñ±»ÆÁ±Î
+        // æ£€æŸ¥æ˜¯å¦è¢«å±è”½
         if (_character.IsActionIgnored(ActionIgnoreTag.Move))
             return;
 
-        // Ö»ÓĞÔÚµØÃæ²ÅÄÜÅÜ²½
+        // åªæœ‰åœ¨åœ°é¢æ‰èƒ½è·‘æ­¥
         if (_character.IsGrounded)
         {
             ChangeState(CharacterStateEnum.Run);
@@ -242,9 +242,9 @@ public class StateController : MonoBehaviour
 
           
 
-            Debug.Log($"[StateController] ÊÕµ½ÉËº¦ÇëÇó£¬¹¥»÷ÕßÎ»ÖÃ: {attackerPosition}");
+            Debug.Log($"[StateController] æ”¶åˆ°ä¼¤å®³è¯·æ±‚ï¼Œæ”»å‡»è€…ä½ç½®: {attackerPosition}");
 
-            // Ê¹ÓÃĞÂ·½·¨´«Èë¹¥»÷ÕßÎ»ÖÃ
+            // ä½¿ç”¨æ–°æ–¹æ³•ä¼ å…¥æ”»å‡»è€…ä½ç½®
             ChangeStateWithDamage(CharacterStateEnum.Damage, attackerPosition);
         }
     }
@@ -286,13 +286,14 @@ public class StateController : MonoBehaviour
     {
         if (EventManager.Instance != null)
         {
-            EventManager.Instance.OnJumpRequested -= HandleJumpRequest;
-            EventManager.Instance.OnRunRequested -= HandleRunRequest;
-            EventManager.Instance.OnMoveRequested -= HandleMoveRequest;    // 
-            EventManager.Instance.OnDodgeRequested -= HandleDodgeRequest;  // 
-            EventManager.Instance.OnAttackRequested -= HandleAttackRequest;
-            EventManager.Instance.OnCrouchRequested -= HandCrouchRequest;  // 
-            EventManager.Instance.OnDamgeRequested -= HandleDamageRequest;// 
+            EventManager.Instance.OnJumpRequested.Unsubscribe(HandleJumpRequest);
+            EventManager.Instance.OnRunRequested.Unsubscribe(HandleRunRequest);
+            EventManager.Instance.OnMoveRequested.Unsubscribe(HandleMoveRequest);
+            EventManager.Instance.OnDodgeRequested.Unsubscribe(HandleDodgeRequest);
+            EventManager.Instance.OnAttackRequested.Unsubscribe(HandleAttackRequest);
+            EventManager.Instance.OnCrouchRequested.Unsubscribe(HandCrouchRequest);
+            EventManager.Instance.OnDamgeRequested.Unsubscribe(HandleDamageRequest);
+            EventManager.Instance.OnDieRequested.Unsubscribe(HandleDieRequest);
 
         }
     }

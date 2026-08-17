@@ -6,11 +6,11 @@ using static ActionIgnoreMask;
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class CharacterMovement : MonoBehaviour
 {
-    [Header("移动参数")]
-    [Tooltip("角色的移动速度（米/秒）")]
+    [Header("character")]
+    [Tooltip("移速")]
     public float moveSpeed = 5f;
 
-    [Header("跳跃参数")]
+    [Header("数据配置")]
     public float jumpForce = 7f;
     public Transform groundCheckPoint;
     public float groundCheckRadius = 0.3f;
@@ -48,7 +48,7 @@ public class CharacterMovement : MonoBehaviour
 
         if (Rigidbody == null)
         {
-            Debug.LogError("CharacterMovement: 缺少Rigidbody2D组件！");
+            Debug.Log("Rigidbody:null");
         }
 
         _actionIgnores = new List<ActionIgnore>();
@@ -66,7 +66,7 @@ public class CharacterMovement : MonoBehaviour
         _userInput = UserInput.Instance;
         if (_userInput == null)
         {
-            Debug.LogError("CharacterMovement: 找不到UserInput实例！");
+            Debug.Log("userInput:null");
         }
 
         SceneManager.sceneLoaded += HandleSceneLoaded;
@@ -135,9 +135,9 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnDamge()
     {
-        if (characterData != null)
+        if (EventManager.Instance != null)
         {
-            characterData.TakeDamage(10);
+            EventManager.Instance.TriggerDamage(10f, transform.position - transform.right);
         }
     }
 
@@ -166,6 +166,20 @@ public class CharacterMovement : MonoBehaviour
         }
 
         _actionIgnores.Add(new ActionIgnore(mask, duration));
+    }
+
+    
+    public void RemoveActionIgnore(params ActionIgnoreTag[] tags)
+    {
+        var mask = ActionIgnoreMask.GetMask(tags);
+        for (int i = _actionIgnores.Count - 1; i >= 0; i--)
+        {
+            if (_actionIgnores[i].Mask.Equals(mask))
+            {
+                _actionIgnores.RemoveAt(i);
+                return;
+            }
+        }
     }
 
     public bool IsActionIgnored(ActionIgnoreTag tag)

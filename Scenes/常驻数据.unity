@@ -545,7 +545,7 @@ MonoBehaviour:
   moveSpeed: 3.5
   jumpForce: 7
   groundCheckPoint: {fileID: 269041831115536511}
-  groundCheckRadius: 0.6
+  groundCheckRadius: 0.4
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -787,7 +787,7 @@ Transform:
   m_GameObject: {fileID: 7644212738857008289}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1477.657, y: 352.20734, z: 0}
+  m_LocalPosition: {x: -1495.55, y: 353.55, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -874,6 +874,7 @@ GameObject:
   - component: {fileID: 1885679808714116600}
   - component: {fileID: 7088491003925496218}
   - component: {fileID: 6525375885128192285}
+  - component: {fileID: 9202237103223915193}
   - component: {fileID: 9202237103223915191}
   - component: {fileID: 9202237103223915192}
   m_Layer: 6
@@ -958,8 +959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e075739535c88e489a94e95e1fc0d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000
-  maxHealth: 1000
+  health: 100
+  maxHealth: 100
   coin: 0
 --- !u!114 &9202237103223915192
 MonoBehaviour:
@@ -973,6 +974,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10b9d8f7c184afca9d321d508228e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9202237103223915193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644212738857008289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164a65a66fff08a46b600530212b8be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 0}
+  attackOffset: {x: 1.55, y: 0}
+  attackRadius: 1.2
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  defaultDamage: 10
+  comboDamages:
+  - 10
+  - 12
+  - 15
 --- !u!95 &9215066197486715012
 Animator:
   serializedVersion: 5

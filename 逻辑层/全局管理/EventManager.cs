@@ -1,9 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.U2D.Animation;
 using UnityEngine;
-
 
 
 
@@ -14,18 +12,34 @@ public class EventManager : MonoBehaviour
     public static EventManager Instance { get; private set; }
 
 
-    public event Action OnJumpRequested;      // ÌøÔ¾ÇëÇó
-    public event Action OnRunRequested;       // ÅÜ²½ÇëÇó
-    public event Action OnAttackRequested;    // ¹¥»÷ÇëÇó
-    public event Action OnSkillRequested;     // ¼¼ÄÜÇëÇó
-    public event Action OnDodgeRequested;     //»¬²ùÇëÇó
-    public event Action OnCrouchRequested;    //ÏÂ¶×ÇëÇó
-    public event Action<Vector3> OnDamgeRequested;
-    public event Action OnDieRequested;
+    public readonly PriorityEvent OnJumpRequested = new();      // è·³è·ƒè¯·æ±‚
+    public readonly PriorityEvent OnRunRequested = new();       // è·‘æ­¥è¯·æ±‚
+    public readonly PriorityEvent OnAttackRequested = new();    // æ”»å‡»è¯·æ±‚
+    public readonly PriorityEvent OnSkillRequested = new();     // æŠ€èƒ½è¯·æ±‚
+    public readonly PriorityEvent OnDodgeRequested = new();     //æ»‘é“²è¯·æ±‚
+    public readonly PriorityEvent OnCrouchRequested = new();    //ä¸‹è¹²è¯·æ±‚
+    public readonly PriorityEvent OnInteractRequested = new();  //äº¤äº’è¯·æ±‚ï¼ˆå¯¹è¯ç­‰ï¼‰
+    public readonly PriorityEvent<Vector3> OnDamgeRequested = new();
+    public readonly PriorityEvent OnDieRequested = new();
 
-    public event Action<float> OnMoveRequested;  // ÒÆ¶¯ÇëÇó£¬²ÎÊıÎª·½Ïò
+    public readonly PriorityEvent<float> OnMoveRequested = new();  // ç§»åŠ¨è¯·æ±‚ï¼Œå‚æ•°ä¸ºæ–¹å‘
 
     public CharacterData characterData;
+
+    private CharacterData CurrentCharacterData
+    {
+        get
+        {
+            if (characterData == null)
+            {
+                characterData = PersistentPlayer.Instance != null
+                    ? PersistentPlayer.Instance.CharacterData
+                    : FindObjectOfType<CharacterData>();
+            }
+
+            return characterData;
+        }
+    }
 
 
     void Awake()
@@ -36,81 +50,110 @@ public class EventManager : MonoBehaviour
             return;
         }
         Instance = this;
-        characterData = FindObjectOfType<CharacterData>();
+        characterData = PersistentPlayer.Instance != null
+            ? PersistentPlayer.Instance.CharacterData
+            : FindObjectOfType<CharacterData>();
         DontDestroyOnLoad(gameObject);
+        Debug.Log("[EventManager] åˆå§‹åŒ–å®Œæˆï¼ŒInstance å·²å°±ç»ª");
     }
 
-    // ´¥·¢ÊÂ¼şµÄ·½·¨
+    // è§¦å‘äº‹ä»¶çš„æ–¹æ³•
     public void TriggerJump()
     {
         Debug.Log("[Event] Jump Requested");
-        OnJumpRequested?.Invoke();
+        OnJumpRequested.Invoke();
     }
 
     public void TriggerRun()
     {
         Debug.Log("[Event] Run Requested");
-        OnRunRequested?.Invoke();
+        OnRunRequested.Invoke();
     }
 
     public void TriggerMove(float direction)
     {
-        OnMoveRequested?.Invoke(direction);
+        OnMoveRequested.Invoke(direction);
     }
 
     public void TriggerAttack()
     {
-        OnAttackRequested?.Invoke();
+        OnAttackRequested.Invoke();
     }
 
     public void TriggerSkill()
     {
-        OnSkillRequested?.Invoke();
+        OnSkillRequested.Invoke();
     }
 
-    public void TriggerDodge() { 
-    
-    
-    OnDodgeRequested?.Invoke();
-    
+    public void TriggerDodge() {
+
+
+    OnDodgeRequested.Invoke();
+
     }
 
     public void TriggerCrouch() {
-        
-    OnCrouchRequested?.Invoke();
-    
-    
+
+    OnCrouchRequested.Invoke();
+
+
     }
+
+    public void TriggerInteract()
+    {
+        Debug.Log("[EventManager] TriggerInteract â†’ OnInteractRequested.Invoke()");
+        OnInteractRequested.Invoke();
+    }
+
     public void TriggerDamage(float amount, Vector3 attackerPosition)
     {
-        if (characterData.Health <= 0)
+        CharacterData player = CurrentCharacterData;
+        if (player == null)
         {
-            Debug.LogError("44444");
-            OnDieRequested?.Invoke();
-
-
+            Debug.LogError("EventManager: CharacterData not found, damage ignored.");
+            return;
         }
-        characterData.TakeDamage(amount);
-        
-        OnDamgeRequested?.Invoke(attackerPosition);  // ´«Èë¹¥»÷ÕßÎ»ÖÃ
+
+        if (player.Health <= 0f)
+        {
+            return;
+        }
+
+        player.TakeDamage(amount);
+
+        if (player.Health <= 0f)
+        {
+            OnDieRequested.Invoke();
+            return;
+        }
+
+        OnDamgeRequested.Invoke(attackerPosition);
     }
 
     public void TriggerDie() {
 
 
-       UserInput.Instance.enabled = false;
+       if (UserInput.Instance != null)
+       {
+           UserInput.Instance.enabled = false;
+       }
 
 
     }
 
-    // ÇåÀíÊÂ¼ş
+    // æ¸…ç†äº‹ä»¶
     public void ClearAllEvents()
     {
-        OnJumpRequested = null;
-        OnRunRequested = null;
-        OnMoveRequested = null;
-        OnAttackRequested = null;
-        OnSkillRequested = null;
+        OnJumpRequested.Clear();
+        OnRunRequested.Clear();
+        OnMoveRequested.Clear();
+        OnAttackRequested.Clear();
+        OnSkillRequested.Clear();
+        OnDodgeRequested.Clear();
+        OnCrouchRequested.Clear();
+        OnInteractRequested.Clear();
+        OnDamgeRequested.Clear();
+        OnDieRequested.Clear();
     }
 
     void OnDestroy()
@@ -118,4 +161,3 @@ public class EventManager : MonoBehaviour
         ClearAllEvents();
     }
 }
-
