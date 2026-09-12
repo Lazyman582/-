@@ -236,7 +236,7 @@ public class RunState : CharacterStateBase
 
         // 移动处理
         HandleHorizontalMovement();
-        if (character.IsGrounded && Mathf.Abs(userInput.HorizontalInput) > 0.01f)
+        if (!userInput.stop && character.IsGrounded && Mathf.Abs(userInput.HorizontalInput) > 0.01f)
         {
             _stepTimer -= TimeManager.GameplayDT;
             if (_stepTimer <= 0f)
@@ -691,7 +691,7 @@ public class DamageState : CharacterStateBase
 {
     private const float HurtDuration = 1.1f;
     private const float HurtInvincibilityTime = 0.3f;
-    private const float HurtForce = 2.5f;
+    private const float HurtForce =40f;
     
     public override CharacterStateEnum StateType => CharacterStateEnum.Damage;
     

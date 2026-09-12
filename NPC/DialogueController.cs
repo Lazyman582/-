@@ -33,6 +33,8 @@ public class DialogueController : Singleton<DialogueController>
         if (UserInput.Instance != null)
             UserInput.Instance.stop = true;
 
+        UIManager.IsUIBlockingInput = true;
+
         CurrentNodeIndex = 0;
         data = dialogueData;
         NpcName = data.NpcName;
@@ -91,6 +93,7 @@ public class DialogueController : Singleton<DialogueController>
         // 解锁玩家
         if (UserInput.Instance != null)
             UserInput.Instance.stop = false;
+            UIManager.IsUIBlockingInput = false;
 
         IsActive = false;
         data = null;

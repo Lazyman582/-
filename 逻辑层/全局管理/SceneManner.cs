@@ -201,26 +201,33 @@ public class SceneManner : MonoBehaviour
     /// </summary>
     public void SwitchScene(string newSceneAddress)
     {
+        // 先捕获旧场景名：LoadScene 是异步的，完成后 currentSceneName 会变成新场景，
+        // 延迟卸载时必须卸载的是捕获到的旧场景，否则会把刚加载的新场景误卸掉
+        string oldSceneAddress = currentSceneName;
+
+        if (oldSceneAddress == newSceneAddress)
+        {
+            Debug.LogWarning($"目标场景 {newSceneAddress} 与当前场景相同，跳过切换");
+            return;
+        }
+
         // 加载新场景
         LoadScene(newSceneAddress);
 
-        // 卸载旧场景（如果有）
-        if (!string.IsNullOrEmpty(currentSceneName) && loadedScenes.ContainsKey(currentSceneName))
+        // 卸载旧场景（延迟到新场景加载完成之后）
+        if (!string.IsNullOrEmpty(oldSceneAddress) && loadedScenes.ContainsKey(oldSceneAddress))
         {
-            // 延迟卸载，确保新场景加载完成后再卸载旧场景
-            Invoke(nameof(UnloadCurrentScene), 1f);
+            StartCoroutine(UnloadSceneAfterDelay(oldSceneAddress, 1f));
         }
     }
 
     /// <summary>
-    /// 卸载当前活动场景（内部调用）
+    /// 延迟卸载指定场景
     /// </summary>
-    private void UnloadCurrentScene()
+    private IEnumerator UnloadSceneAfterDelay(string sceneAddress, float delay)
     {
-        if (!string.IsNullOrEmpty(currentSceneName) && loadedScenes.ContainsKey(currentSceneName))
-        {
-            UnloadScene(currentSceneName);
-        }
+        yield return new WaitForSeconds(delay);
+        UnloadScene(sceneAddress);
     }
 
     #endregion

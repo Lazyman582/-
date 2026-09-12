@@ -192,6 +192,10 @@ public class AudioManager : MonoBehaviour
     /// <summary>从 Catalog 按分类 + ID 播放一次性 SFX</summary>
     public void PlaySFXById(AudioClipCatalog.Category category, string id)
     {
+        // 中央守卫：UI 打开（背包/对话等）时屏蔽玩家游戏音效，UI 音效不受影响
+        if (category == AudioClipCatalog.Category.PlayerSFX && UIManager.IsUIBlockingInput)
+            return;
+
         var entry = _catalog?.Find(category, id);
         if (entry == null) { Debug.LogWarning($"[AudioManager] Catalog 中找不到 [{category}] {id}"); return; }
         PlaySFX(entry.clip);
@@ -201,6 +205,8 @@ public class AudioManager : MonoBehaviour
     /// <summary>启动一个循环音效（如移动），用专用源播放，不影响 SFX 池</summary>
     public void PlayLoopSFX(AudioClip clip)
     {
+        // 中央守卫：UI 打开时不允许启动玩家循环音效
+        if (UIManager.IsUIBlockingInput) return;
         if (clip == null || _moveSource == null) return;
         if (_moveSource.isPlaying && _moveSource.clip == clip) return;
         _moveSource.clip = clip;

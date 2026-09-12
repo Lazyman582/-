@@ -82,6 +82,13 @@ public class SceneSaveTool : EditorWindow
     /// </summary>
     private static void RestoreFromPaths(string[] paths, int activeIndex, bool silent = false)
     {
+        // 播放模式下禁止恢复叠加（EditorSceneManager.OpenScene 不能在 Play 中调用）
+        if (EditorApplication.isPlaying || EditorApplication.isPlayingOrWillChangePlaymode)
+        {
+            if (!silent) EditorUtility.DisplayDialog("提示", "播放模式下无法恢复场景叠加，请先退出 Play 模式", "确定");
+            return;
+        }
+
         if (paths == null || paths.Length == 0)
         {
             if (!silent) EditorUtility.DisplayDialog("提示", "没有可恢复的场景叠加", "确定");

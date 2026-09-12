@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: SceneSetupConfig
   m_EditorClassIdentifier: 
   lastAutoSaveScenePaths:
-  - 
+  - Assets/Scenes/UI.unity
+  - "Assets/Scenes/\u5E38\u9A7B\u6570\u636E.unity"
+  - Assets/Scenes/Mannerger.unity
+  - "Assets/Scenes/\u5173\u5361\u4E8C.unity"
   lastAutoSaveActiveIndex: 0
   autoRestoreOnLoad: 1
   presets:
