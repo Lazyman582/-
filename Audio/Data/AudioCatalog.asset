@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2c77ae8aa431d44b56b641225ac4c3, type: 3}
+  m_Name: AudioCatalog
+  m_EditorClassIdentifier: 
+  _bgmClips:
+  - id: "\u6BBF\u5802"
+    clip: {fileID: 8300000, guid: c0474019adf35734b8e052c687940920, type: 3}
+    volume: 0.5
+    pitchVariation: 0
+  _playerSFX:
+  - id: move
+    clip: {fileID: 8300000, guid: 0e7e7d11e1649a942a8ea1b1fd7bddc7, type: 3}
+    volume: 0
+    pitchVariation: 0
+  - id: attack_swing
+    clip: {fileID: 8300000, guid: a1f456224a1925c42ad9382eb96ae3dd, type: 3}
+    volume: 0
+    pitchVariation: 0
+  - id: attack_finisher
+    clip: {fileID: 8300000, guid: 3741bb889c307ec46b6f27162ba579e3, type: 3}
+    volume: 0
+    pitchVariation: 0
+  - id: attack_hit
+    clip: {fileID: 8300000, guid: f8a381a8fefc46345903db6082309b67, type: 3}
+    volume: 0
+    pitchVariation: 0
+  _enemySFX: []
+  _uiSFX: []
+  _ambientSFX: []

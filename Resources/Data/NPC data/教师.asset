@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b660223b9f7a384a901247d5533b263, type: 3}
+  m_Name: "\u6559\u5E08"
+  m_EditorClassIdentifier: 
+  npcName: "\u52B3\u6B65\u4F3C\u5F97"
+  nodes:
+  - text: "\u554A\u554A\u3002\u3002\u3002"
+    branches: []
+    isEndNode: 0
+  - text: "\u7EC8\u4E8E\u662F\u77E3"
+    branches: []
+    isEndNode: 0
+  - text: "\u541B\u5DF2\u89C9\u4E4E\uFF1F"
+    branches: []
+    isEndNode: 0
+  - text: "\u5B50\u6C89\u5BD0\u5DF2\u5386\u6570\u767E\u79CB\u3002"
+    branches: []
+    isEndNode: 0
+  - text: "\u800C\u4ECA\uFF0C\u5947\u8FF9\u5C06\u5174\uFF0C\u706B\u4E4B\u964D\u7184"
+    branches: []
+    isEndNode: 0
+  - text: "\u5929\u4E0B\u5C06\u503E\uFF0C\u4E07\u7269\u5C06\u5C3D\u3002"
+    branches: []
+    isEndNode: 0
+  - text: "\u6C5D\u4E43\u62EF\u4E16\u4E4B\u4EBA\u3002"
+    branches: []
+    isEndNode: 0
+  - text: "\u613F\u6C5D\u80FD\u7834\u5947\u8FF9\u4E4B\u62A4\u8005\uFF0C\u590D\u71C3\u706B\u79CD\u3002"
+    branches: []
+    isEndNode: 0

@@ -1,0 +1,827 @@
+fileFormatVersion: 2
+guid: 8055e3cf0a22e77498f57ba97788ac1a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walkingtomb_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 491
+        width: 73
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 1.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a85e7a89be0de45a2641ee5824071d
+      internalID: -529700479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 419
+        width: 79
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a857662fd8912d46b3fd81f1b957386
+      internalID: 1583548464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 347
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83a24ca36d31a94496d7fe823ab4485
+      internalID: 917152122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b682912b2e65d0e478625a048fb74655
+      internalID: -489159378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf0e15c98bd3f349a6e8e554f124012
+      internalID: -538582186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 235
+        width: 83
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a63f1df288d35e47ac39ec7972b55c0
+      internalID: -1769360361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_6
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 65
+        width: 70
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b4f41321de3c148828c745806b2d09
+      internalID: 130873395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7011d2501911eb4abd62df455cdb274
+      internalID: 40527393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 174
+        width: 71
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8cf56ebcece624fbbdb770d4471edc
+      internalID: 500346258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 182
+        width: 72
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070c1ed7cb5d43148bdaf4a900b6381e
+      internalID: 1197521364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 137
+        width: 105
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3cce0514ae7314ab589957fd8ea5b7
+      internalID: -2115648148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 137
+        width: 92
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fd8e7d72e6fac48bb230a1dee0a280
+      internalID: -614161943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_17
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 161
+        width: 98
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 1.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff04c4ec08c1cf343baf9fe4524ae27c
+      internalID: 742442033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_20
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 152
+        width: 73
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 2.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e159854013162b4b91c525cef460722
+      internalID: 1418309595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_21
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 137
+        width: 98
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 1.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734c25ae2311ba54292c7c0d5a6690c8
+      internalID: 2055894254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_24
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 137
+        width: 75
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 2.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8d140bacefe4c41a000b3fee2964c7
+      internalID: -1630063463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 88
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bdffaf594fae24a829ce4e93d15218
+      internalID: -398365374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_27
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 65
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261c4551cad0ae0449db4c939558a092
+      internalID: -465800933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_28
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 65
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46863cb4754cb1d44aacb1093c5acc54
+      internalID: 487246372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_29
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 65
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce32ccc2f083e24d8d3e4efce273d59
+      internalID: 896626093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_30
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 65
+        width: 72
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9049d03f25e3f459d4f6db2bca94fb
+      internalID: -1303237832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_31
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 65
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5ae1de81b66024b957ae495a896392
+      internalID: 115610132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_34
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 67
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8940687fe68eae4395d0dee04961571
+      internalID: -1751543458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_35
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 87
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b37261d31b82bf4fac3a65a548f45e9
+      internalID: 561874516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_36
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 0
+        width: 94
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf0a32ca79ed194cabdacafcd2d34f4
+      internalID: 1261809561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_37
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 48
+        width: 75
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 2.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1ff9806388673419445643d374f499
+      internalID: -778822037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_38
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 45
+        width: 98
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 2.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac26a1d9e789904a9546d3999ccd351
+      internalID: 1165707734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_46
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 97
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3e79e88c24c3b40840a1466ecffe92
+      internalID: 1130228006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_49
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 93
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd835cf696dcc24ca297848590fbab3
+      internalID: -1922369610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walkingtomb_death_7
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 167
+        width: 73
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 2.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b2a20afb533b94f9bc43fc95a64e67
+      internalID: 442461796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      walkingtomb_death_0: -529700479
+      walkingtomb_death_1: 1583548464
+      walkingtomb_death_10: 372170257
+      walkingtomb_death_11: 40527393
+      walkingtomb_death_12: 500346258
+      walkingtomb_death_13: 1197521364
+      walkingtomb_death_14: -2115648148
+      walkingtomb_death_15: -614161943
+      walkingtomb_death_16: 546803809
+      walkingtomb_death_17: 742442033
+      walkingtomb_death_18: -133363892
+      walkingtomb_death_19: -1202972972
+      walkingtomb_death_2: 917152122
+      walkingtomb_death_20: 1418309595
+      walkingtomb_death_21: 2055894254
+      walkingtomb_death_22: -2125820105
+      walkingtomb_death_23: 1208417152
+      walkingtomb_death_24: -1630063463
+      walkingtomb_death_25: 1486020329
+      walkingtomb_death_26: -398365374
+      walkingtomb_death_27: -465800933
+      walkingtomb_death_28: 487246372
+      walkingtomb_death_29: 896626093
+      walkingtomb_death_3: -489159378
+      walkingtomb_death_30: -1303237832
+      walkingtomb_death_31: 115610132
+      walkingtomb_death_32: -1105525372
+      walkingtomb_death_33: 1345105726
+      walkingtomb_death_34: -1751543458
+      walkingtomb_death_35: 561874516
+      walkingtomb_death_36: 1261809561
+      walkingtomb_death_37: -778822037
+      walkingtomb_death_38: 1165707734
+      walkingtomb_death_39: 702169058
+      walkingtomb_death_4: -538582186
+      walkingtomb_death_40: -2030913278
+      walkingtomb_death_41: -1770411458
+      walkingtomb_death_42: 752946884
+      walkingtomb_death_43: 992533144
+      walkingtomb_death_44: 40450594
+      walkingtomb_death_45: 919026119
+      walkingtomb_death_46: 1130228006
+      walkingtomb_death_47: 213780971
+      walkingtomb_death_48: -2024307113
+      walkingtomb_death_49: -1922369610
+      walkingtomb_death_5: -1769360361
+      walkingtomb_death_50: -1929135384
+      walkingtomb_death_51: 1377296207
+      walkingtomb_death_52: 1295730568
+      walkingtomb_death_53: 651763527
+      walkingtomb_death_54: 1138675762
+      walkingtomb_death_55: -1921794924
+      walkingtomb_death_56: 1023860920
+      walkingtomb_death_6: 130873395
+      walkingtomb_death_7: 442461796
+      walkingtomb_death_8: -1999104890
+      walkingtomb_death_9: -1605117132
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

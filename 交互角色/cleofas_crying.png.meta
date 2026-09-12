@@ -1,0 +1,1900 @@
+fileFormatVersion: 2
+guid: 5181f0b4246f0e142ac0f4ba317d1f96
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cleofas_crying_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 774
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43954572ee3e0c94f94b1a920f5129a0
+      internalID: 751948233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 774
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5555fed9fc82f2429eb585bae86b726
+      internalID: -697142336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 774
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c04eb3827292694abf1b1018f935d08
+      internalID: -753740536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 774
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57395b2b18527da4eb8096c717a47721
+      internalID: -1080261817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 774
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0864c7ed34367b44a2d9da59718926a
+      internalID: -531395165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 774
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468eaf50e7b433c41b420dd1836bfa11
+      internalID: 550803727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 774
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb916129a2b3d924683c8513c391e044
+      internalID: -511604242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 774
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b760454f3e8945b44b0914bfb9b0580d
+      internalID: -504646493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 774
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6040266b25aa504398e1f5ffcd68fdf
+      internalID: 961786529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 774
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c4dc75afe827b45af90db84d81720c
+      internalID: 1209953319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_10
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 774
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ab5a7dad8d57c44af57b4f2c820f85
+      internalID: 1666827390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_11
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 774
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ced0b1802c183146b3a204a2e43947b
+      internalID: 590126140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_12
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 774
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b895bd2e74d63408b4da4ac92e335f
+      internalID: -1367805393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 646
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21e392aa2182994cb64a5979c2c8169
+      internalID: 1285357043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_14
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 646
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fb97e51d930e745a46165cfd281312
+      internalID: -2137427078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_15
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 646
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0582c9d3a1335e4cb5cf936341eea9b
+      internalID: 1465199242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_16
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 646
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a893de3276fd24892dc0ddccf18f9d
+      internalID: 894118849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_17
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 646
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee9c774dae815d4699bc8a066034a85
+      internalID: 1010322609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_18
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 646
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b28056a10316af42a760782b01f8961
+      internalID: 1106494316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_19
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 646
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2521a3119cc1e80429585ff8959d5a2d
+      internalID: -1253051832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_20
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 646
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bbb405870681a4b9bdc3c14b2799d8
+      internalID: 58194808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_21
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 646
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8490e3fdb750d6408349069f766dbb8
+      internalID: -1999253045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_22
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 646
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac86ebab69f168840bcee7e39b385f66
+      internalID: -988778915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_23
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 646
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc0944bc154eab4db5e95a4fa8a5257
+      internalID: 1120518069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_24
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 646
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c379fac82c563409f6cb7bd19f9d3a
+      internalID: -1770250378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_25
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 646
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461b86826d89ee84b85c153b14908bb4
+      internalID: -1417651236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_26
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 518
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25a20354e0517648af869426a690c97
+      internalID: -1821612853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_27
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 518
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74febe5a301c1ab4eadd3b3f26eac326
+      internalID: 373858044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_28
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 518
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfeed5bd00ed0d49900744b586709a2
+      internalID: -754515791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_29
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 518
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a93b4caceb5e140a32a7954a2a8556
+      internalID: 895688989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_30
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 518
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f29e1a6fc5ebbd44ad9df349ce5ea50
+      internalID: 241472332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 518
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83a40a013f377c459111662e132a333
+      internalID: -1084006222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_32
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 518
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8384bb4d389acb4f8db0072475d0b19
+      internalID: 445615182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_33
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 518
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88e3be9601f56341bc40d783a479e09
+      internalID: -546251821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_34
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 518
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d980f45c36f77774d9b5697835ebcf50
+      internalID: -698056112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_35
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 518
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f7d6f979fdf574d84c8afc49cba3e9
+      internalID: -552965058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_36
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 518
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85126267c50d8247b0fdabe906c4a2d
+      internalID: -2004798281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_37
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 518
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c1a33df3dbd9f4bbf3f2738c0e421b
+      internalID: 1076718420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_38
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 518
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f4a68e4c527b9489b4fbb9eee402c9
+      internalID: -1051255305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_39
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 390
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1978bd7fa339a74cb8e90082de9b859
+      internalID: -1742252985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_40
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 390
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963c13f55c9127646a53658ce0298dcb
+      internalID: 1676148208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_41
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 390
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e12393e9acecf4ea6cc4bc14f659e1
+      internalID: 404505613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_42
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 390
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e84a6807680dcf448f721d6047ec019
+      internalID: -774833674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_43
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 390
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5cb66954eea5744ade503146d667d1
+      internalID: 1032171492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_44
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 390
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272686ec9cc4848479aa291a2c9851dc
+      internalID: 631114674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_45
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 390
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea97e939cee765479eed74e626f98f5
+      internalID: -1500776376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_46
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 390
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d46e3a18e55574fb4f39fc490bd3e0
+      internalID: -748357614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_47
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 390
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0c4c5ee8c26384cb21442295e26cd2
+      internalID: -1676725740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_48
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 390
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de984721461bb540b82ca0a5e97c608
+      internalID: 2049291013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_49
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 390
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdd84ce5c06d524398e7784876e28a9
+      internalID: 1908591529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_50
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 390
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565684ddc4c67c4459b565b2c7de4091
+      internalID: 168753936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_51
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 390
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ca9e2701d6c3946af7e03ecf8c55a7
+      internalID: -1354039935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_52
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 262
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a04a8d568e7704187bd814d675d810
+      internalID: 926177070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_53
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 262
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72449108c7b17e4eaa590925940e0f7
+      internalID: 1775895284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_54
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 262
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ad302f818869b4d9ba9900b74fb67e
+      internalID: 467489196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_55
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 262
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2372a092d9a524e4c9dbd59eb7db7896
+      internalID: -1868138448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_56
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 262
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671be836b3b69644d98b60f3e667de10
+      internalID: -804192766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_57
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 262
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45394bff35fdb24c82aff0ce51bd7d5
+      internalID: -1469005486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_58
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 262
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947c4210b0b69e84c80f43174e43d0a0
+      internalID: 1394360902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_59
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 262
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab09a142b27e17409ed386e98fd48a9
+      internalID: -786795831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_60
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 262
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b155c5c891d0e2c47b4923ac890acc6e
+      internalID: 544694397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_61
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 262
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a317232ec4ec44c9987d2c86386085
+      internalID: -1302083198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_62
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 262
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28491d2aa0c942a4f8a1e08cde886acb
+      internalID: 1027968830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_63
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 262
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de149a2e732ed941a4f5a2ab4347e7e
+      internalID: -2013904536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_64
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 262
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7ac30bd1bb07c4184dc3ade4c2fe75
+      internalID: -1210009089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_65
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 134
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57efb69c9459a174db74f7a1dadae8aa
+      internalID: -228571636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_66
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 134
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cf9c221eee9cc429cfccd310e04b72
+      internalID: -551297583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_67
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 134
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85a88eaf3d50b044831fd81533e8240
+      internalID: 625538568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_68
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 134
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d54165fda340142906f34b839a9f83
+      internalID: 789609800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_69
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 134
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd5970dc566e1c48ada26b0cb2f4d25
+      internalID: 1793097631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_70
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 134
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead24037ace4a3f419575faf2029ea15
+      internalID: 748598363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_71
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 134
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc2cfc3fcf9a8041993088b0dbe5abe
+      internalID: 1992293115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_72
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 134
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dda259403323084c8061dff314c21ec
+      internalID: -1267649465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_73
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 134
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca18450490e7884ca0ba668cdc8fe24
+      internalID: -1871542971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_74
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 134
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8863c5ede44c724b9c5fa683dfd4742
+      internalID: -1020748176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_75
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 134
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbe9c4987589c14facdc44574952519
+      internalID: -945129833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_76
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 134
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88ca80cf74306f46b01c7429e9271e7
+      internalID: -1063607858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_77
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 134
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8718feaf9e10e4cb27d4a2b67be683
+      internalID: -326252401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_78
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 6
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8933386f3b31940ae0870d0ef864f5
+      internalID: -1336772217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cleofas_crying_79
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 6
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd38b6197026b14997156a8db7e4fdb
+      internalID: 1880643398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cleofas_crying_0: 751948233
+      cleofas_crying_1: -697142336
+      cleofas_crying_10: 1666827390
+      cleofas_crying_11: 590126140
+      cleofas_crying_12: -1367805393
+      cleofas_crying_13: 1285357043
+      cleofas_crying_14: -2137427078
+      cleofas_crying_15: 1465199242
+      cleofas_crying_16: 894118849
+      cleofas_crying_17: 1010322609
+      cleofas_crying_18: 1106494316
+      cleofas_crying_19: -1253051832
+      cleofas_crying_2: -753740536
+      cleofas_crying_20: 58194808
+      cleofas_crying_21: -1999253045
+      cleofas_crying_22: -988778915
+      cleofas_crying_23: 1120518069
+      cleofas_crying_24: -1770250378
+      cleofas_crying_25: -1417651236
+      cleofas_crying_26: -1821612853
+      cleofas_crying_27: 373858044
+      cleofas_crying_28: -754515791
+      cleofas_crying_29: 895688989
+      cleofas_crying_3: -1080261817
+      cleofas_crying_30: 241472332
+      cleofas_crying_31: -1084006222
+      cleofas_crying_32: 445615182
+      cleofas_crying_33: -546251821
+      cleofas_crying_34: -698056112
+      cleofas_crying_35: -552965058
+      cleofas_crying_36: -2004798281
+      cleofas_crying_37: 1076718420
+      cleofas_crying_38: -1051255305
+      cleofas_crying_39: -1742252985
+      cleofas_crying_4: -531395165
+      cleofas_crying_40: 1676148208
+      cleofas_crying_41: 404505613
+      cleofas_crying_42: -774833674
+      cleofas_crying_43: 1032171492
+      cleofas_crying_44: 631114674
+      cleofas_crying_45: -1500776376
+      cleofas_crying_46: -748357614
+      cleofas_crying_47: -1676725740
+      cleofas_crying_48: 2049291013
+      cleofas_crying_49: 1908591529
+      cleofas_crying_5: 550803727
+      cleofas_crying_50: 168753936
+      cleofas_crying_51: -1354039935
+      cleofas_crying_52: 926177070
+      cleofas_crying_53: 1775895284
+      cleofas_crying_54: 467489196
+      cleofas_crying_55: -1868138448
+      cleofas_crying_56: -804192766
+      cleofas_crying_57: -1469005486
+      cleofas_crying_58: 1394360902
+      cleofas_crying_59: -786795831
+      cleofas_crying_6: -511604242
+      cleofas_crying_60: 544694397
+      cleofas_crying_61: -1302083198
+      cleofas_crying_62: 1027968830
+      cleofas_crying_63: -2013904536
+      cleofas_crying_64: -1210009089
+      cleofas_crying_65: -228571636
+      cleofas_crying_66: -551297583
+      cleofas_crying_67: 625538568
+      cleofas_crying_68: 789609800
+      cleofas_crying_69: 1793097631
+      cleofas_crying_7: -504646493
+      cleofas_crying_70: 748598363
+      cleofas_crying_71: 1992293115
+      cleofas_crying_72: -1267649465
+      cleofas_crying_73: -1871542971
+      cleofas_crying_74: -1020748176
+      cleofas_crying_75: -945129833
+      cleofas_crying_76: -1063607858
+      cleofas_crying_77: -326252401
+      cleofas_crying_78: -1336772217
+      cleofas_crying_79: 1880643398
+      cleofas_crying_8: 961786529
+      cleofas_crying_9: 1209953319
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

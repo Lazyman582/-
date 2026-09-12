@@ -14,6 +14,6 @@ public class #类名# : MonoBehaviour
 	}
 	#成员#
 }
-";
+";///用来生成UI统一模板
 }
 
