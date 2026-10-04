@@ -94,6 +94,11 @@ public class EnemyHealth : MonoBehaviour
     {
         IsDead = false;
         currentHealth = MaxHealth;
+
+        if (aiController != null)
+        {
+            aiController.Revive();
+        }
     }
 
     public void FlashHurt()
@@ -117,7 +122,16 @@ public class EnemyHealth : MonoBehaviour
 
         if (aiController != null)
         {
-            aiController.enabled = false;
+            // 写黑板让行为树自己走死亡分支（DeathTask 接管动画与行为），
+            // 不再从树外禁用 AI 组件
+            aiController.MarkDead();
+        }
+        else if (animalContrller != null)
+        {
+            // 行为树不存在时的兜底：直接驱动动画
+            animalContrller.SetDeath(true);
+            animalContrller.SetMove(false);
+            animalContrller.SetAttack(false);
         }
 
         if (targetRigidbody != null)
@@ -137,16 +151,6 @@ public class EnemyHealth : MonoBehaviour
                 }
             }
         }
-
-        if (animalContrller!=null) {
-
-            animalContrller.SetDeath(true);
-            animalContrller.SetMove(false);
-            animalContrller.SetAttack(false);
-        }
-
-
-        
     }
 
     public void HandleDeathAnimationEvent()

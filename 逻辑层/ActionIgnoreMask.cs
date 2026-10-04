@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 
-public enum ActionIgnoreTag { Move, Attack, Dodge, Jump, Interact,crouch,die,Damage,fall, All = 1022 }
+public enum ActionIgnoreTag { Move, Attack, Dodge, Jump, Interact,crouch,die,Damage,fall, All = ~0 }
 
 public struct ActionIgnoreMask
 {

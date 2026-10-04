@@ -40,10 +40,23 @@ public class Emery : BehaviorTrees
 
         Root = new Selector(new List<Node>
         {
+            new DeathTask(),
             attacktask,
             chaseSequence,
             partoltask
         });
+    }
+
+    /// <summary>死亡时由 EnemyHealth 调用：写黑板，让行为树自己走死亡分支</summary>
+    public void MarkDead()
+    {
+        Blackboard.Add("isDead", true);
+    }
+
+    /// <summary>复活时由 EnemyHealth 调用：清除死亡标记，行为树恢复正常</summary>
+    public void Revive()
+    {
+        Blackboard.Remove("isDead");
     }
 
     private void OnDrawGizmosSelected()

@@ -13,7 +13,6 @@ public enum CharacterStateEnum
     Jump,
     Fall,
     Attack,
-    Skill,
     RunJump,
     Dodge,
     Crouch,
@@ -26,7 +25,11 @@ public interface ICharacterState
 {
     CharacterStateEnum StateType { get; }
     void OnEnter();
-    void OnUpdate();
+    /// <summary>
+    /// 状态自报：返回想要切换到的目标状态（null = 留在本状态）。
+    /// 切换裁决（动作屏蔽、优先级）统一由 StateController 执行。
+    /// </summary>
+    CharacterStateEnum? OnUpdate();
     void OnFixedUpdate();  // 新增：分离物理更新
     void OnExit();
 }
@@ -49,7 +52,7 @@ public abstract class CharacterStateBase : ICharacterState
     }
 
     public virtual void OnEnter() { }
-    public virtual void OnUpdate() { }
+    public virtual CharacterStateEnum? OnUpdate() { return null; }
     public virtual void OnFixedUpdate() { }
     public virtual void OnExit() { }
 
@@ -113,18 +116,18 @@ public class JumpState : CharacterStateBase
         AudioManager.Instance?.PlayJumpSFX();
     }
 
-    public override void OnUpdate()
+    public override CharacterStateEnum? OnUpdate()
     {
         // 检查是否到达最高点
         if (character.Rigidbody.velocity.y <= 0 && !_hasReachedApex)
         {
             _hasReachedApex = true;
-            stateController.ChangeState(CharacterStateEnum.Fall);
-            return;
+            return CharacterStateEnum.Fall;
         }
 
         // 空中水平控制（减弱）
         HandleHorizontalMovement(0.8f);
+        return null;
     }
 
     public override void OnExit()
@@ -148,7 +151,7 @@ public class FallState : CharacterStateBase
         character.Animator.Play("Fall");
     }
 
-    public override void OnUpdate()
+    public override CharacterStateEnum? OnUpdate()
     {
         // 空中水平控制
         HandleHorizontalMovement(0.7f);
@@ -160,12 +163,10 @@ public class FallState : CharacterStateBase
             character.Animator.SetBool("Is Falling", false);
             AudioManager.Instance?.PlayLandSFX();
 
-            // 根据是否有输入决定切换到Run还是Idle
-            stateController.ChangeState(
-                Mathf.Abs(userInput.HorizontalInput) > 0.01f ?
-                CharacterStateEnum.Run : CharacterStateEnum.Idle
-            );
+            // 根据是否有输入决定回到Run还是Idle
+            return stateController.GetRunOrIdle();
         }
+        return null;
     }
 
     public override void OnExit()
@@ -182,27 +183,27 @@ public class IdleState : CharacterStateBase
 
     public override void OnEnter()
     {
-       
+
         character.Animator.SetBool("Is Idle", true);
         character.Animator.SetBool("Is Running", false);
         character.Animator.SetBool("Is Jumping", false);
         character.Animator.SetBool("Is Falling", false);
-        
+
     }
 
-    public override void OnUpdate()
+    public override CharacterStateEnum? OnUpdate()
     {
         // 检查是否应该离开Idle状态
         if (!character.IsGrounded)
         {
-            stateController.ChangeState(CharacterStateEnum.Fall);
-            return;
+            return CharacterStateEnum.Fall;
         }
 
         if (!userInput.stop && Mathf.Abs(userInput.HorizontalInput) > 0.01f)
         {
-            stateController.ChangeState(CharacterStateEnum.Run);
+            return CharacterStateEnum.Run;
         }
+        return null;
     }
 }
 public class RunState : CharacterStateBase
@@ -220,19 +221,12 @@ public class RunState : CharacterStateBase
         character.Animator.Play("startrun");
     }
 
-    public override void OnUpdate()
+    public override CharacterStateEnum? OnUpdate()
     {
-        
-        //if (userInput.IsJumpPressed && !character.IsActionIgnored(ActionIgnoreTag.Jump))
-        //{
-        //    stateController.ChangeState(CharacterStateEnum.RunJump);
-        //    return;
-        //}
-        //if (!character.IsGrounded && !character.IsActionIgnored(ActionIgnoreTag.Move))
-        //{
-        //    stateController.ChangeState(CharacterStateEnum.Fall);
-        //    return;
-        //}
+        if (!character.IsGrounded)
+        {
+            return CharacterStateEnum.Fall;
+        }
 
         // 移动处理
         HandleHorizontalMovement();
@@ -251,26 +245,20 @@ public class RunState : CharacterStateBase
             AudioManager.Instance?.StopMoveSFX();
         }
         // 停止检查
-        if (Mathf.Abs(userInput.HorizontalInput) <= 0.01f && !character.IsActionIgnored(ActionIgnoreTag.Move))
+        if (Mathf.Abs(userInput.HorizontalInput) <= 0.01f)
         {
             AudioManager.Instance?.StopMoveSFX();
             character.Animator.SetBool("Is Running", false);
             character.Animator.Play("stoprun");
-            stateController.ChangeState(CharacterStateEnum.Idle);
-          
+            return CharacterStateEnum.Idle;
         }
-        
+
+        return null;
     }
 
     public override void OnExit()
     {
         AudioManager.Instance?.StopMoveSFX();
-
-        if (character.IsGrounded)
-        {
-
-        }
-
     }
 }
 public class RunJumpState : CharacterStateBase
@@ -287,12 +275,16 @@ public class RunJumpState : CharacterStateBase
     {
         _hasReachedApex = false;
         character.Animator.SetBool("Is Run Jumping", true);
+        character.Animator.SetBool("Is Jumping", true);  // 与 JumpState 一致，避免动画机回退到 Fall
         character.Animator.Play("RunJump");
         AudioManager.Instance?.PlayJumpSFX();
-        // 关键：进入RunJump时屏蔽状态切换
-        // 屏蔽所有可能干扰的状态（0.2秒内不允许切换到其他状态）
-        character.AddActionIgnore(1f, ActionIgnoreTag.Jump,ActionIgnoreTag.Damage,ActionIgnoreTag.Attack,ActionIgnoreTag.crouch,ActionIgnoreTag.Move  // 防止攻击打断
-                                                             // 可以根据需要添加更多
+        // 关键：进入RunJump时短暂屏蔽外部请求（0.2秒），防止跳跃瞬间被打断。
+        // 注意：不再屏蔽 Damage——受伤应该能正常打断任何状态（无敌帧由 DamageState 自己提供）
+        character.AddActionIgnore(0.2f,
+            ActionIgnoreTag.Jump,
+            ActionIgnoreTag.Attack,
+            ActionIgnoreTag.crouch,
+            ActionIgnoreTag.Move
         );
         // 根据输入方向施加跳跃力
         float horizontalVelocity = userInput.HorizontalInput * character.moveSpeed;
@@ -300,12 +292,10 @@ public class RunJumpState : CharacterStateBase
 
         UpdateFacingDirection();
 
-
-
-        Debug.Log("[RunJump] 进入状态，添加动作屏蔽0.2秒");
+        Debug.Log("[RunJump] 进入状态，添加动作屏蔽");
     }
 
-    public override void OnUpdate()
+    public override CharacterStateEnum? OnUpdate()
     {
         // 空中水平加速
         if (Mathf.Abs(userInput.HorizontalInput) > 0.01f)
@@ -322,17 +312,17 @@ public class RunJumpState : CharacterStateBase
             _hasReachedApex = true;
         }
 
-        // 落地检测 - 检查是否被屏蔽
-        if (character.IsGrounded && !character.IsActionIgnored(ActionIgnoreTag.Move))
+        // 落地检测：过了最高点（开始下落）后才允许落地。
+        // 起跳头几帧地面 raycast 还没脱离判定范围（半径+0.15 余量），
+        // 直接判 IsGrounded 会把跳跃立刻打断（表现为只播 Fall 动画）
+        if (_hasReachedApex && character.IsGrounded)
         {
-            Debug.Log("[RunJump] 落地，屏蔽已解除");
+            Debug.Log("[RunJump] 落地");
             AudioManager.Instance?.PlayLandSFX();
 
-            CharacterStateEnum nextState = Mathf.Abs(userInput.HorizontalInput) > 0.01f ?
-                CharacterStateEnum.Run : CharacterStateEnum.Idle;
-
-            stateController.ChangeState(nextState);
+            return stateController.GetRunOrIdle();
         }
+        return null;
     }
 
     public override void OnExit()
@@ -348,7 +338,7 @@ public class RunJumpState : CharacterStateBase
         }
     }
 
-   
+
 }
 public class DodgeState : CharacterStateBase
 {
@@ -375,9 +365,9 @@ public class DodgeState : CharacterStateBase
         // 1. 重置标记
         _isDodgeFinished = false;
 
-        // 2.设置碰撞体
-        CharacterMovement.Instance.Idle_collider.GetComponent<Collider2D>().enabled = false;
-        CharacterMovement.Instance.Dodge_collider.GetComponent<Collider2D>().enabled = true;
+        // 2.设置碰撞体（用注入的 character，而不是全局单例，避免多实例/场景重建时操作错对象）
+        character.Idle_collider.GetComponent<Collider2D>().enabled = false;
+        character.Dodge_collider.GetComponent<Collider2D>().enabled = true;
 
         // 3. 设置动作屏蔽（0.4秒内不允许切换到攻击或移动）
         character.AddActionIgnore(0.5f,
@@ -400,7 +390,7 @@ public class DodgeState : CharacterStateBase
         if (dodgeDirection > 0) character.transform.localScale = new Vector3(3, 3, 3);
         else if (dodgeDirection < 0) character.transform.localScale = new Vector3(-3, 3, 3);
 
-        // 7. 设置结束计时器（0.35秒后自动结束）
+        // 7. 设置结束计时器
         character.StartCoroutine(EndDodgeAfterDelay(DODGE_DURATION - 0.18f));
 
 
@@ -415,37 +405,21 @@ public class DodgeState : CharacterStateBase
     }
 
     // ---------- 9. 更新逻辑 ----------
-    public override void OnUpdate()
+    // 闪避中的跳跃已收归 HandleJumpRequest（事件统一入口），这里只负责自然结束
+    public override CharacterStateEnum? OnUpdate()
     {
-        if (userInput.IsJumpPressed && character.IsGrounded && !character.IsActionIgnored(ActionIgnoreTag.Jump))
+        // 结束检测：如果闪避时间到了
+        if (_isDodgeFinished)
         {
-            // 跳跃逻辑：立即切换到 Jump 状态
-            stateController.ChangeState(CharacterStateEnum.RunJump);
-            return; // 跳跃后退出当前的 Update，防止后面的逻辑干扰
-        }
-        // 1. 结束检测：如果闪避时间到了
-        if (_isDodgeFinished && !character.IsActionIgnored(ActionIgnoreTag.Dodge))
-        {
-            // 2. 根据当前输入决定落地后的状态
-            CharacterStateEnum nextState;
-            if (!character.IsGrounded)
-            {
-                // 空中结束：回到跳跃状态
-                nextState = CharacterStateEnum.Fall;
-            }
-            else
-            {
-                // 地面结束：根据是否有水平输入决定是跑动还是待机
-                nextState = Mathf.Abs(userInput.HorizontalInput) > 0.01f
-                    ? CharacterStateEnum.Run
-                    : CharacterStateEnum.Idle;
-            }
-
-            stateController.ChangeState(nextState);
+            // 根据是否在地面决定回 Fall 还是 Run/Idle
+            return !character.IsGrounded
+                ? CharacterStateEnum.Fall
+                : stateController.GetRunOrIdle();
         }
 
-        // 2. 防止在闪避期间被外部代码误改方向（可选）
+        // 防止在闪避期间被外部代码误改方向（可选）
         // character.Rigidbody.velocity = new Vector2(Mathf.Sign(character.transform.localScale.x) * character.moveSpeed * DODGE_SPEED_MULTIPLIER, character.Rigidbody.velocity.y);
+        return null;
     }
 
     // ---------- 10. 退出状态 ----------
@@ -454,8 +428,8 @@ public class DodgeState : CharacterStateBase
         // 1. 重置动画参数
         character.Animator.ResetTrigger("Is Dodge");
 
-        CharacterMovement.Instance.Idle_collider.GetComponent<Collider2D>().enabled = true;
-        CharacterMovement.Instance.Dodge_collider.GetComponent<Collider2D>().enabled = false;
+        character.Idle_collider.GetComponent<Collider2D>().enabled = true;
+        character.Dodge_collider.GetComponent<Collider2D>().enabled = false;
         // 2. 确保水平速度恢复正常（防止残留冲量）
         if (character.IsGrounded)
         {
@@ -474,9 +448,13 @@ public class AttackState : CharacterStateBase
     private const float comboWindow = 0.2f;
 
     private int currentCombo = 0;
-    private float attackStartTime = 0f;
-    private bool hasExitedComboWindow = false;  // 是否已退出连击窗口
+    private float segmentTimer;     // 当前攻击段剩余时间
+    private float hitTimer;         // 距离出伤点的时间
+    private float windowTimer;      // 连击窗口剩余时间
+    private bool hasExitedComboWindow = false;
     private bool hasAppliedDamage;
+    private bool attackBuffered;    // 攻击期间缓冲的按击（解决"提前按被吞"）
+    private bool attackHeldLast;    // 上一帧是否按住攻击键（缓冲只认上升沿）
     private readonly PlayerAttackDealer attackDealer;
 
     public override CharacterStateEnum StateType => CharacterStateEnum.Attack;
@@ -491,9 +469,14 @@ public class AttackState : CharacterStateBase
     {
         // 直接从第1段开始
         currentCombo = 1;
-        attackStartTime = Time.time;
         hasExitedComboWindow = false;
         hasAppliedDamage = false;
+        attackBuffered = false;
+        // 把"进入攻击的那一下按键"视为已消费，避免一次按键自动打出两段连击
+        attackHeldLast = true;
+        segmentTimer = attackDuration;
+        hitTimer = GetHitTime(currentCombo);
+        windowTimer = comboWindow;   // 必须初始化：否则攻击段一结束窗口就过期，连击永远打不出
 
         // 锁定动作
         character.AddActionIgnore(attackDuration,
@@ -510,83 +493,78 @@ public class AttackState : CharacterStateBase
         Debug.Log($"[Attack] 第 {currentCombo} 段攻击开始");
     }
 
-    public override void OnUpdate()
+    public override CharacterStateEnum? OnUpdate()
     {
-        if (!hasAppliedDamage && Time.time - attackStartTime >= GetHitTime(currentCombo))
+        float dt = TimeManager.GameplayDT;
+
+        // 只缓冲"新"的按击（上升沿），避免"提前按被吞"；
+        // 进入攻击的那一下按键视为已消费，否则一次按键会在攻击段结束后自动触发下一段
+        if (userInput.AttackPressed && !attackHeldLast)
+            attackBuffered = true;
+        attackHeldLast = userInput.AttackPressed;
+
+        if (!hasAppliedDamage)
         {
-            attackDealer?.DealDamage(currentCombo);
-            hasAppliedDamage = true;
-        }
-
-        // 当前攻击段是否结束？
-        if (Time.time - attackStartTime >= attackDuration)
-        {
-            // 已经退出连击窗口？
-            if (hasExitedComboWindow) return;
-
-            float timeSinceAttackEnd = Time.time - (attackStartTime + attackDuration);
-
-            // 如果在连击窗口内
-            if (timeSinceAttackEnd <= comboWindow)
+            hitTimer -= dt;
+            if (hitTimer <= 0f)
             {
-               
-                if (currentCombo < maxCombo && userInput.AttackPressed)
-                {
-                    // 触发下一段连击
-                    currentCombo++;
-                    attackStartTime = Time.time;
-                    hasAppliedDamage = false;
-
-                    // 重新锁定动作
-                    character.AddActionIgnore(attackDuration,
-                        ActionIgnoreTag.Move,
-                        ActionIgnoreTag.Jump,
-                        ActionIgnoreTag.Attack);
-
-                    // 播放下一段动画
-                    character.Animator.SetInteger("BasicAttackIndex", currentCombo);
-                    character.Animator.Play($"attack{currentCombo}");
-                    if (currentCombo == maxCombo)
-                    {
-                        AudioManager.Instance?.PlayAttackFinisher();  // 最大连击终结音效
-                    }
-                    else
-                    {
-                        AudioManager.Instance?.PlayAttackSwing();
-                    }
-
-                    Debug.Log($"[Attack] 连击! 第 {currentCombo} 段");
-                }
-               
-            }
-            else if (!hasExitedComboWindow)
-            {
-                // 超过窗口期，退出攻击
-                hasExitedComboWindow = true;
-                ExitAttack();
+                attackDealer?.DealDamage(currentCombo);
+                hasAppliedDamage = true;
             }
         }
-    }
 
-    private void ExitAttack()
-    {
-        // 关闭攻击动画
-        character.Animator.SetBool("Is Attacking", false);
-
-        // 根据地面状态切换
-        if (character.IsGrounded)
+        segmentTimer -= dt;
+        if (segmentTimer > 0f)
         {
-            if (Mathf.Abs(userInput.HorizontalInput) > 0.01f)
-                stateController.ChangeState(CharacterStateEnum.Run);
+            return null;
+        }
+
+        // 当前攻击段已结束，进入连击窗口
+        if (hasExitedComboWindow) return null;
+
+        windowTimer -= dt;
+
+        if (currentCombo < maxCombo && attackBuffered)
+        {
+            // 触发下一段连击
+            attackBuffered = false;
+            currentCombo++;
+            segmentTimer = attackDuration;
+            hitTimer = GetHitTime(currentCombo);
+            hasAppliedDamage = false;
+            windowTimer = comboWindow;
+
+            // 重新锁定动作
+            character.AddActionIgnore(attackDuration,
+                ActionIgnoreTag.Move,
+                ActionIgnoreTag.Jump,
+                ActionIgnoreTag.Attack);
+
+            // 播放下一段动画
+            character.Animator.SetInteger("BasicAttackIndex", currentCombo);
+            character.Animator.Play($"attack{currentCombo}");
+            if (currentCombo == maxCombo)
+            {
+                AudioManager.Instance?.PlayAttackFinisher();  // 最大连击终结音效
+            }
             else
-                stateController.ChangeState(CharacterStateEnum.Idle);
-        }
-        else
-        {
-            stateController.ChangeState(CharacterStateEnum.Fall);
+            {
+                AudioManager.Instance?.PlayAttackSwing();
+            }
+
+            Debug.Log($"[Attack] 连击! 第 {currentCombo} 段");
+            return null;
         }
 
-        Debug.Log("[Attack] 攻击结束");
+        if (windowTimer <= 0f)
+        {
+            // 窗口期结束，自报退出攻击（动画参数由 OnExit 统一清理）
+            hasExitedComboWindow = true;
+            Debug.Log("[Attack] 攻击结束");
+            return character.IsGrounded ? stateController.GetRunOrIdle() : CharacterStateEnum.Fall;
+        }
+
+        return null;
     }
 
     private float GetHitTime(int comboIndex)
@@ -606,7 +584,6 @@ public class AttackState : CharacterStateBase
 
     public override void OnExit()
     {
-        Debug.Log("1111");
         character.Animator.SetBool("Is Attacking", false);
         character.Animator.SetInteger("BasicAttackIndex", 0);
         hasAppliedDamage = false;
@@ -625,7 +602,7 @@ public class CrouchState : CharacterStateBase
     // 进入状态时调用
     public override void OnEnter()
     {
-   
+
         character.Animator.Play("Crouch");
         AudioManager.Instance?.PlayCrouchSFX();
         character.Animator.SetBool("Is Crouching", true);
@@ -645,7 +622,7 @@ public class CrouchState : CharacterStateBase
     }
 
     // 每帧更新调用
-    public override void OnUpdate()
+    public override CharacterStateEnum? OnUpdate()
     {
         if (userInput.IsCrouchPressed) {
             character.AddActionIgnore(0.1f, ActionIgnoreTag.Move,
@@ -654,49 +631,41 @@ public class CrouchState : CharacterStateBase
         }
         if (!userInput.IsCrouchPressed)
         {
-            
-            
-            CharacterStateEnum nextState = character.IsGrounded ?
-                (Mathf.Abs(userInput.HorizontalInput) > 0.01f ? CharacterStateEnum.Run : CharacterStateEnum.Idle) :
-                CharacterStateEnum.Fall;
-
-            stateController.ChangeState(nextState);
-            return;
+            return character.IsGrounded
+                ? stateController.GetRunOrIdle()
+                : CharacterStateEnum.Fall;
         }
 
-        
-
+        return null;
     }
 
     // 退出状态时调用
     public override void OnExit()
     {
-        Debug.Log("222");
         // 1. 重置动画参数
         character.Animator.SetBool("Is Crouching", false);
- 
-       
+
+
         // 2. 恢复原始碰撞体
-        if (character.Crouch_collider != null && character.Crouch_collider != null)
+        if (character.Crouch_collider != null && character.Idle_collider != null)
         {
             character.Crouch_collider.enabled = false;
             character.Idle_collider.enabled = true;
         }
 
-        
+
     }
 }
 
 public class DamageState : CharacterStateBase
 {
     private const float HurtDuration = 1.1f;
-    private const float HurtInvincibilityTime = 0.3f;
+    private const float HurtInvincibilityTime = 1f;
     private const float HurtForce =40f;
-    
+    private const float MaxKnockbackSpeed = 3f;
     public override CharacterStateEnum StateType => CharacterStateEnum.Damage;
-    
+
     private float hurtTimer = 3.5f;
-    private float invincibilityTimer = 2f;
     private Vector3 hurtDirection;
 
     public DamageState(CharacterMovement character, UserInput userInput, 
@@ -706,13 +675,18 @@ public class DamageState : CharacterStateBase
         Vector3 direction = (character.transform.position - hurtSourcePosition);
         direction.y = 0f;
         hurtDirection = direction.normalized;
+        // 没有攻击者位置时（如直接调 ChangeState(Damage)），默认按朝向反向击退，
+        // 避免零向量导致 normalized 全零、角色缩放被压平
+        if (hurtDirection.sqrMagnitude < 0.001f)
+            hurtDirection = character.IsFacingRight ? Vector3.left : Vector3.right;
     }
 
     public override void OnEnter()
     {
         
         hurtTimer = HurtDuration;
-        invincibilityTimer = HurtInvincibilityTime;
+        // 受击无敌帧：HurtInvincibilityTime 内 Damage 被屏蔽，EventManager 端不再扣血
+        character.AddActionIgnore(HurtInvincibilityTime, ActionIgnoreTag.Damage);
         Vector3 scale = character.transform.localScale;
         scale.x = Mathf.Abs(scale.x) * Mathf.Sign(-hurtDirection.x);
         character.transform.localScale = scale;
@@ -720,43 +694,59 @@ public class DamageState : CharacterStateBase
         AudioManager.Instance?.PlayHurtSFX();
         character.Animator.SetBool("Is Hurt", true);
         character.AddActionIgnore(HurtDuration,
-            ActionIgnoreTag.Move, ActionIgnoreTag.Jump, 
+            ActionIgnoreTag.Move, ActionIgnoreTag.Jump,
             ActionIgnoreTag.Attack, ActionIgnoreTag.Interact);
 
     }
 
-    public override void OnUpdate()
+    /// <summary>
+    /// 连续受击时刷新硬直：更新击退方向、重置硬直计时、续上动作锁定与无敌帧。
+    /// 不重播受伤动画和音效——动画只在首次进入 Damage 时播放一次。
+    /// </summary>
+    public void RefreshHit(Vector3 hurtSourcePosition)
+    {
+        Vector3 direction = character.transform.position - hurtSourcePosition;
+        direction.y = 0f;
+        if (direction.sqrMagnitude > 0.001f)
+            hurtDirection = direction.normalized;
+
+        // 按新的击退方向翻转朝向
+        Vector3 scale = character.transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * Mathf.Sign(-hurtDirection.x);
+        character.transform.localScale = scale;
+
+        hurtTimer = HurtDuration;
+        character.AddActionIgnore(HurtDuration,
+            ActionIgnoreTag.Move, ActionIgnoreTag.Jump,
+            ActionIgnoreTag.Attack, ActionIgnoreTag.Interact);
+        character.AddActionIgnore(HurtInvincibilityTime, ActionIgnoreTag.Damage);
+    }
+
+    public override CharacterStateEnum? OnUpdate()
     {
         hurtTimer -= TimeManager.GameplayDT;
-        invincibilityTimer -= TimeManager.GameplayDT;
-        
-        if (invincibilityTimer <= 0f)
-            //character.Animator.SetBool("Is Invincible", false);
 
         if (hurtTimer > 0f)
         {
-          
-            character.Rigidbody.velocity = new Vector3(hurtDirection.x, 
-                0, hurtDirection.z)*HurtForce;
-         
+            // 击退：地面清零竖直速度，空中保留下落速度（空中受击不再悬浮）
+            float vy = character.IsGrounded ? 0f : character.Rigidbody.velocity.y;
+            float vx = Mathf.Clamp(hurtDirection.x * HurtForce, -MaxKnockbackSpeed, MaxKnockbackSpeed);
+            character.Rigidbody.velocity = new Vector2(vx, vy);
         }
 
         if (hurtTimer <= 0f)
         {
-            CharacterStateEnum nextState = character.IsGrounded ?
-                (Mathf.Abs(userInput.HorizontalInput) > 0.01f ? 
-                    CharacterStateEnum.Run : CharacterStateEnum.Idle) :
-                CharacterStateEnum.Fall;
-            stateController.ChangeState(nextState);
-            return;
+            return character.IsGrounded
+                ? stateController.GetRunOrIdle()
+                : CharacterStateEnum.Fall;
         }
+        return null;
     }
 
     public override void OnExit()
     {
         character.Animator.SetBool("Is Hurt", false);
         hurtTimer = 0f;
-        invincibilityTimer = 0f;
     }
 }
 
@@ -770,6 +760,7 @@ public class DeathState : CharacterStateBase
     private float deathTimer = DeathDuration;
     private float responeTimer = RespawnTime;
     private bool isDying;
+    private bool _respawnRequested;
 
     public DeathState(CharacterMovement character, UserInput userInput,
                        StateController stateController)
@@ -782,34 +773,38 @@ public class DeathState : CharacterStateBase
     {
         EventManager.Instance.TriggerDie();
         deathTimer = DeathDuration;
+        responeTimer = RespawnTime;
         isDying = true;
-        character.Rigidbody.velocity = Vector3.zero;     // 清除速度          
+        _respawnRequested = false;
+        character.Rigidbody.velocity = Vector3.zero;     // 清除速度
         character.Animator.Play("Death");
         AudioManager.Instance?.PlayDeathSFX();
         character.Animator.SetBool("Is active", true);
         character.AddActionIgnore(DeathDuration,
           ActionIgnoreTag.All);
-        
+
 
     }
 
-    public override void OnUpdate()
+    // 复活走事件（TriggerRespawn → HandleRespawnRequest），OnUpdate 不自报
+    public override CharacterStateEnum? OnUpdate()
     {
         deathTimer -= TimeManager.GameplayDT;
         responeTimer -= TimeManager.GameplayDT;
 
-      
+
         if (deathTimer <= 0f && isDying)
         {
             isDying = false;
         }
 
-       
-        //if (responeTimer <= 0f)
-        //{
-        //    stateController.ChangeState(CharacterStateEnum.Idle);
-        //    return;
-        //}
+        // 复活：倒计时结束后发复活请求，由 StateController 切回 Idle
+        if (responeTimer <= 0f && !_respawnRequested)
+        {
+            _respawnRequested = true;
+            EventManager.Instance?.TriggerRespawn();
+        }
+        return null;
     }
 
     public override void OnExit()

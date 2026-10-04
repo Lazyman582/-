@@ -154,10 +154,10 @@ public class AudioManager : MonoBehaviour
         Debug.Log($"[AudioManager] BGM: {clip.name}");
     }
 
-    /// <summary>从 Catalog 按 ID 播放 BGM</summary>
+
     public void PlayBGMById(string id) => PlayBGM(_catalog.GetClip(AudioClipCatalog.Category.BGM, id));
 
-    /// <summary>从 Resources/Music/ 加载并播放 BGM</summary>
+  
     public void PlayBGMByName(string musicName)
     {
         var clip = Resources.Load<AudioClip>("Music/" + musicName);
@@ -167,6 +167,9 @@ public class AudioManager : MonoBehaviour
 
     public void PlayTitleBGM()  => PlayBGMById("title");
     public void PlayLevelBGM()  => PlayBGMById("level");
+
+    public void PlayFireBGM() => PlayBGMById("火焰");
+
     public void StopBGM()       { if (_bgmSource.isPlaying) _bgmSource.Stop(); }
     public void PauseBGM()      { if (_bgmSource.isPlaying) _bgmSource.Pause(); }
     public void ResumeBGM()     { if (!_bgmSource.isPlaying && _bgmSource.clip != null) _bgmSource.Play(); }
@@ -237,7 +240,8 @@ public class AudioManager : MonoBehaviour
     public void PlayInteractSFX()  => PlaySFXById(AudioClipCatalog.Category.PlayerSFX, "interact");
     public void PlayButtonClick()  => PlaySFXById(AudioClipCatalog.Category.UISFX, "button_click");
     public void PlayButtonHover()  => PlaySFXById(AudioClipCatalog.Category.UISFX, "button_hover");
-
+    public void PlayButtonStart() => PlaySFXById(AudioClipCatalog.Category.UISFX, "Start");
+    public void PlayFire() => PlaySFXById(AudioClipCatalog.Category.UISFX, "fire");
     public void SetSFXVolume(float v)
     {
         _sfxVolume = Mathf.Clamp01(v);

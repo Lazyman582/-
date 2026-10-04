@@ -10,6 +10,9 @@ public class SceneSaveTool : EditorWindow
 {
     private const string CONFIG_PATH = "Assets/Editor/SceneSetupConfig.asset";
     private static bool s_IsRestoring = false;
+    // 批量关场景时 sceneClosing 会逐个触发，只在第一批触发时保存一次完整快照，
+    // 否则最后一次触发会把配置覆盖成只剩最后一个场景
+    private static bool s_BatchSaved = false;
 
     // ==================== 静态初始化 ====================
 
@@ -17,6 +20,9 @@ public class SceneSaveTool : EditorWindow
     {
         // 切场景前自动保存当前叠加状态
         EditorSceneManager.sceneClosing += OnSceneClosing;
+
+        // 场景批次结束（有新场景打开）后，允许下一批再次保存
+        EditorSceneManager.sceneOpened += OnSceneOpened;
 
         // 编辑器启动后延迟恢复（等所有场景加载完毕）
         EditorApplication.delayCall += () =>
@@ -33,7 +39,16 @@ public class SceneSaveTool : EditorWindow
     {
         // 正在恢复中时不触发自动保存，避免覆盖
         if (s_IsRestoring) return;
+        // 同一批关闭只保存第一次（那时看到的叠加最完整）
+        if (s_BatchSaved) return;
+        s_BatchSaved = true;
         AutoSave();
+    }
+
+    private static void OnSceneOpened(Scene scene, OpenSceneMode mode)
+    {
+        // 延迟到本批次全部打开动作结束后再复位
+        EditorApplication.delayCall += () => { s_BatchSaved = false; };
     }
 
     // ==================== 自动保存 ====================

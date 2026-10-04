@@ -12,29 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b660223b9f7a384a901247d5533b263, type: 3}
   m_Name: "\u6559\u5E08"
   m_EditorClassIdentifier: 
-  npcName: "\u52B3\u6B65\u4F3C\u5F97"
+  npcName: "\uFF1F\uFF1F\uFF1F"
   nodes:
-  - text: "\u554A\u554A\u3002\u3002\u3002"
+  - text: "\u7EC8\u4E8E..."
     branches: []
     isEndNode: 0
-  - text: "\u7EC8\u4E8E\u662F\u77E3"
+  - text: "\u60A8\u518D\u6B21\u82CF\u9192\u4E86"
     branches: []
     isEndNode: 0
-  - text: "\u541B\u5DF2\u89C9\u4E4E\uFF1F"
+  - text: "\u8FD9\u91CC\u662F\u6559\u4F1A\u7684\u76D1\u72F1"
     branches: []
     isEndNode: 0
-  - text: "\u5B50\u6C89\u5BD0\u5DF2\u5386\u6570\u767E\u79CB\u3002"
+  - text: "\u8BF7\u522B\u8BEF\u4F1A\uFF0C\u8FD9\u5E76\u4E0D\u662F\u5173\u62BC\u60A8\u7684\u5730\u65B9"
     branches: []
     isEndNode: 0
-  - text: "\u800C\u4ECA\uFF0C\u5947\u8FF9\u5C06\u5174\uFF0C\u706B\u4E4B\u964D\u7184"
+  - text: "\u6B63\u76F8\u53CD\uFF0C\u6211\u4EEC\u662F\u4E3A\u4E86\u4FDD\u62A4\u60A8\u7684\u5C38\u9996\u624D\u4E0D\u5F97\u4E0D\u8FD9\u4E48\u505A"
     branches: []
     isEndNode: 0
-  - text: "\u5929\u4E0B\u5C06\u503E\uFF0C\u4E07\u7269\u5C06\u5C3D\u3002"
+  - text: "\u5947\u8FF9\u7684\u722A\u7259\u6B63\u5927\u8086\u641C\u6355\u7740\u60A8\u7684\u5B58\u5728\uFF0C\u5B83\u4EEC\u60E7\u6015\u60A8"
     branches: []
     isEndNode: 0
-  - text: "\u6C5D\u4E43\u62EF\u4E16\u4E4B\u4EBA\u3002"
+  - text: "\u800C\u6211\u7B49\u4E3A\u8EB2\u907F\u8FFD\u6355\uFF0C\u4E0D\u5F97\u4EE5\u51FA\u6B64\u4E0B\u7B56"
     branches: []
     isEndNode: 0
-  - text: "\u613F\u6C5D\u80FD\u7834\u5947\u8FF9\u4E4B\u62A4\u8005\uFF0C\u590D\u71C3\u706B\u79CD\u3002"
+  - text: "\u800C\u4ECA\u60A8\u5DF2\u82CF\u9192\uFF0C\u8BF7\u5B8C\u6210\u60A8\u7684\u4F7F\u547D"
     branches: []
     isEndNode: 0
+  - text: "\u9A71\u6563\u5947\u8FF9\uFF0C\u8BA9\u706B\u590D\u82CF\u5427"
+    branches:
+    - text: "\u540C\u610F"
+      nextNodeIndex: 9
+    - text: "\u62D2\u7EDD"
+      nextNodeIndex: 10
+    isEndNode: 0
+  - text: "\u611F\u8C22"
+    branches: []
+    isEndNode: 1
+  - text: "\u62B1\u6B49\uFF0C\u4F46\u6211\u60F3\u60A8\u6CA1\u6709\u62D2\u7EDD\u7684\u6743\u529B"
+    branches: []
+    isEndNode: 1

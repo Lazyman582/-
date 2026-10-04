@@ -13,7 +13,6 @@ public class EventManager : MonoBehaviour
 
 
     public readonly PriorityEvent OnJumpRequested = new();      // 跳跃请求
-    public readonly PriorityEvent OnRunRequested = new();       // 跑步请求
     public readonly PriorityEvent OnAttackRequested = new();    // 攻击请求
     public readonly PriorityEvent OnSkillRequested = new();     // 技能请求
     public readonly PriorityEvent OnDodgeRequested = new();     //滑铲请求
@@ -21,6 +20,7 @@ public class EventManager : MonoBehaviour
     public readonly PriorityEvent OnInteractRequested = new();  //交互请求（对话等）
     public readonly PriorityEvent<Vector3> OnDamgeRequested = new();
     public readonly PriorityEvent OnDieRequested = new();
+    public readonly PriorityEvent OnRespawnRequested = new();   // 复活请求
 
     public readonly PriorityEvent<float> OnMoveRequested = new();  // 移动请求，参数为方向
 
@@ -64,12 +64,6 @@ public class EventManager : MonoBehaviour
         OnJumpRequested.Invoke();
     }
 
-    public void TriggerRun()
-    {
-        Debug.Log("[Event] Run Requested");
-        OnRunRequested.Invoke();
-    }
-
     public void TriggerMove(float direction)
     {
         OnMoveRequested.Invoke(direction);
@@ -107,6 +101,13 @@ public class EventManager : MonoBehaviour
 
     public void TriggerDamage(float amount, Vector3 attackerPosition)
     {
+        // 伤害屏蔽（受击无敌帧等）期间，整个伤害不生效——屏蔽语义与状态机一致
+        if (CharacterMovement.Instance != null && CharacterMovement.Instance.IsActionIgnored(ActionIgnoreTag.Damage))
+        {
+            Debug.Log("[EventManager] 伤害被 Damage 屏蔽（无敌帧），已忽略");
+            return;
+        }
+
         CharacterData player = CurrentCharacterData;
         if (player == null)
         {
@@ -130,22 +131,23 @@ public class EventManager : MonoBehaviour
         OnDamgeRequested.Invoke(attackerPosition);
     }
 
-    public void TriggerDie() {
+    public void TriggerDie()
+    {
+        // 死亡期间的动作屏蔽由 DeathState 的 ActionIgnoreTag.All 负责，
+        // 不再永久禁用 UserInput（否则复活后输入回不来）
+        Debug.Log("[EventManager] TriggerDie");
+    }
 
-
-       if (UserInput.Instance != null)
-       {
-           UserInput.Instance.enabled = false;
-       }
-
-
+    public void TriggerRespawn()
+    {
+        Debug.Log("[EventManager] TriggerRespawn → OnRespawnRequested.Invoke()");
+        OnRespawnRequested.Invoke();
     }
 
     // 清理事件
     public void ClearAllEvents()
     {
         OnJumpRequested.Clear();
-        OnRunRequested.Clear();
         OnMoveRequested.Clear();
         OnAttackRequested.Clear();
         OnSkillRequested.Clear();
@@ -154,6 +156,7 @@ public class EventManager : MonoBehaviour
         OnInteractRequested.Clear();
         OnDamgeRequested.Clear();
         OnDieRequested.Clear();
+        OnRespawnRequested.Clear();
     }
 
     void OnDestroy()

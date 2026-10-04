@@ -1,0 +1,765 @@
+fileFormatVersion: 2
+guid: 28ebe220c26cc054191b348cc2bf2329
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 808
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b6ead9298bd8640a584a5ec25cbef8
+      internalID: -879843395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_3
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 808
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942e8965d592f0f4e8fb8e6e84bd2083
+      internalID: 2055339078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_4
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 808
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa49fcbe8dd418149a7536a4f0c1645d
+      internalID: 1801644369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_5
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 807
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a41d4730fe067f4d8c3e9ec008a6808
+      internalID: -1810329156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_6
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 802
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157032b68d9c9434c98851b78a6da1ab
+      internalID: 677471697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 545
+        width: 29
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e19488b9abe7324f9ef842b054b5400
+      internalID: 12395890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_17
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 545
+        width: 28
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e07903b6094b646aeb419817ecde6b
+      internalID: 1832458677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_18
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 545
+        width: 31
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb0e155226b77a48ae8679a440fb7fa
+      internalID: 855336015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_19
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 545
+        width: 31
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96687606556fc943829eb5c6e92824e
+      internalID: 1831229180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_20
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 543
+        width: 34
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7a54c6c568ef04f972747bd3ea5e08
+      internalID: 305892327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_21
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 539
+        width: 36
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c74bb1e5b759ee42827ffba1d7d8de4
+      internalID: -1194285547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_22
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 539
+        width: 34
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8020e3f76804d7043be4f15b1f91e2aa
+      internalID: -834730736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_23
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 283
+        width: 34
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae875e70f32a484296c817c3064d27e
+      internalID: 898476623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_24
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 283
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064bff423549a7d4a8460cc5601a9738
+      internalID: 91946239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_25
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 283
+        width: 31
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a280960063f39e4d9e7c6907c211753
+      internalID: 186395414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_26
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 282
+        width: 29
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e9ed4eb9800ee43a36132aaa8fb1c7
+      internalID: -363471135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_27
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 277
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9b44d169fa23b468cc19badabe5974
+      internalID: -1120749309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_28
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 276
+        width: 29
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c760e08535fe2fb48b7166b4bce1c4af
+      internalID: -1991141916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_29
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 276
+        width: 28
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2080b6a301c0fa7479b9508170a658b3
+      internalID: -592521322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 20
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e831f31ce5a434a9cc0bab11d4cab9
+      internalID: 1366453001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_31
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 20
+        width: 31
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f435c5bfa3d3cd47a2fd2e030612592
+      internalID: -1646936784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_32
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 18
+        width: 34
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871195d00dafbcf419c6ef07e6376c5d
+      internalID: -1129109877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_33
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 16
+        width: 36
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b5514ce724dcd48b2f1eb6fb9fecd1
+      internalID: 1022955450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_34
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 16
+        width: 51
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168e41e2ab37691438e023bdbdac5ce8
+      internalID: 1160795411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_35
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 16
+        width: 62
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b6a1523e382fb46892ff3837aaf655
+      internalID: -1791290804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_36
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 16
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7661017fb786842b0888a4077cb3fb
+      internalID: 526799237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_0
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 805
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a54ed9ea53cfcb44adceb69efc6e15c
+      internalID: 854685255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: penitent_crossing_teleportVortex_in_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 807
+        width: 40
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed42e42e5fd05104282df606b3891bd3
+      internalID: 1923475626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      penitent_crossing_teleportVortex_in_0: 854685255
+      penitent_crossing_teleportVortex_in_1: 1923475626
+      penitent_crossing_teleportVortex_in_10: -2099581188
+      penitent_crossing_teleportVortex_in_11: -471119446
+      penitent_crossing_teleportVortex_in_12: 1322784846
+      penitent_crossing_teleportVortex_in_13: 1459208336
+      penitent_crossing_teleportVortex_in_14: 492236659
+      penitent_crossing_teleportVortex_in_15: 872298943
+      penitent_crossing_teleportVortex_in_16: 12395890
+      penitent_crossing_teleportVortex_in_17: 1832458677
+      penitent_crossing_teleportVortex_in_18: 855336015
+      penitent_crossing_teleportVortex_in_19: 1831229180
+      penitent_crossing_teleportVortex_in_2: -879843395
+      penitent_crossing_teleportVortex_in_20: 305892327
+      penitent_crossing_teleportVortex_in_21: -1194285547
+      penitent_crossing_teleportVortex_in_22: -834730736
+      penitent_crossing_teleportVortex_in_23: 898476623
+      penitent_crossing_teleportVortex_in_24: 91946239
+      penitent_crossing_teleportVortex_in_25: 186395414
+      penitent_crossing_teleportVortex_in_26: -363471135
+      penitent_crossing_teleportVortex_in_27: -1120749309
+      penitent_crossing_teleportVortex_in_28: -1991141916
+      penitent_crossing_teleportVortex_in_29: -592521322
+      penitent_crossing_teleportVortex_in_3: 2055339078
+      penitent_crossing_teleportVortex_in_30: 1366453001
+      penitent_crossing_teleportVortex_in_31: -1646936784
+      penitent_crossing_teleportVortex_in_32: -1129109877
+      penitent_crossing_teleportVortex_in_33: 1022955450
+      penitent_crossing_teleportVortex_in_34: 1160795411
+      penitent_crossing_teleportVortex_in_35: -1791290804
+      penitent_crossing_teleportVortex_in_36: 526799237
+      penitent_crossing_teleportVortex_in_4: 1801644369
+      penitent_crossing_teleportVortex_in_5: -1810329156
+      penitent_crossing_teleportVortex_in_6: 677471697
+      penitent_crossing_teleportVortex_in_7: -310096157
+      penitent_crossing_teleportVortex_in_8: 1371919091
+      penitent_crossing_teleportVortex_in_9: 1807201776
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

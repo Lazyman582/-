@@ -55,13 +55,11 @@ public class UIManager : MonoBehaviour
     public void OpenInventory()
     {
         isInventoryOpen = true;
-        IsUIBlockingInput = true;
         if (inventoryPanel != null) inventoryPanel.SetActive(true);
         Time.timeScale = 0f;
 
-        // 屏蔽玩家操作，防止背包打开时按键触发移动/攻击等状态
-        if (UserInput.Instance != null)
-            UserInput.Instance.stop = true;
+        // 屏蔽玩家操作（stop + UI 拦截 + 切回 Idle），单一入口
+        StateController.SetInputLocked(true);
 
         // 立即停掉循环音效（移动音效等）
         AudioManager.Instance?.StopAllLoops();
@@ -73,12 +71,10 @@ public class UIManager : MonoBehaviour
     public void CloseInventory()
     {
         isInventoryOpen = false;
-        IsUIBlockingInput = false;
         if (inventoryPanel != null) inventoryPanel.SetActive(false);
         Time.timeScale = 1f;
 
         // 恢复玩家操作
-        if (UserInput.Instance != null)
-            UserInput.Instance.stop = false;
+        StateController.SetInputLocked(false);
     }
 }

@@ -17,13 +17,33 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2538e1862342258409923b92261ae93e
   m_SerializeEntries:
-  - m_GUID: b02b62fc02e0f5c488de548aef87c2c9
+  - m_GUID: 29abf258904605e499df55eb6761bc3b
+    m_Address: "Assets/Scenes/\u5173\u5361\u4E8C.unity"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71991b226f0da374292f25f868439c00
+    m_Address: Assets/Scenes/Mannerger.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1384552efc63be4e9fbc49825b2e2cc
     m_Address: Assets/Scenes/UI.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be86fc9f0d9a8b442a9464a41f1910cd
     m_Address: Assets/Scenes/MainUI.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d57894f37ab8c4743afd22156b5538b5
+    m_Address: "Assets/\u5173\u5361\u4E00.unity"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fdbd708e7bd8cca419a9e13255634615
+    m_Address: "Assets/Scenes/\u5E38\u9A7B\u6570\u636E.unity"
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

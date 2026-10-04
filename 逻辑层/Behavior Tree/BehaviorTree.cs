@@ -64,12 +64,7 @@ namespace BehaviorTree
 
         public Staus Evaluate(Transform agent, Blackboard blackboard)
         {
-
-
-            Debug.Log(message: $"{GetType().Name} - Entered...");
-            staus = OnEvaluate(agent,blackboard);
-            Debug.Log(message: $"{GetType().Name} - {staus}");
-            Debug.Log(message: $"{GetType().Name} - Exited...");
+            staus = OnEvaluate(agent, blackboard);
             return staus;
         }
 

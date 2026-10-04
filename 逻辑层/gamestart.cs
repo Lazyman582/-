@@ -8,12 +8,17 @@ public class gamestart : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        SceneManner.Instance.LoadScene("Assets/Scenes/MainUI.unity");
-    }
 
+    }
+    private void Start()
+    {
+        SceneManner.Instance.LoadScene("Assets/Scenes/MainUI.unity");
+
+
+    }
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

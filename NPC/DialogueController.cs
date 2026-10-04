@@ -26,14 +26,8 @@ public class DialogueController : Singleton<DialogueController>
         if (dialogueData == null || dialogueData.NodeCount == 0 || IsActive) return;
         Debug.Log($"[DialogueController] Start dialogue: {dialogueData.NpcName}, {dialogueData.NodeCount} nodes");
 
-        
-        if (StateController.Instance != null)
-            StateController.Instance.ChangeState(CharacterStateEnum.Idle);
-        
-        if (UserInput.Instance != null)
-            UserInput.Instance.stop = true;
-
-        UIManager.IsUIBlockingInput = true;
+        // 锁定玩家输入（切回 Idle + stop + UI 拦截），单一入口
+        StateController.SetInputLocked(true);
 
         CurrentNodeIndex = 0;
         data = dialogueData;
@@ -90,10 +84,8 @@ public class DialogueController : Singleton<DialogueController>
 
     public void EndDialogue()
     {
-        // 解锁玩家
-        if (UserInput.Instance != null)
-            UserInput.Instance.stop = false;
-            UIManager.IsUIBlockingInput = false;
+        // 解锁玩家输入（单一入口）
+        StateController.SetInputLocked(false);
 
         IsActive = false;
         data = null;

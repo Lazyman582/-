@@ -17,6 +17,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c0474019adf35734b8e052c687940920, type: 3}
     volume: 0.5
     pitchVariation: 0
+  - id: "\u5F00\u5C40"
+    clip: {fileID: 8300000, guid: 17206f58029355f4cb7ea8d0fee997ae, type: 3}
+    volume: 0.5
+    pitchVariation: 0
+  - id: "\u706B\u7130"
+    clip: {fileID: 8300000, guid: 8d6d97d783fe9ac488e0a89fab08ffb8, type: 3}
+    volume: 0.5
+    pitchVariation: 0
   _playerSFX:
   - id: move
     clip: {fileID: 8300000, guid: 0e7e7d11e1649a942a8ea1b1fd7bddc7, type: 3}
@@ -35,5 +43,17 @@ MonoBehaviour:
     volume: 0
     pitchVariation: 0
   _enemySFX: []
-  _uiSFX: []
+  _uiSFX:
+  - id: fire
+    clip: {fileID: 8300000, guid: e24a8015e20dcb448a114390915b82c4, type: 3}
+    volume: 0.5
+    pitchVariation: 0
+  - id: Start
+    clip: {fileID: 8300000, guid: f7a53f7f3cefe214da72530236d2ef73, type: 3}
+    volume: 0.5
+    pitchVariation: 0
+  - id: burn
+    clip: {fileID: 8300000, guid: 8d6d97d783fe9ac488e0a89fab08ffb8, type: 3}
+    volume: 0.5
+    pitchVariation: 0
   _ambientSFX: []

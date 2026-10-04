@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -39,6 +40,9 @@ public class SceneManner : MonoBehaviour
     // 当前活动场景名称（只读属性）
     public string CurrentSceneName => currentSceneName;
 
+    /// <summary>查询某个场景地址是否由本管理器加载（受管理）</summary>
+    public bool IsSceneTracked(string sceneAddress) => loadedScenes.ContainsKey(sceneAddress);
+
     private void Awake()
     {
         // 保证单例唯一
@@ -59,7 +63,7 @@ public class SceneManner : MonoBehaviour
     /// <summary>
     /// 加载场景（如果已经预加载，则直接激活）
     /// </summary>
-    public void LoadScene(string sceneAddress)
+    public void LoadScene(string sceneAddress, Action<bool> onCompleted = null)
     {
         // 检查是否已经预加载
         if (preloadedScenes.ContainsKey(sceneAddress))
@@ -76,6 +80,7 @@ public class SceneManner : MonoBehaviour
             UpdateInspectorInfo(sceneAddress, preloadedInstance);
             UpdateUsageOrder(sceneAddress);
             EnforceCacheLimit();
+            onCompleted?.Invoke(true);
             return;
         }
 
@@ -84,6 +89,7 @@ public class SceneManner : MonoBehaviour
         {
             Debug.LogWarning($"场景 {sceneAddress} 已经加载过了！");
             UpdateUsageOrder(sceneAddress);
+            onCompleted?.Invoke(true);
             return;
         }
 
@@ -101,10 +107,12 @@ public class SceneManner : MonoBehaviour
                 UpdateInspectorInfo(sceneAddress, handle.Result);
                 UpdateUsageOrder(sceneAddress);
                 EnforceCacheLimit();
+                onCompleted?.Invoke(true);
             }
             else
             {
                 Debug.LogError($"场景 {sceneAddress} 加载失败: {handle.OperationException}");
+                onCompleted?.Invoke(false);
             }
         };
 
@@ -202,7 +210,7 @@ public class SceneManner : MonoBehaviour
     public void SwitchScene(string newSceneAddress)
     {
         // 先捕获旧场景名：LoadScene 是异步的，完成后 currentSceneName 会变成新场景，
-        // 延迟卸载时必须卸载的是捕获到的旧场景，否则会把刚加载的新场景误卸掉
+        // 卸载时必须卸载的是捕获到的旧场景，否则会把刚加载的新场景误卸掉
         string oldSceneAddress = currentSceneName;
 
         if (oldSceneAddress == newSceneAddress)
@@ -211,23 +219,22 @@ public class SceneManner : MonoBehaviour
             return;
         }
 
-        // 加载新场景
-        LoadScene(newSceneAddress);
-
-        // 卸载旧场景（延迟到新场景加载完成之后）
-        if (!string.IsNullOrEmpty(oldSceneAddress) && loadedScenes.ContainsKey(oldSceneAddress))
+        // 加载新场景；在新场景加载完成的回调里卸载旧场景（事件驱动，替代固定延迟——
+        // 避免新场景加载快于延迟时间时出现"新场景已就绪、旧场景还在"的重叠帧）
+        LoadScene(newSceneAddress, onCompleted: success =>
         {
-            StartCoroutine(UnloadSceneAfterDelay(oldSceneAddress, 1f));
-        }
-    }
+            if (!success)
+            {
+                Debug.LogWarning($"新场景 {newSceneAddress} 加载失败，保留旧场景 {oldSceneAddress}");
+                return;
+            }
 
-    /// <summary>
-    /// 延迟卸载指定场景
-    /// </summary>
-    private IEnumerator UnloadSceneAfterDelay(string sceneAddress, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        UnloadScene(sceneAddress);
+            if (!string.IsNullOrEmpty(oldSceneAddress) && loadedScenes.ContainsKey(oldSceneAddress))
+            {
+                Debug.LogError(oldSceneAddress);
+                UnloadScene(oldSceneAddress);
+            }
+        });
     }
 
     #endregion

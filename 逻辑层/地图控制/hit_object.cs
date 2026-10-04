@@ -11,7 +11,8 @@ public class hit_object : MonoBehaviour
    
     // 是否触发过（避免重复执行）
     private bool hasCollision = false;
-
+    [SerializeField]
+    private float hurt = 100;
     private void Awake()
     {
 
@@ -35,19 +36,13 @@ public class hit_object : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.P)) {
-
-            EventManager.Instance.TriggerDamage(10,transform.position);
-
-
-
-        }
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            EventManager.Instance.TriggerDamage(10, transform.position);
+            EventManager.Instance.TriggerDamage(hurt, transform.position);
         }
     }
 }

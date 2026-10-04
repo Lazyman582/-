@@ -125,7 +125,8 @@ public class UserInput : MonoBehaviour
 
     private void HandleCrouchInput() {
         if (stop) return;
-        if (Input.GetKey(KeyCode.S))
+        // 边沿触发：与其他动作事件一致，按住期间不再每帧轰炸 TriggerCrouch
+        if (Input.GetKeyDown(KeyCode.S))
         {
 
             IsCrouchPressed = true;

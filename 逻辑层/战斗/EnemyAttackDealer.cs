@@ -38,8 +38,13 @@ public class EnemyAttackDealer : MonoBehaviour
         // 玩家受击震动：沿击退方向（敌人指向玩家）
         if (ScreenShakeManager.Instance != null)
         {
-            Vector2 knockDir = ((Vector2)playerTransform.position - (Vector2)transform.position).normalized;
-            ScreenShakeManager.Instance.Shake(2f, 6, 0.25f, knockDir);
+            CharacterData playerData = hit.GetComponentInParent<CharacterData>();
+
+            if (playerData.Health !=0)
+            {
+                Vector2 knockDir = ((Vector2)playerTransform.position - (Vector2)transform.position).normalized;
+                ScreenShakeManager.Instance.Shake(0.5f, 6, 0.25f, knockDir);
+            }
         }
     }
 

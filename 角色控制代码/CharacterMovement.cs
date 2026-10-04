@@ -111,26 +111,23 @@ public class CharacterMovement : MonoBehaviour
             return;
         }
 
-        IsGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
+        
+        Vector2 origin = groundCheckPoint.position;
+        float halfWidth = groundCheckRadius;
+        float distance = groundCheckRadius + 0.15f;
 
-        if (IsGrounded)
-        {
-            RaycastHit2D hit = Physics2D.BoxCast(
-                groundCheckPoint.position,
-                new Vector2(groundCheckRadius * 2, 0.01f),
-                0f,
-                Vector2.down,
-                0.05f,
-                groundLayer
-            );
+        RaycastHit2D leftHit = Physics2D.Raycast(origin + Vector2.left * halfWidth, Vector2.down, distance, groundLayer);
+        RaycastHit2D rightHit = Physics2D.Raycast(origin + Vector2.right * halfWidth, Vector2.down, distance, groundLayer);
 
-            if (hit.collider == null)
-            {
-                IsGrounded = false;
-            }
-        }
+        IsGrounded = IsValidGround(leftHit) || IsValidGround(rightHit);
 
         Animator.SetBool("Is Ground", IsGrounded);
+    }
+
+
+    private static bool IsValidGround(RaycastHit2D hit)
+    {
+        return hit.collider != null && hit.normal.y >= 0.5f;
     }
 
     private void OnDamge()
@@ -210,6 +207,12 @@ public class CharacterMovement : MonoBehaviour
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         RefreshCameraDependencies();
+
+        // 补抓输入引用：开局时 UserInput（Mannerger）可能尚未加载完成
+        if (_userInput == null)
+        {
+            _userInput = UserInput.Instance;
+        }
     }
 
     private void RefreshCameraDependencies()
@@ -230,7 +233,15 @@ public class CharacterMovement : MonoBehaviour
         if (groundCheckPoint != null)
         {
             Gizmos.color = IsGrounded ? Color.green : Color.red;
-            Gizmos.DrawWireSphere(groundCheckPoint.position, groundCheckRadius);
+
+            Vector2 origin = groundCheckPoint.position;
+            float halfWidth = groundCheckRadius;
+            float distance = groundCheckRadius + 0.15f;
+
+            Vector2 left = origin + Vector2.left * halfWidth;
+            Vector2 right = origin + Vector2.right * halfWidth;
+            Gizmos.DrawLine(left, left + Vector2.down * distance);
+            Gizmos.DrawLine(right, right + Vector2.down * distance);
         }
     }
 

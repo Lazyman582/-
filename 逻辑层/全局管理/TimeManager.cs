@@ -48,8 +48,12 @@ public class TimeManager : MonoBehaviour
     /// </summary>
     public void Freeze(float duration, float freezeScale = 0f)
     {
+        // 重叠调用：先恢复旧冻结保存的倍率，避免把冻结中的倍率当成"正常值"存下来
         if (freezeRoutine != null)
+        {
             StopCoroutine(freezeRoutine);
+            RestoreScales();
+        }
         freezeRoutine = StartCoroutine(FreezeRoutine(duration, freezeScale));
     }
 

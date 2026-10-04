@@ -2,13 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 关卡跳转数据库：记录每个关卡（场景地址字符串）以及它能跳转到的场景地址列表。
-/// 跳转时（如 ScenePortal）从这里读取目标场景，而不是把地址写死在场景物体上。
-///
-/// 资产位置：Assets/Resources/Data/LevelDatabase.asset
-/// 运行时通过 Resources 自动加载，场景里不需要手动引用。
-/// </summary>
+
 [CreateAssetMenu(fileName = "LevelDatabase", menuName = "我与史诗/关卡跳转数据库")]
 public class LevelDatabase : ScriptableObject
 {
